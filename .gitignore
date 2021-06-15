@@ -105,3 +105,4 @@ dist
 
 # Temporary file
 src/temp/
+_site
