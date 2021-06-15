@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "init": "npx postcss src/assets/main.tailwind.css -o src/temp/main.css",
+    "temp": "npx postcss src/assets/main.tailwind.css -o src/temp/main.css",
     "start": "npx eleventy --serve",
     "clean": "rm -r _site",
     "build": "NODE_ENV=production npx postcss src/assets/main.tailwind.css -o src/main.css & NODE_ENV=production npx eleventy"
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/zulvkr/zulvkr.github.io#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.2.6",
     "cssnano": "^5.0.5",
     "dotenv": "^10.0.0",
