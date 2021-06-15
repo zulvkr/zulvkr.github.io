@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <title>Document</title>
-</head>
-<body>
-  <h1 class="text-gray-700 p-10 text-5xl">yes</h1>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <!-- <link rel="stylesheet"   href="./red.css" /> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="mx-auto lg:border-r left-side lg:fixed lg:w-1/4 lg:h-full max-w-prose lg:pt-8"
+    >
+      <nav class="p-4 text-sm lg:px-6 ">
+        <ul class="flex flex-nowrap">
+          <li class="flex-initial font-black">
+            <a class="block px-3 pt-6 text-white bg-gray-700 rounded-sm" href="/">/zul/</a>
+          </li>
+          <li class="flex-initial">
+            <a class="block px-3 pt-6" href="{'/contact' | url}">Contact</a>
+          </li>
+          <li class="flex-initial">
+            <a class="block px-3 pt-6" href="{'/profile' | url}">Profile</a>
+          </li>
+          <li class="flex-initial">
+            <a class="block px-3 pt-6" href="{'/for-hire' | url}">For Hire</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="px-4 py-8 lg:px-6">
+        <h1 id="title" class="pb-5 text-5xl font-bold">zul</h1>
+        <p id="description" class="font-serif prose">
+          Array of writings I want to share with the world. I haven't write much
+          though. Hahaha.
+        </p>
+      </div>
+    </header>
+    <div class="lg:grid lg:grid-cols-4">
+      <div class="lg:col-start-2 right-side lg:col-span-2">
+        <div class="px-4 pt-5 pb-8 mx-auto prose lg:pt-16 max-w-prose">
+          <section id="preface" class="my-5 prose">
+            <p>
+              Hi! I'm Ivan Zulfikar. A Muslim Indonesian, living in Java Island.
+              Currently hopping on programmer-land and mostly coding JavaScript.
+            </p>
+            <img src="./image/1280px-Java_region_map.png" alt="java-island" />
+          </section>
+          <hr />
+          <article class="my-10 font-serif prose">
+            <h2>First blog post</h2>
+            <p>
+              Simple website with: code highlighting, dark mode, sharp yet fun
+              and birdy. Bigger screen can have aside, with easy navigation,
+              smaller screen has button
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, incidunt nemo consequuntur modi aspernatur commodi a
+              laudantium rem dicta repellat officiis, tenetur maxime nostrum
+              corporis soluta cumque similique, eos minima.
+            </p>
+            <p class="prose-purple"><a href="/post1">Go to Post 1...</a></p>
+          </article>
+          <article class="my-10 font-serif prose">
+            <h2>Second blog post</h2>
+            <p>
+              Simple website with: code highlighting, dark mode, sharp yet fun
+              and birdy. Bigger screen can have aside, with easy navigation,
+              smaller screen has button
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, incidunt nemo consequuntur modi aspernatur commodi a
+              laudantium rem dicta repellat officiis, tenetur maxime nostrum
+              corporis soluta cumque similique, eos minima.
+            </p>
+            <p class="prose-purple"><a href="/post2">Go to Post 2...</a></p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
