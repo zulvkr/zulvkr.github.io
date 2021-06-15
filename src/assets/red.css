@@ -1,0 +1,4 @@
+* {
+  outline: 1px solid red !important;
+  outline-offset: -1px !important;
+}
