@@ -1,0 +1,11 @@
+---
+layout: main.html
+---
+{% for post in collections.all %}
+
+{{ post | debug | safe }}
+<br>
+<hr>
+<br>
+
+{% endfor %}
