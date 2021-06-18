@@ -48,7 +48,7 @@ Well, some Googling makes me found a gem! See the second line.
 
 The code above is my latest solution. `in` works similarly as `arr.includes()` in JavaScript. The `in` syntax is borrowed from Python and not available in the Nunjucks documentation. You have to have some familiarity with Python and Jinja to know it. Ugh, what a painful way to learn!
 
-The `includes()` method also works inline in Nunjucks.
+The `.includes()` method surprisingly also works inline in Nunjucks.
 
 ```nunjucks
 {%- raw -%}
@@ -59,7 +59,7 @@ The `includes()` method also works inline in Nunjucks.
 {%- endraw -%}
 ```
 
-Does all array methods work in Nunjucks? I don't even find this notion in the documentation, or is it obscured somewhere? I hope the ability to use built-in JavaScript object methods written in prominent way in Nunjucks documentations. It's a game changer.
+Does all array methods work in Nunjucks? I don't even find this notion in the documentation, or is it obscured somewhere? I hope the ability to use built-in JavaScript object methods written in prominent way in Nunjucks documentation. It's a game changer.
 
 Anyway, both solutions are amazing for my use case! I can ditch my custom filter and use these semantic syntax. Lots of thanks to Ryuno-ki who pointed [this out in this thread][1] and all folks who contributed to that thread.
 
