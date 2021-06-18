@@ -10,11 +10,9 @@ tags:
   - javascript
 ---
 
-*Bismillah*.
+Nunjucks are funny templating lagunage, it seems to have a lot of unusual behavior doesn't really match with JavaScript syntax and not documented well. Maybe because it is inspired by Jinja 2, that makes it absorbed some Python characteristics.
 
-Nunjucks are funny, it seems to have a lot of tricks that are so unobvious and doesn't really match with JavaScript syntax. Maybe because it is derived from Jinja 2 that makes it absorbed some Python characteristics.
-
-Recently I'm trying to find a clean way to render items conditionally according to tags, which met some stumble blocks. At first I tried to make custom filter like this
+Recently I'm trying to find a clean way to render items conditionally according to tags and met some stumble blocks. At first I tried to make custom filter like this
 
 ```nunjucks
 eleventyConfig.addFilter('includesPost', arr => arr.includes('post'))
@@ -30,8 +28,8 @@ So I need to prevent `tags` being iterated when `tags` is `undefined`:
 
 ```nunjucks
 {%- raw -%}
-{% if not tags %}}
-{% elif (tags | includesPost) %}}
+{% if not tags %}
+{% elif (tags | includesPost) %}
   render something
 {% endif %}
 {%- endraw -%}
@@ -41,17 +39,26 @@ Well, some Googling makes me found a gem! See the second line.
 
 ```nunjucks
 {%- raw -%}
-{% if not tags %}}
-{% elif 'post' in tags %}}
+{% if not tags %}
+{% elif 'post' in tags %}
   render something
 {% endif %}
 {%- endraw -%}
 ```
 
-The code above is my latest solution, `in` works similarly as `arr.includes()` in JavaScript.
+The code above is my latest solution, `in` works similarly as `arr.includes()` in JavaScript. The `in` syntax is borrowed from Python and not available in the Nunjucks documentation. You have to have some familiarity with Python to know it. Ugh, what a painful way to learn!
 
-The `in` syntax is borrowed from Python and not available in the Nunjucks documentation 😫. Ugh, what a painful way to learn!
+The `includes()` method also works inline in Nunjucks. Petty semantic too.
 
-Anyway it's amazing for my use case! I can ditch my custom filter and use this semantic syntax. Lots of thanks to Ryuno-ki who pointed [this out in this thread][1] and all folks who contributed to that thread.
+```nunjucks
+{%- raw -%}
+{% if not tags %}
+{% elif tags.includes('post') %}
+  render something
+{% endif %}
+{%- endraw -%}
+```
+
+Anyway, both are amazing for my use case! I can ditch my custom filter and use this semantic syntax. Lots of thanks to Ryuno-ki who pointed [this out in this thread][1] and all folks who contributed to that thread.
 
 [1]: https://github.com/11ty/eleventy/issues/524
