@@ -10,9 +10,9 @@ tags:
   - javascript
 ---
 
-Nunjucks are funny templating lagunage, it seems to have a lot of unusual behavior doesn't really match with JavaScript syntax and not documented well. Maybe because it is inspired by Jinja 2, that makes it absorbed some Python characteristics.
+Nunjucks are funny templating language. It seems to have a lot of unusual behavior that doesn't match with JavaScript syntax and not documented well. Maybe because it is inspired by Jinja 2 that makes it absorbed some Python characteristics.
 
-Recently I'm trying to find a clean way to render items conditionally according to tags and met some stumble blocks. At first I tried to make custom filter like this
+Recently I'm trying to find a clean way to render items conditionally according to tags and met some stumble blocks. At first I tried to make custom filter like this:
 
 ```nunjucks
 eleventyConfig.addFilter('includesPost', arr => arr.includes('post'))
@@ -22,9 +22,9 @@ It supposed to check if `tags` of a post includes `post` tag as its member. Tags
 
 This makes me utterly confused, how could that be possible?
 
-Some testing and an hour of debugging later, the culprit was found! Not every post in Eleventy has `tags` as property, which makes caling them will return `undefined`. Wild `undefined` tags will appear in any posts that has no tags assigned in their frontmatter.
+Some testing and an hour of debugging later, the culprit was found! Not every post in Eleventy has `tags` as property, which makes caling `tags` property will return `undefined` when reaching some pages. Wild `undefined` tags consistently appear in any posts that has no tags assigned in their frontmatter.
 
-So I need to prevent `tags` being iterated when `tags` is `undefined`:
+So, I need to prevent `tags` being iterated when `tags` is `undefined`:
 
 ```nunjucks
 {%- raw -%}
@@ -46,9 +46,9 @@ Well, some Googling makes me found a gem! See the second line.
 {%- endraw -%}
 ```
 
-The code above is my latest solution, `in` works similarly as `arr.includes()` in JavaScript. The `in` syntax is borrowed from Python and not available in the Nunjucks documentation. You have to have some familiarity with Python to know it. Ugh, what a painful way to learn!
+The code above is my latest solution. `in` works similarly as `arr.includes()` in JavaScript. The `in` syntax is borrowed from Python and not available in the Nunjucks documentation. You have to have some familiarity with Python and Jinja to know it. Ugh, what a painful way to learn!
 
-The `includes()` method also works inline in Nunjucks. Petty semantic too.
+The `includes()` method also works inline in Nunjucks.
 
 ```nunjucks
 {%- raw -%}
@@ -59,6 +59,8 @@ The `includes()` method also works inline in Nunjucks. Petty semantic too.
 {%- endraw -%}
 ```
 
-Anyway, both are amazing for my use case! I can ditch my custom filter and use this semantic syntax. Lots of thanks to Ryuno-ki who pointed [this out in this thread][1] and all folks who contributed to that thread.
+Does all array methods work in Nunjucks? I don't even find this notion in the documentation, or is it obscured somewhere? I hope the ability to use built-in JavaScript object methods written in prominent way in Nunjucks documentations. It's a game changer.
+
+Anyway, both solutions are amazing for my use case! I can ditch my custom filter and use these semantic syntax. Lots of thanks to Ryuno-ki who pointed [this out in this thread][1] and all folks who contributed to that thread.
 
 [1]: https://github.com/11ty/eleventy/issues/524
