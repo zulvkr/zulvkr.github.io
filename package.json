@@ -8,7 +8,7 @@
     "seed": "npx postcss src/assets/main.tailwind.css -o src/temp/main.css",
     "start": "npx eleventy --serve",
     "clean": "rm -r _site",
-    "build": "NODE_ENV=production npx postcss src/assets/main.tailwind.css -o src/main.css & NODE_ENV=production npx eleventy"
+    "build": "NODE_ENV=production npx postcss src/assets/main.tailwind.css -o _site/main.css & NODE_ENV=production npx eleventy"
   },
   "repository": {
     "type": "git",
