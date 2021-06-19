@@ -1,0 +1,1378 @@
+<!DOCTYPE html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/main.css"><title>zul</title></head><body>
+<!-- Left Side -->
+<header class="lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8">
+  <div class="mx-auto max-w-prose">
+    <nav class="p-4 text-sm lg:px-6">
+      <ul class="flex flex-wrap">
+        <li class="flex-shrink-0 font-black">
+          <a class="block px-3 pt-6 rounded-sm" href="/">/zul/</a>
+        </li>
+        <li class="flex-shrink-0">
+          <a class="block px-3 pt-6" href="/objects">Contact</a>
+        </li>
+        <li class="flex-shrink-0">
+          <a
+            class="block px-3 pt-6"
+            href="/posts/conditional-render-by-tags-eleventy"
+            >Profile</a
+          >
+        </li>
+        <li class="flex-shrink-0">
+          <a class="block px-3 pt-6" href="/for-hire">For Hire</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="px-4 py-8 lg:px-6">
+      <h1 id="title" class="pb-6 text-5xl font-bold text-gray-800">
+        zul
+      </h1>
+      <h2 id="description" class="text-xl italic text-gray-600">
+        
+      Array of writings I want to share with the world.
+      I haven&#39;t write much though.
+      
+      </h2>
+    </div>
+  </div>
+</header>
+<div class="lg:grid lg:grid-cols-6">
+  <!-- Middle -->
+  <div class="lg:col-start-3 lg:col-span-3">
+    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">
+      
+      <div>
+
+<pre>{
+  template: Template {
+    inputPath: './src/posts/post1.md',
+    inputDir: 'src',
+    parsed: {
+      root: '',
+      dir: './src/posts',
+      base: 'post1.md',
+      ext: '.md',
+      name: 'post1',
+      extname: '.md',
+      basename: 'post1.md',
+      dirname: './src/posts',
+      stem: 'post1',
+      path: './src/posts/post1.md',
+      absolute: [Getter/Setter],
+      isAbsolute: [Getter/Setter]
+    },
+    extraOutputSubdirectory: '',
+    outputDir: '_site',
+    _extensionMap: EleventyExtensionMap {
+      formatKeys: [Array],
+      unfilteredFormatKeys: [Array],
+      _extensionToKeyMap: [Object],
+      validTemplateLanguageKeys: [Array],
+      passthroughCopyKeys: [],
+      configOverride: [Object],
+      _engineManager: [TemplateEngineManager]
+    },
+    linters: [],
+    transforms: [],
+    plugins: {},
+    templateData: TemplateData {
+      config: [Object],
+      dataTemplateEngine: 'liquid',
+      inputDirNeedsCheck: true,
+      inputDir: 'src',
+      dataDir: 'src/_data',
+      rawImports: [Object],
+      globalData: [Object],
+      _extensionMap: [EleventyExtensionMap],
+      pathCache: [Array]
+    },
+    paginationData: {},
+    isVerbose: true,
+    isDryRun: false,
+    writeCount: 0,
+    skippedCount: 0,
+    wrapWithLayouts: true,
+    fileSlug: TemplateFileSlug {
+      inputPath: 'posts/post1.md',
+      cleanInputPath: 'posts/post1.md',
+      dirs: [Array],
+      parsed: [Object],
+      filenameNoExt: 'post1'
+    },
+    fileSlugStr: 'post1',
+    filePathStem: '/posts/post1',
+    _templateRender: TemplateRender {
+      engineNameOrPath: './src/posts/post1.md',
+      inputDir: 'src',
+      _config: [Object],
+      includesDir: 'src/_includes',
+      parseMarkdownWith: 'liquid',
+      parseHtmlWith: 'njk',
+      _extensionMap: [EleventyExtensionMap],
+      _engineName: 'md',
+      _engine: [Markdown],
+      useMarkdown: true
+    },
+    inputContent: '---\n' +
+      'layout: blog.html\n' +
+      'title: Lorem Post 1\n' +
+      'description: Nulla ut consequat minim officia magna culpa sint occaecat laborum.\n' +
+      'date: 2021-06-01\n' +
+      'tags:\n' +
+      '  - post\n' +
+      '  - example\n' +
+      '---\n' +
+      'Sint cupidatat in aliquip ad officia qui cillum cillum veniam nulla cupidatat esse. Pariatur ad ad ipsum sit non nostrud sint proident. Nulla et laborum dolor aliquip excepteur anim enim enim esse exercitation pariatur et deserunt proident. Ipsum tempor veniam voluptate exercitation veniam reprehenderit cillum duis proident. Elit deserunt deserunt laborum irure veniam est. Anim magna ex incididunt do do culpa cupidatat occaecat anim laborum elit. Commodo occaecat nulla quis eu consectetur.\n' +
+      '\n' +
+      'Velit mollit sit nisi proident aliquip magna non aliquip proident nostrud culpa consectetur aliqua. Irure exercitation fugiat elit dolor. Labore amet labore ad pariatur elit ea aute.\n' +
+      '\n' +
+      'Aliquip aliqua et enim qui cillum. In laboris sit sint labore ut consectetur. Exercitation mollit consequat non nulla nisi. Dolore elit nulla enim sit amet cupidatat nulla est sit culpa irure. Aute ipsum elit amet dolore. Fugiat pariatur qui aute in dolore voluptate pariatur elit excepteur consectetur. Anim sunt cillum do magna laboris pariatur enim velit amet.\n' +
+      '\n' +
+      'Sint anim laborum commodo ex ea anim amet mollit. Ullamco excepteur aute velit qui ullamco occaecat cillum labore cillum commodo proident. Aute voluptate do laborum consequat consectetur quis consequat. Minim nostrud consectetur fugiat magna pariatur nostrud et amet incididunt duis deserunt ullamco enim in. Laboris aute elit est quis adipisicing laboris.\n' +
+      '\n' +
+      'Velit cillum ullamco ex laborum adipisicing esse enim ipsum culpa ea commodo ut deserunt irure. Reprehenderit duis veniam qui ut nulla non eiusmod occaecat in fugiat consectetur excepteur laborum. Reprehenderit pariatur aute aliquip pariatur exercitation est laborum nostrud dolor anim nulla. Nisi nisi nulla magna esse enim id consequat labore ullamco Lorem dolore qui.\n',
+    _config: {
+      templateFormats: [Array],
+      pathPrefix: '/',
+      markdownTemplateEngine: 'liquid',
+      htmlTemplateEngine: 'njk',
+      dataTemplateEngine: 'liquid',
+      passthroughFileCopy: true,
+      htmlOutputSuffix: '-o',
+      jsDataFileSuffix: '.11tydata',
+      keys: [Object],
+      dir: [Object],
+      filters: {},
+      handlebarsHelpers: [Object],
+      nunjucksFilters: [Object],
+      linters: {},
+      layoutAliases: {},
+      passthroughCopies: [Object],
+      liquidOptions: {},
+      liquidTags: {},
+      liquidFilters: [Object],
+      liquidShortcodes: {},
+      liquidPairedShortcodes: {},
+      nunjucksAsyncFilters: {},
+      nunjucksTags: {},
+      nunjucksAsyncShortcodes: {},
+      nunjucksShortcodes: {},
+      nunjucksAsyncPairedShortcodes: {},
+      nunjucksPairedShortcodes: {},
+      handlebarsShortcodes: {},
+      handlebarsPairedShortcodes: {},
+      javascriptFunctions: [Object],
+      pugOptions: {},
+      ejsOptions: {},
+      markdownHighlighter: null,
+      libraryOverrides: {},
+      dynamicPermalinks: true,
+      useGitIgnore: true,
+      dataDeepMerge: false,
+      watchJavaScriptDependencies: true,
+      additionalWatchTargets: [],
+      browserSyncConfig: {},
+      chokidarConfig: {},
+      watchThrottleWaitTime: 0,
+      frontMatterParsingOptions: undefined,
+      dataExtensions: Map(0) {},
+      extensionMap: Set(0) {},
+      quietMode: false,
+      events: [EventEmitter],
+      inputDir: 'src'
+    },
+    frontMatter: {
+      content: 'Sint cupidatat in aliquip ad officia qui cillum cillum veniam nulla cupidatat esse. Pariatur ad ad ipsum sit non nostrud sint proident. Nulla et laborum dolor aliquip excepteur anim enim enim esse exercitation pariatur et deserunt proident. Ipsum tempor veniam voluptate exercitation veniam reprehenderit cillum duis proident. Elit deserunt deserunt laborum irure veniam est. Anim magna ex incididunt do do culpa cupidatat occaecat anim laborum elit. Commodo occaecat nulla quis eu consectetur.\n' +
+        '\n' +
+        'Velit mollit sit nisi proident aliquip magna non aliquip proident nostrud culpa consectetur aliqua. Irure exercitation fugiat elit dolor. Labore amet labore ad pariatur elit ea aute.\n' +
+        '\n' +
+        'Aliquip aliqua et enim qui cillum. In laboris sit sint labore ut consectetur. Exercitation mollit consequat non nulla nisi. Dolore elit nulla enim sit amet cupidatat nulla est sit culpa irure. Aute ipsum elit amet dolore. Fugiat pariatur qui aute in dolore voluptate pariatur elit excepteur consectetur. Anim sunt cillum do magna laboris pariatur enim velit amet.\n' +
+        '\n' +
+        'Sint anim laborum commodo ex ea anim amet mollit. Ullamco excepteur aute velit qui ullamco occaecat cillum labore cillum commodo proident. Aute voluptate do laborum consequat consectetur quis consequat. Minim nostrud consectetur fugiat magna pariatur nostrud et amet incididunt duis deserunt ullamco enim in. Laboris aute elit est quis adipisicing laboris.\n' +
+        '\n' +
+        'Velit cillum ullamco ex laborum adipisicing esse enim ipsum culpa ea commodo ut deserunt irure. Reprehenderit duis veniam qui ut nulla non eiusmod occaecat in fugiat consectetur excepteur laborum. Reprehenderit pariatur aute aliquip pariatur exercitation est laborum nostrud dolor anim nulla. Nisi nisi nulla magna esse enim id consequat labore ullamco Lorem dolore qui.\n',
+      data: [Object],
+      isEmpty: false,
+      excerpt: ''
+    },
+    _layoutKey: 'blog.html',
+    _layout: TemplateLayout {
+      inputPath: './src/_includes/blog.html',
+      inputDir: 'src',
+      _extensionMap: [EleventyExtensionMap],
+      dataKeyLayoutPath: 'blog.html',
+      _config: [Object],
+      _templateRender: [TemplateRender],
+      inputContent: '---\n' +
+        'layout: main.html\n' +
+        '---\n' +
+        '\n' +
+        '<article class="prose">\n' +
+        '  <div class="font-serif">{{ content | safe }}</div>\n' +
+        '</article>\n',
+      frontMatter: [Object],
+      mapCache: [Array],
+      layoutChain: [Array],
+      dataCache: {}
+    },
+    dataCache: {
+      metadata: [Object],
+      pkg: [Object],
+      layout: 'blog.html',
+      title: 'Lorem Post 1',
+      description: 'Nulla ut consequat minim officia magna culpa sint occaecat laborum.',
+      date: 2021-06-01T00:00:00.000Z,
+      tags: [Array],
+      page: [Object]
+    },
+    computedData: ComputedData {
+      computed: [Object],
+      templateStringKeyLookup: [Object],
+      computedKeys: [Set],
+      declaredDependencies: [Object],
+      queue: [ComputedDataQueue]
+    }
+  },
+  inputPath: './src/posts/post1.md',
+  fileSlug: 'post1',
+  filePathStem: '/posts/post1',
+  data: {
+    metadata: {
+      title: 'zul',
+      description: '\n' +
+        '      Array of writings I want to share with the world.\n' +
+        "      I haven't write much though.\n" +
+        '      '
+    },
+    pkg: {
+      name: 'zulvkr.github.io',
+      version: '1.0.0',
+      description: 'Personal website',
+      main: '.eleventy.js',
+      scripts: [Object],
+      repository: [Object],
+      keywords: [],
+      author: '',
+      license: 'ISC',
+      bugs: [Object],
+      homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
+      dependencies: [Object],
+      devDependencies: {}
+    },
+    layout: 'blog.html',
+    title: 'Lorem Post 1',
+    description: 'Nulla ut consequat minim officia magna culpa sint occaecat laborum.',
+    date: 2021-06-01T00:00:00.000Z,
+    tags: [ 'post', 'example' ],
+    page: {
+      date: 2021-06-01T00:00:00.000Z,
+      inputPath: './src/posts/post1.md',
+      fileSlug: 'post1',
+      filePathStem: '/posts/post1',
+      url: '/posts/post1/',
+      outputPath: '_site/posts/post1/index.html'
+    },
+    collections: {
+      all: [Array],
+      post: [Array],
+      eleventy: [Array],
+      nunjucks: [Array],
+      javascript: [Array],
+      example: [Array]
+    }
+  },
+  date: 2021-06-01T00:00:00.000Z,
+  outputPath: '_site/posts/post1/index.html',
+  url: '/posts/post1/',
+  templateContent: [Getter/Setter],
+  _templateContent: '<p>Sint cupidatat in aliquip ad officia qui cillum cillum veniam nulla cupidatat esse. Pariatur ad ad ipsum sit non nostrud sint proident. Nulla et laborum dolor aliquip excepteur anim enim enim esse exercitation pariatur et deserunt proident. Ipsum tempor veniam voluptate exercitation veniam reprehenderit cillum duis proident. Elit deserunt deserunt laborum irure veniam est. Anim magna ex incididunt do do culpa cupidatat occaecat anim laborum elit. Commodo occaecat nulla quis eu consectetur.</p>\n' +
+    '<p>Velit mollit sit nisi proident aliquip magna non aliquip proident nostrud culpa consectetur aliqua. Irure exercitation fugiat elit dolor. Labore amet labore ad pariatur elit ea aute.</p>\n' +
+    '<p>Aliquip aliqua et enim qui cillum. In laboris sit sint labore ut consectetur. Exercitation mollit consequat non nulla nisi. Dolore elit nulla enim sit amet cupidatat nulla est sit culpa irure. Aute ipsum elit amet dolore. Fugiat pariatur qui aute in dolore voluptate pariatur elit excepteur consectetur. Anim sunt cillum do magna laboris pariatur enim velit amet.</p>\n' +
+    '<p>Sint anim laborum commodo ex ea anim amet mollit. Ullamco excepteur aute velit qui ullamco occaecat cillum labore cillum commodo proident. Aute voluptate do laborum consequat consectetur quis consequat. Minim nostrud consectetur fugiat magna pariatur nostrud et amet incididunt duis deserunt ullamco enim in. Laboris aute elit est quis adipisicing laboris.</p>\n' +
+    '<p>Velit cillum ullamco ex laborum adipisicing esse enim ipsum culpa ea commodo ut deserunt irure. Reprehenderit duis veniam qui ut nulla non eiusmod occaecat in fugiat consectetur excepteur laborum. Reprehenderit pariatur aute aliquip pariatur exercitation est laborum nostrud dolor anim nulla. Nisi nisi nulla magna esse enim id consequat labore ullamco Lorem dolore qui.</p>\n'
+}</pre>
+<br>
+<hr>
+<br>
+
+
+
+<pre>{
+  template: Template {
+    inputPath: './src/posts/conditional-render-by-tags-eleventy.md',
+    inputDir: 'src',
+    parsed: {
+      root: '',
+      dir: './src/posts',
+      base: 'conditional-render-by-tags-eleventy.md',
+      ext: '.md',
+      name: 'conditional-render-by-tags-eleventy',
+      extname: '.md',
+      basename: 'conditional-render-by-tags-eleventy.md',
+      dirname: './src/posts',
+      stem: 'conditional-render-by-tags-eleventy',
+      path: './src/posts/conditional-render-by-tags-eleventy.md',
+      absolute: [Getter/Setter],
+      isAbsolute: [Getter/Setter]
+    },
+    extraOutputSubdirectory: '',
+    outputDir: '_site',
+    _extensionMap: EleventyExtensionMap {
+      formatKeys: [Array],
+      unfilteredFormatKeys: [Array],
+      _extensionToKeyMap: [Object],
+      validTemplateLanguageKeys: [Array],
+      passthroughCopyKeys: [],
+      configOverride: [Object],
+      _engineManager: [TemplateEngineManager]
+    },
+    linters: [],
+    transforms: [],
+    plugins: {},
+    templateData: TemplateData {
+      config: [Object],
+      dataTemplateEngine: 'liquid',
+      inputDirNeedsCheck: true,
+      inputDir: 'src',
+      dataDir: 'src/_data',
+      rawImports: [Object],
+      globalData: [Object],
+      _extensionMap: [EleventyExtensionMap],
+      pathCache: [Array]
+    },
+    paginationData: {},
+    isVerbose: true,
+    isDryRun: false,
+    writeCount: 0,
+    skippedCount: 0,
+    wrapWithLayouts: true,
+    fileSlug: TemplateFileSlug {
+      inputPath: 'posts/conditional-render-by-tags-eleventy.md',
+      cleanInputPath: 'posts/conditional-render-by-tags-eleventy.md',
+      dirs: [Array],
+      parsed: [Object],
+      filenameNoExt: 'conditional-render-by-tags-eleventy'
+    },
+    fileSlugStr: 'conditional-render-by-tags-eleventy',
+    filePathStem: '/posts/conditional-render-by-tags-eleventy',
+    _templateRender: TemplateRender {
+      engineNameOrPath: './src/posts/conditional-render-by-tags-eleventy.md',
+      inputDir: 'src',
+      _config: [Object],
+      includesDir: 'src/_includes',
+      parseMarkdownWith: 'liquid',
+      parseHtmlWith: 'njk',
+      _extensionMap: [EleventyExtensionMap],
+      _engineName: 'md',
+      _engine: [Markdown],
+      useMarkdown: true
+    },
+    inputContent: '---\n' +
+      'layout: blog.html\n' +
+      'title: Conditional Render by Tags in Eleventy\n' +
+      'description: How to render item conditionally based on tags in Eleventy using Nunjucks\n' +
+      'date: 2021-06-17\n' +
+      'tags:\n' +
+      '  - post\n' +
+      '  - eleventy\n' +
+      '  - nunjucks\n' +
+      '  - javascript\n' +
+      '---\n' +
+      '\n' +
+      "Nunjucks are funny templating language. It seems to have a lot of unusual behavior that doesn't match with JavaScript syntax. Maybe because it's inspired by Jinja 2 that makes it has some Python characteristics.\n" +
+      '\n' +
+      'Recently I was trying to find a clean way to render items conditionally based on availabililty of tags and met a stumble block. At first, I tried to make custom filter like this:\n' +
+      '\n' +
+      '```nunjucks\n' +
+      "eleventyConfig.addFilter('includesPost', arr => arr.includes('post'))\n" +
+      '```\n' +
+      '\n' +
+      'The custom filter supposed to check if `tags` of a post includes `post` tag as its member. Tags are array in Eleventy so I expected a smooth journey, but things go awry in the console. Eleventy crashed when rendering root `/index.html` file.\n' +
+      '\n' +
+      'After careful inspection on the rendering error, I realized that the filter always trying to iterate over uniterable item before crashing.\n' +
+      '\n' +
+      "This makes me utterly confused, how could that be possible? Is it possible that tags didn't always return array but stringified value?\n" +
+      '\n' +
+      'One trick I managed to learn is to print the value of objects using built-in Nunjucks `dump()` filter. It turned out that `tags` is array as expected.\n' +
+      '\n' +
+      '```nunjucks\n' +
+      '{%- raw -%}\n' +
+      '{{ tags | dump(2) }}\n' +
+      '{%- endraw %}\n' +
+      "{# it prints ['tag1', 'post'] just fine #}\n" +
+      '```\n' +
+      '\n' +
+      'Some testing and an hour of debugging later, the culprit was found! Not every post in Eleventy has `tags` as property, which makes caling `tags` key will return `undefined` when reaching some pages. Wild `undefined` tags consistently appeared in any posts that has no tags assigned in their frontmatter.\n' +
+      '\n' +
+      'So, I need to prevent `tags` being iterated when `tags` is `undefined`:\n' +
+      '\n' +
+      '```nunjucks\n' +
+      '{%- raw -%}\n' +
+      '{% if not tags %}\n' +
+      '{% elif (tags | includesPost) %}\n' +
+      '  render something\n' +
+      '{% endif %}\n' +
+      '{%- endraw -%}\n' +
+      '```\n' +
+      '\n' +
+      'Well, some Googling later I found a gem! See the second line.\n' +
+      '\n' +
+      '```nunjucks\n' +
+      '{%- raw -%}\n' +
+      '{% if not tags %}\n' +
+      "{% elif 'post' in tags %}\n" +
+      '  render something\n' +
+      '{% endif %}\n' +
+      '{%- endraw -%}\n' +
+      '```\n' +
+      '\n' +
+      'The code above is my latest solution. The `in` syntax works similarly as `arr.includes()` in JavaScript. This syntax is borrowed from Python and not available in the Nunjucks documentation. So you have to have some familiarity with Python and Jinja to know it. Ugh, what a painful way to learn!\n' +
+      '\n' +
+      'The `.includes()` method surprisingly also works inline in Nunjucks.\n' +
+      '\n' +
+      '```nunjucks\n' +
+      '{%- raw -%}\n' +
+      '{% if not tags %}\n' +
+      "{% elif tags.includes('post') %}\n" +
+      '  render something\n' +
+      '{% endif %}\n' +
+      '{%- endraw -%}\n' +
+      '```\n' +
+      '\n' +
+      "Does all array methods work in Nunjucks? I don't even find this notion in the documentation, or is it obscured somewhere? I hope the ability to use built-in JavaScript object methods is written in prominent way in Nunjucks documentation. It's a game changer.\n" +
+      '\n' +
+      'Anyway, both solutions are amazing for my use case! I ditched my custom filter and used these semantic syntax for this blog. Lots of thanks to Ryuno-ki who pointed [this out in this thread][1] and all folks who contributed to that thread.\n' +
+      '\n' +
+      '[1]: https://github.com/11ty/eleventy/issues/524\n',
+    _config: {
+      templateFormats: [Array],
+      pathPrefix: '/',
+      markdownTemplateEngine: 'liquid',
+      htmlTemplateEngine: 'njk',
+      dataTemplateEngine: 'liquid',
+      passthroughFileCopy: true,
+      htmlOutputSuffix: '-o',
+      jsDataFileSuffix: '.11tydata',
+      keys: [Object],
+      dir: [Object],
+      filters: {},
+      handlebarsHelpers: [Object],
+      nunjucksFilters: [Object],
+      linters: {},
+      layoutAliases: {},
+      passthroughCopies: [Object],
+      liquidOptions: {},
+      liquidTags: {},
+      liquidFilters: [Object],
+      liquidShortcodes: {},
+      liquidPairedShortcodes: {},
+      nunjucksAsyncFilters: {},
+      nunjucksTags: {},
+      nunjucksAsyncShortcodes: {},
+      nunjucksShortcodes: {},
+      nunjucksAsyncPairedShortcodes: {},
+      nunjucksPairedShortcodes: {},
+      handlebarsShortcodes: {},
+      handlebarsPairedShortcodes: {},
+      javascriptFunctions: [Object],
+      pugOptions: {},
+      ejsOptions: {},
+      markdownHighlighter: null,
+      libraryOverrides: {},
+      dynamicPermalinks: true,
+      useGitIgnore: true,
+      dataDeepMerge: false,
+      watchJavaScriptDependencies: true,
+      additionalWatchTargets: [],
+      browserSyncConfig: {},
+      chokidarConfig: {},
+      watchThrottleWaitTime: 0,
+      frontMatterParsingOptions: undefined,
+      dataExtensions: Map(0) {},
+      extensionMap: Set(0) {},
+      quietMode: false,
+      events: [EventEmitter],
+      inputDir: 'src'
+    },
+    frontMatter: {
+      content: '\n' +
+        "Nunjucks are funny templating language. It seems to have a lot of unusual behavior that doesn't match with JavaScript syntax. Maybe because it's inspired by Jinja 2 that makes it has some Python characteristics.\n" +
+        '\n' +
+        'Recently I was trying to find a clean way to render items conditionally based on availabililty of tags and met a stumble block. At first, I tried to make custom filter like this:\n' +
+        '\n' +
+        '```nunjucks\n' +
+        "eleventyConfig.addFilter('includesPost', arr => arr.includes('post'))\n" +
+        '```\n' +
+        '\n' +
+        'The custom filter supposed to check if `tags` of a post includes `post` tag as its member. Tags are array in Eleventy so I expected a smooth journey, but things go awry in the console. Eleventy crashed when rendering root `/index.html` file.\n' +
+        '\n' +
+        'After careful inspection on the rendering error, I realized that the filter always trying to iterate over uniterable item before crashing.\n' +
+        '\n' +
+        "This makes me utterly confused, how could that be possible? Is it possible that tags didn't always return array but stringified value?\n" +
+        '\n' +
+        'One trick I managed to learn is to print the value of objects using built-in Nunjucks `dump()` filter. It turned out that `tags` is array as expected.\n' +
+        '\n' +
+        '```nunjucks\n' +
+        '{%- raw -%}\n' +
+        '{{ tags | dump(2) }}\n' +
+        '{%- endraw %}\n' +
+        "{# it prints ['tag1', 'post'] just fine #}\n" +
+        '```\n' +
+        '\n' +
+        'Some testing and an hour of debugging later, the culprit was found! Not every post in Eleventy has `tags` as property, which makes caling `tags` key will return `undefined` when reaching some pages. Wild `undefined` tags consistently appeared in any posts that has no tags assigned in their frontmatter.\n' +
+        '\n' +
+        'So, I need to prevent `tags` being iterated when `tags` is `undefined`:\n' +
+        '\n' +
+        '```nunjucks\n' +
+        '{%- raw -%}\n' +
+        '{% if not tags %}\n' +
+        '{% elif (tags | includesPost) %}\n' +
+        '  render something\n' +
+        '{% endif %}\n' +
+        '{%- endraw -%}\n' +
+        '```\n' +
+        '\n' +
+        'Well, some Googling later I found a gem! See the second line.\n' +
+        '\n' +
+        '```nunjucks\n' +
+        '{%- raw -%}\n' +
+        '{% if not tags %}\n' +
+        "{% elif 'post' in tags %}\n" +
+        '  render something\n' +
+        '{% endif %}\n' +
+        '{%- endraw -%}\n' +
+        '```\n' +
+        '\n' +
+        'The code above is my latest solution. The `in` syntax works similarly as `arr.includes()` in JavaScript. This syntax is borrowed from Python and not available in the Nunjucks documentation. So you have to have some familiarity with Python and Jinja to know it. Ugh, what a painful way to learn!\n' +
+        '\n' +
+        'The `.includes()` method surprisingly also works inline in Nunjucks.\n' +
+        '\n' +
+        '```nunjucks\n' +
+        '{%- raw -%}\n' +
+        '{% if not tags %}\n' +
+        "{% elif tags.includes('post') %}\n" +
+        '  render something\n' +
+        '{% endif %}\n' +
+        '{%- endraw -%}\n' +
+        '```\n' +
+        '\n' +
+        "Does all array methods work in Nunjucks? I don't even find this notion in the documentation, or is it obscured somewhere? I hope the ability to use built-in JavaScript object methods is written in prominent way in Nunjucks documentation. It's a game changer.\n" +
+        '\n' +
+        'Anyway, both solutions are amazing for my use case! I ditched my custom filter and used these semantic syntax for this blog. Lots of thanks to Ryuno-ki who pointed [this out in this thread][1] and all folks who contributed to that thread.\n' +
+        '\n' +
+        '[1]: https://github.com/11ty/eleventy/issues/524\n',
+      data: [Object],
+      isEmpty: false,
+      excerpt: ''
+    },
+    _layoutKey: 'blog.html',
+    _layout: TemplateLayout {
+      inputPath: './src/_includes/blog.html',
+      inputDir: 'src',
+      _extensionMap: [EleventyExtensionMap],
+      dataKeyLayoutPath: 'blog.html',
+      _config: [Object],
+      _templateRender: [TemplateRender],
+      inputContent: '---\n' +
+        'layout: main.html\n' +
+        '---\n' +
+        '\n' +
+        '<article class="prose">\n' +
+        '  <div class="font-serif">{{ content | safe }}</div>\n' +
+        '</article>\n',
+      frontMatter: [Object],
+      mapCache: [Array],
+      layoutChain: [Array],
+      dataCache: {}
+    },
+    dataCache: {
+      metadata: [Object],
+      pkg: [Object],
+      layout: 'blog.html',
+      title: 'Conditional Render by Tags in Eleventy',
+      description: 'How to render item conditionally based on tags in Eleventy using Nunjucks',
+      date: 2021-06-17T00:00:00.000Z,
+      tags: [Array],
+      page: [Object]
+    },
+    computedData: ComputedData {
+      computed: [Object],
+      templateStringKeyLookup: [Object],
+      computedKeys: [Set],
+      declaredDependencies: [Object],
+      queue: [ComputedDataQueue]
+    }
+  },
+  inputPath: './src/posts/conditional-render-by-tags-eleventy.md',
+  fileSlug: 'conditional-render-by-tags-eleventy',
+  filePathStem: '/posts/conditional-render-by-tags-eleventy',
+  data: {
+    metadata: {
+      title: 'zul',
+      description: '\n' +
+        '      Array of writings I want to share with the world.\n' +
+        "      I haven't write much though.\n" +
+        '      '
+    },
+    pkg: {
+      name: 'zulvkr.github.io',
+      version: '1.0.0',
+      description: 'Personal website',
+      main: '.eleventy.js',
+      scripts: [Object],
+      repository: [Object],
+      keywords: [],
+      author: '',
+      license: 'ISC',
+      bugs: [Object],
+      homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
+      dependencies: [Object],
+      devDependencies: {}
+    },
+    layout: 'blog.html',
+    title: 'Conditional Render by Tags in Eleventy',
+    description: 'How to render item conditionally based on tags in Eleventy using Nunjucks',
+    date: 2021-06-17T00:00:00.000Z,
+    tags: [ 'post', 'eleventy', 'nunjucks', 'javascript' ],
+    page: {
+      date: 2021-06-17T00:00:00.000Z,
+      inputPath: './src/posts/conditional-render-by-tags-eleventy.md',
+      fileSlug: 'conditional-render-by-tags-eleventy',
+      filePathStem: '/posts/conditional-render-by-tags-eleventy',
+      url: '/posts/conditional-render-by-tags-eleventy/',
+      outputPath: '_site/posts/conditional-render-by-tags-eleventy/index.html'
+    },
+    collections: {
+      all: [Array],
+      post: [Array],
+      eleventy: [Array],
+      nunjucks: [Array],
+      javascript: [Array],
+      example: [Array]
+    },
+    references: { '1': [Object] }
+  },
+  date: 2021-06-17T00:00:00.000Z,
+  outputPath: '_site/posts/conditional-render-by-tags-eleventy/index.html',
+  url: '/posts/conditional-render-by-tags-eleventy/',
+  templateContent: [Getter/Setter],
+  _templateContent: "<p>Nunjucks are funny templating language. It seems to have a lot of unusual behavior that doesn't match with JavaScript syntax. Maybe because it's inspired by Jinja 2 that makes it has some Python characteristics.</p>\n" +
+    '<p>Recently I was trying to find a clean way to render items conditionally based on availabililty of tags and met a stumble block. At first, I tried to make custom filter like this:</p>\n' +
+    `<pre><code class="language-nunjucks">eleventyConfig.addFilter('includesPost', arr =&gt; arr.includes('post'))\n` +
+    '</code></pre>\n' +
+    '<p>The custom filter supposed to check if <code>tags</code> of a post includes <code>post</code> tag as its member. Tags are array in Eleventy so I expected a smooth journey, but things go awry in the console. Eleventy crashed when rendering root <code>/index.html</code> file.</p>\n' +
+    '<p>After careful inspection on the rendering error, I realized that the filter always trying to iterate over uniterable item before crashing.</p>\n' +
+    "<p>This makes me utterly confused, how could that be possible? Is it possible that tags didn't always return array but stringified value?</p>\n" +
+    '<p>One trick I managed to learn is to print the value of objects using built-in Nunjucks <code>dump()</code> filter. It turned out that <code>tags</code> is array as expected.</p>\n' +
+    '<pre><code class="language-nunjucks">{{ tags | dump(2) }}\n' +
+    '\n' +
+    "{# it prints ['tag1', 'post'] just fine #}\n" +
+    '</code></pre>\n' +
+    '<p>Some testing and an hour of debugging later, the culprit was found! Not every post in Eleventy has <code>tags</code> as property, which makes caling <code>tags</code> key will return <code>undefined</code> when reaching some pages. Wild <code>undefined</code> tags consistently appeared in any posts that has no tags assigned in their frontmatter.</p>\n' +
+    '<p>So, I need to prevent <code>tags</code> being iterated when <code>tags</code> is <code>undefined</code>:</p>\n' +
+    '<pre><code class="language-nunjucks">{% if not tags %}\n' +
+    '{% elif (tags | includesPost) %}\n' +
+    '  render something\n' +
+    '{% endif %}\n' +
+    '</code></pre>\n' +
+    '<p>Well, some Googling later I found a gem! See the second line.</p>\n' +
+    '<pre><code class="language-nunjucks">{% if not tags %}\n' +
+    "{% elif 'post' in tags %}\n" +
+    '  render something\n' +
+    '{% endif %}\n' +
+    '</code></pre>\n' +
+    '<p>The code above is my latest solution. The <code>in</code> syntax works similarly as <code>arr.includes()</code> in JavaScript. This syntax is borrowed from Python and not available in the Nunjucks documentation. So you have to have some familiarity with Python and Jinja to know it. Ugh, what a painful way to learn!</p>\n' +
+    '<p>The <code>.includes()</code> method surprisingly also works inline in Nunjucks.</p>\n' +
+    '<pre><code class="language-nunjucks">{% if not tags %}\n' +
+    "{% elif tags.includes('post') %}\n" +
+    '  render something\n' +
+    '{% endif %}\n' +
+    '</code></pre>\n' +
+    "<p>Does all array methods work in Nunjucks? I don't even find this notion in the documentation, or is it obscured somewhere? I hope the ability to use built-in JavaScript object methods is written in prominent way in Nunjucks documentation. It's a game changer.</p>\n" +
+    '<p>Anyway, both solutions are amazing for my use case! I ditched my custom filter and used these semantic syntax for this blog. Lots of thanks to Ryuno-ki who pointed <a href="https://github.com/11ty/eleventy/issues/524">this out in this thread</a> and all folks who contributed to that thread.</p>\n'
+}</pre>
+<br>
+<hr>
+<br>
+
+
+
+<pre>{
+  template: Template {
+    inputPath: './src/index.html',
+    inputDir: 'src',
+    parsed: {
+      root: '',
+      dir: './src',
+      base: 'index.html',
+      ext: '.html',
+      name: 'index',
+      extname: '.html',
+      basename: 'index.html',
+      dirname: './src',
+      stem: 'index',
+      path: './src/index.html',
+      absolute: [Getter/Setter],
+      isAbsolute: [Getter/Setter]
+    },
+    extraOutputSubdirectory: '',
+    outputDir: '_site',
+    _extensionMap: EleventyExtensionMap {
+      formatKeys: [Array],
+      unfilteredFormatKeys: [Array],
+      _extensionToKeyMap: [Object],
+      validTemplateLanguageKeys: [Array],
+      passthroughCopyKeys: [],
+      configOverride: [Object],
+      _engineManager: [TemplateEngineManager]
+    },
+    linters: [],
+    transforms: [],
+    plugins: {},
+    templateData: TemplateData {
+      config: [Object],
+      dataTemplateEngine: 'liquid',
+      inputDirNeedsCheck: true,
+      inputDir: 'src',
+      dataDir: 'src/_data',
+      rawImports: [Object],
+      globalData: [Object],
+      _extensionMap: [EleventyExtensionMap],
+      pathCache: [Array]
+    },
+    paginationData: {},
+    isVerbose: true,
+    isDryRun: false,
+    writeCount: 0,
+    skippedCount: 0,
+    wrapWithLayouts: true,
+    fileSlug: TemplateFileSlug {
+      inputPath: 'index.html',
+      cleanInputPath: 'index.html',
+      dirs: [],
+      parsed: [Object],
+      filenameNoExt: 'index'
+    },
+    fileSlugStr: '',
+    filePathStem: '/index',
+    _templateRender: TemplateRender {
+      engineNameOrPath: './src/index.html',
+      inputDir: 'src',
+      _config: [Object],
+      includesDir: 'src/_includes',
+      parseMarkdownWith: 'liquid',
+      parseHtmlWith: 'njk',
+      _extensionMap: [EleventyExtensionMap],
+      _engineName: 'html',
+      _engine: [Html],
+      useMarkdown: true
+    },
+    inputContent: '---\n' +
+      'layout: main.html\n' +
+      '---\n' +
+      '\n' +
+      '<section id="preface" class="my-5 prose">\n' +
+      '  <p>\n' +
+      "    Hi! I'm Ivan Zulfikar. A Muslim Indonesian, living in Java Island. Currently\n" +
+      '    hopping on programmer-land and mostly coding JavaScript.\n' +
+      '  </p>\n' +
+      '  <img src="./image/1280px-Java_region_map.png" alt="java-island" />\n' +
+      '</section>\n' +
+      '<hr />\n' +
+      '<article class="my-10 font-serif prose">\n' +
+      '  <h2>Ad esse qui magna ex laboris ipsum excepteur.</h2>\n' +
+      '  <p>\n' +
+      '    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.\n' +
+      '    Bigger screen can have aside, with easy navigation, smaller screen has\n' +
+      '    button\n' +
+      '  </p>\n' +
+      '  <h3>\n' +
+      '    Enim in reprehenderit sunt dolor irure voluptate.\n' +
+      '  </h3>\n' +
+      '  <p>\n' +
+      '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,\n' +
+      '    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta\n' +
+      '    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,\n' +
+      '    eos minima.\n' +
+      '  </p>\n' +
+      '  <p class="prose-purple"><a href="/post1">Go to Post 1...</a></p>\n' +
+      '</article>\n' +
+      '<article class="my-10 font-serif prose">\n' +
+      '  <h2>Second blog post</h2>\n' +
+      '  <p>\n' +
+      '    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.\n' +
+      '    Bigger screen can have aside, with easy navigation, smaller screen has\n' +
+      '    button\n' +
+      '  </p>\n' +
+      '  <p>\n' +
+      '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,\n' +
+      '    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta\n' +
+      '    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,\n' +
+      '    eos minima.\n' +
+      '  </p>\n' +
+      '  <p class="prose-purple"><a href="/post2">Go to Post 2...</a></p>\n' +
+      '</article>\n',
+    _config: {
+      templateFormats: [Array],
+      pathPrefix: '/',
+      markdownTemplateEngine: 'liquid',
+      htmlTemplateEngine: 'njk',
+      dataTemplateEngine: 'liquid',
+      passthroughFileCopy: true,
+      htmlOutputSuffix: '-o',
+      jsDataFileSuffix: '.11tydata',
+      keys: [Object],
+      dir: [Object],
+      filters: {},
+      handlebarsHelpers: [Object],
+      nunjucksFilters: [Object],
+      linters: {},
+      layoutAliases: {},
+      passthroughCopies: [Object],
+      liquidOptions: {},
+      liquidTags: {},
+      liquidFilters: [Object],
+      liquidShortcodes: {},
+      liquidPairedShortcodes: {},
+      nunjucksAsyncFilters: {},
+      nunjucksTags: {},
+      nunjucksAsyncShortcodes: {},
+      nunjucksShortcodes: {},
+      nunjucksAsyncPairedShortcodes: {},
+      nunjucksPairedShortcodes: {},
+      handlebarsShortcodes: {},
+      handlebarsPairedShortcodes: {},
+      javascriptFunctions: [Object],
+      pugOptions: {},
+      ejsOptions: {},
+      markdownHighlighter: null,
+      libraryOverrides: {},
+      dynamicPermalinks: true,
+      useGitIgnore: true,
+      dataDeepMerge: false,
+      watchJavaScriptDependencies: true,
+      additionalWatchTargets: [],
+      browserSyncConfig: {},
+      chokidarConfig: {},
+      watchThrottleWaitTime: 0,
+      frontMatterParsingOptions: undefined,
+      dataExtensions: Map(0) {},
+      extensionMap: Set(0) {},
+      quietMode: false,
+      events: [EventEmitter],
+      inputDir: 'src'
+    },
+    frontMatter: {
+      content: '\n' +
+        '<section id="preface" class="my-5 prose">\n' +
+        '  <p>\n' +
+        "    Hi! I'm Ivan Zulfikar. A Muslim Indonesian, living in Java Island. Currently\n" +
+        '    hopping on programmer-land and mostly coding JavaScript.\n' +
+        '  </p>\n' +
+        '  <img src="./image/1280px-Java_region_map.png" alt="java-island" />\n' +
+        '</section>\n' +
+        '<hr />\n' +
+        '<article class="my-10 font-serif prose">\n' +
+        '  <h2>Ad esse qui magna ex laboris ipsum excepteur.</h2>\n' +
+        '  <p>\n' +
+        '    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.\n' +
+        '    Bigger screen can have aside, with easy navigation, smaller screen has\n' +
+        '    button\n' +
+        '  </p>\n' +
+        '  <h3>\n' +
+        '    Enim in reprehenderit sunt dolor irure voluptate.\n' +
+        '  </h3>\n' +
+        '  <p>\n' +
+        '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,\n' +
+        '    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta\n' +
+        '    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,\n' +
+        '    eos minima.\n' +
+        '  </p>\n' +
+        '  <p class="prose-purple"><a href="/post1">Go to Post 1...</a></p>\n' +
+        '</article>\n' +
+        '<article class="my-10 font-serif prose">\n' +
+        '  <h2>Second blog post</h2>\n' +
+        '  <p>\n' +
+        '    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.\n' +
+        '    Bigger screen can have aside, with easy navigation, smaller screen has\n' +
+        '    button\n' +
+        '  </p>\n' +
+        '  <p>\n' +
+        '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,\n' +
+        '    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta\n' +
+        '    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,\n' +
+        '    eos minima.\n' +
+        '  </p>\n' +
+        '  <p class="prose-purple"><a href="/post2">Go to Post 2...</a></p>\n' +
+        '</article>\n',
+      data: [Object],
+      isEmpty: false,
+      excerpt: ''
+    },
+    _layoutKey: 'main.html',
+    _layout: TemplateLayout {
+      inputPath: './src/_includes/main.html',
+      inputDir: 'src',
+      _extensionMap: [EleventyExtensionMap],
+      dataKeyLayoutPath: 'main.html',
+      _config: [Object],
+      _templateRender: [TemplateRender],
+      inputContent: '---\n' +
+        'layout: root.pug\n' +
+        '---\n' +
+        '\n' +
+        '<!-- Left Side -->\n' +
+        '<header class="lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8">\n' +
+        '  <div class="mx-auto max-w-prose">\n' +
+        '    <nav class="p-4 text-sm lg:px-6">\n' +
+        '      <ul class="flex flex-wrap">\n' +
+        '        <li class="flex-shrink-0 font-black">\n' +
+        '          <a class="block px-3 pt-6 rounded-sm" href="/">/zul/</a>\n' +
+        '        </li>\n' +
+        '        <li class="flex-shrink-0">\n' +
+        '          <a class="block px-3 pt-6" href="/objects">Contact</a>\n' +
+        '        </li>\n' +
+        '        <li class="flex-shrink-0">\n' +
+        '          <a\n' +
+        '            class="block px-3 pt-6"\n' +
+        '            href="/posts/conditional-render-by-tags-eleventy"\n' +
+        '            >Profile</a\n' +
+        '          >\n' +
+        '        </li>\n' +
+        '        <li class="flex-shrink-0">\n' +
+        '          <a class="block px-3 pt-6" href="/for-hire">For Hire</a>\n' +
+        '        </li>\n' +
+        '      </ul>\n' +
+        '    </nav>\n' +
+        '    <div class="px-4 py-8 lg:px-6">\n' +
+        "      {% if not tags -%} {%- elif 'post' in tags -%}\n" +
+        '      <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>\n' +
+        '      {%- endif -%}\n' +
+        '      <h1 id="title" class="pb-6 text-5xl font-bold text-gray-800">\n' +
+        '        {{ title or metadata.title }}\n' +
+        '      </h1>\n' +
+        '      <h2 id="description" class="text-xl italic text-gray-600">\n' +
+        '        {{ description or metadata.description }}\n' +
+        '      </h2>\n' +
+        '    </div>\n' +
+        '  </div>\n' +
+        '</header>\n' +
+        '<div class="lg:grid lg:grid-cols-6">\n' +
+        '  <!-- Middle -->\n' +
+        '  <div class="lg:col-start-3 lg:col-span-3">\n' +
+        '    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">\n' +
+        '      {#\n' +
+        '      <div>{{ page | debug | safe }}</div>\n' +
+        '      #}\n' +
+        '      <div>{{ content | safe }}</div>\n' +
+        '    </div>\n' +
+        '  </div>\n' +
+        '\n' +
+        '  <!-- Right Side -->\n' +
+        '  {#\n' +
+        '  <div class="bg-gray-100 lg:col-start-6 lg:col-span-1">aaa</div>\n' +
+        '  #}\n' +
+        '</div>\n',
+      frontMatter: [Object],
+      mapCache: [Array],
+      layoutChain: [Array],
+      dataCache: {}
+    },
+    dataCache: {
+      metadata: [Object],
+      pkg: [Object],
+      layout: 'main.html',
+      page: [Object]
+    },
+    computedData: ComputedData {
+      computed: [Object],
+      templateStringKeyLookup: [Object],
+      computedKeys: [Set],
+      declaredDependencies: [Object],
+      queue: [ComputedDataQueue]
+    }
+  },
+  inputPath: './src/index.html',
+  fileSlug: '',
+  filePathStem: '/index',
+  data: {
+    metadata: {
+      title: 'zul',
+      description: '\n' +
+        '      Array of writings I want to share with the world.\n' +
+        "      I haven't write much though.\n" +
+        '      '
+    },
+    pkg: {
+      name: 'zulvkr.github.io',
+      version: '1.0.0',
+      description: 'Personal website',
+      main: '.eleventy.js',
+      scripts: [Object],
+      repository: [Object],
+      keywords: [],
+      author: '',
+      license: 'ISC',
+      bugs: [Object],
+      homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
+      dependencies: [Object],
+      devDependencies: {}
+    },
+    layout: 'main.html',
+    page: {
+      date: 2021-06-19T12:45:10.264Z,
+      inputPath: './src/index.html',
+      fileSlug: '',
+      filePathStem: '/index',
+      url: '/',
+      outputPath: '_site/index.html'
+    },
+    collections: {
+      all: [Array],
+      post: [Array],
+      eleventy: [Array],
+      nunjucks: [Array],
+      javascript: [Array],
+      example: [Array]
+    }
+  },
+  date: 2021-06-19T12:45:10.264Z,
+  outputPath: '_site/index.html',
+  url: '/',
+  templateContent: [Getter/Setter],
+  _templateContent: '\n' +
+    '<section id="preface" class="my-5 prose">\n' +
+    '  <p>\n' +
+    "    Hi! I'm Ivan Zulfikar. A Muslim Indonesian, living in Java Island. Currently\n" +
+    '    hopping on programmer-land and mostly coding JavaScript.\n' +
+    '  </p>\n' +
+    '  <img src="./image/1280px-Java_region_map.png" alt="java-island" />\n' +
+    '</section>\n' +
+    '<hr />\n' +
+    '<article class="my-10 font-serif prose">\n' +
+    '  <h2>Ad esse qui magna ex laboris ipsum excepteur.</h2>\n' +
+    '  <p>\n' +
+    '    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.\n' +
+    '    Bigger screen can have aside, with easy navigation, smaller screen has\n' +
+    '    button\n' +
+    '  </p>\n' +
+    '  <h3>\n' +
+    '    Enim in reprehenderit sunt dolor irure voluptate.\n' +
+    '  </h3>\n' +
+    '  <p>\n' +
+    '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,\n' +
+    '    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta\n' +
+    '    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,\n' +
+    '    eos minima.\n' +
+    '  </p>\n' +
+    '  <p class="prose-purple"><a href="/post1">Go to Post 1...</a></p>\n' +
+    '</article>\n' +
+    '<article class="my-10 font-serif prose">\n' +
+    '  <h2>Second blog post</h2>\n' +
+    '  <p>\n' +
+    '    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.\n' +
+    '    Bigger screen can have aside, with easy navigation, smaller screen has\n' +
+    '    button\n' +
+    '  </p>\n' +
+    '  <p>\n' +
+    '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,\n' +
+    '    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta\n' +
+    '    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,\n' +
+    '    eos minima.\n' +
+    '  </p>\n' +
+    '  <p class="prose-purple"><a href="/post2">Go to Post 2...</a></p>\n' +
+    '</article>\n'
+}</pre>
+<br>
+<hr>
+<br>
+
+
+
+<pre>{
+  template: Template {
+    inputPath: './src/objects.html',
+    inputDir: 'src',
+    parsed: {
+      root: '',
+      dir: './src',
+      base: 'objects.html',
+      ext: '.html',
+      name: 'objects',
+      extname: '.html',
+      basename: 'objects.html',
+      dirname: './src',
+      stem: 'objects',
+      path: './src/objects.html',
+      absolute: [Getter/Setter],
+      isAbsolute: [Getter/Setter]
+    },
+    extraOutputSubdirectory: '',
+    outputDir: '_site',
+    _extensionMap: EleventyExtensionMap {
+      formatKeys: [Array],
+      unfilteredFormatKeys: [Array],
+      _extensionToKeyMap: [Object],
+      validTemplateLanguageKeys: [Array],
+      passthroughCopyKeys: [],
+      configOverride: [Object],
+      _engineManager: [TemplateEngineManager]
+    },
+    linters: [],
+    transforms: [],
+    plugins: {},
+    templateData: TemplateData {
+      config: [Object],
+      dataTemplateEngine: 'liquid',
+      inputDirNeedsCheck: true,
+      inputDir: 'src',
+      dataDir: 'src/_data',
+      rawImports: [Object],
+      globalData: [Object],
+      _extensionMap: [EleventyExtensionMap],
+      pathCache: [Array]
+    },
+    paginationData: {},
+    isVerbose: true,
+    isDryRun: false,
+    writeCount: 0,
+    skippedCount: 0,
+    wrapWithLayouts: false,
+    fileSlug: TemplateFileSlug {
+      inputPath: 'objects.html',
+      cleanInputPath: 'objects.html',
+      dirs: [],
+      parsed: [Object],
+      filenameNoExt: 'objects'
+    },
+    fileSlugStr: 'objects',
+    filePathStem: '/objects',
+    _templateRender: TemplateRender {
+      engineNameOrPath: './src/objects.html',
+      inputDir: 'src',
+      _config: [Object],
+      includesDir: 'src/_includes',
+      parseMarkdownWith: 'liquid',
+      parseHtmlWith: 'njk',
+      _extensionMap: [EleventyExtensionMap],
+      _engineName: 'html',
+      _engine: [Html],
+      useMarkdown: true
+    },
+    inputContent: '---\n' +
+      'layout: main.html\n' +
+      '---\n' +
+      '{% for post in collections.all %}\n' +
+      '\n' +
+      '{{ post | debug | safe }}\n' +
+      '<br>\n' +
+      '<hr>\n' +
+      '<br>\n' +
+      '\n' +
+      '{% endfor %}',
+    _config: {
+      templateFormats: [Array],
+      pathPrefix: '/',
+      markdownTemplateEngine: 'liquid',
+      htmlTemplateEngine: 'njk',
+      dataTemplateEngine: 'liquid',
+      passthroughFileCopy: true,
+      htmlOutputSuffix: '-o',
+      jsDataFileSuffix: '.11tydata',
+      keys: [Object],
+      dir: [Object],
+      filters: {},
+      handlebarsHelpers: [Object],
+      nunjucksFilters: [Object],
+      linters: {},
+      layoutAliases: {},
+      passthroughCopies: [Object],
+      liquidOptions: {},
+      liquidTags: {},
+      liquidFilters: [Object],
+      liquidShortcodes: {},
+      liquidPairedShortcodes: {},
+      nunjucksAsyncFilters: {},
+      nunjucksTags: {},
+      nunjucksAsyncShortcodes: {},
+      nunjucksShortcodes: {},
+      nunjucksAsyncPairedShortcodes: {},
+      nunjucksPairedShortcodes: {},
+      handlebarsShortcodes: {},
+      handlebarsPairedShortcodes: {},
+      javascriptFunctions: [Object],
+      pugOptions: {},
+      ejsOptions: {},
+      markdownHighlighter: null,
+      libraryOverrides: {},
+      dynamicPermalinks: true,
+      useGitIgnore: true,
+      dataDeepMerge: false,
+      watchJavaScriptDependencies: true,
+      additionalWatchTargets: [],
+      browserSyncConfig: {},
+      chokidarConfig: {},
+      watchThrottleWaitTime: 0,
+      frontMatterParsingOptions: undefined,
+      dataExtensions: Map(0) {},
+      extensionMap: Set(0) {},
+      quietMode: false,
+      events: [EventEmitter],
+      inputDir: 'src'
+    },
+    frontMatter: {
+      content: '{% for post in collections.all %}\n' +
+        '\n' +
+        '{{ post | debug | safe }}\n' +
+        '<br>\n' +
+        '<hr>\n' +
+        '<br>\n' +
+        '\n' +
+        '{% endfor %}',
+      data: [Object],
+      isEmpty: false,
+      excerpt: ''
+    },
+    _layoutKey: 'main.html',
+    _layout: TemplateLayout {
+      inputPath: './src/_includes/main.html',
+      inputDir: 'src',
+      _extensionMap: [EleventyExtensionMap],
+      dataKeyLayoutPath: 'main.html',
+      _config: [Object],
+      _templateRender: [TemplateRender],
+      inputContent: '---\n' +
+        'layout: root.pug\n' +
+        '---\n' +
+        '\n' +
+        '<!-- Left Side -->\n' +
+        '<header class="lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8">\n' +
+        '  <div class="mx-auto max-w-prose">\n' +
+        '    <nav class="p-4 text-sm lg:px-6">\n' +
+        '      <ul class="flex flex-wrap">\n' +
+        '        <li class="flex-shrink-0 font-black">\n' +
+        '          <a class="block px-3 pt-6 rounded-sm" href="/">/zul/</a>\n' +
+        '        </li>\n' +
+        '        <li class="flex-shrink-0">\n' +
+        '          <a class="block px-3 pt-6" href="/objects">Contact</a>\n' +
+        '        </li>\n' +
+        '        <li class="flex-shrink-0">\n' +
+        '          <a\n' +
+        '            class="block px-3 pt-6"\n' +
+        '            href="/posts/conditional-render-by-tags-eleventy"\n' +
+        '            >Profile</a\n' +
+        '          >\n' +
+        '        </li>\n' +
+        '        <li class="flex-shrink-0">\n' +
+        '          <a class="block px-3 pt-6" href="/for-hire">For Hire</a>\n' +
+        '        </li>\n' +
+        '      </ul>\n' +
+        '    </nav>\n' +
+        '    <div class="px-4 py-8 lg:px-6">\n' +
+        "      {% if not tags -%} {%- elif 'post' in tags -%}\n" +
+        '      <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>\n' +
+        '      {%- endif -%}\n' +
+        '      <h1 id="title" class="pb-6 text-5xl font-bold text-gray-800">\n' +
+        '        {{ title or metadata.title }}\n' +
+        '      </h1>\n' +
+        '      <h2 id="description" class="text-xl italic text-gray-600">\n' +
+        '        {{ description or metadata.description }}\n' +
+        '      </h2>\n' +
+        '    </div>\n' +
+        '  </div>\n' +
+        '</header>\n' +
+        '<div class="lg:grid lg:grid-cols-6">\n' +
+        '  <!-- Middle -->\n' +
+        '  <div class="lg:col-start-3 lg:col-span-3">\n' +
+        '    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">\n' +
+        '      {#\n' +
+        '      <div>{{ page | debug | safe }}</div>\n' +
+        '      #}\n' +
+        '      <div>{{ content | safe }}</div>\n' +
+        '    </div>\n' +
+        '  </div>\n' +
+        '\n' +
+        '  <!-- Right Side -->\n' +
+        '  {#\n' +
+        '  <div class="bg-gray-100 lg:col-start-6 lg:col-span-1">aaa</div>\n' +
+        '  #}\n' +
+        '</div>\n',
+      frontMatter: [Object],
+      mapCache: [Array],
+      layoutChain: [Array],
+      dataCache: {}
+    },
+    dataCache: {
+      metadata: [Object],
+      pkg: [Object],
+      layout: 'main.html',
+      page: [Object]
+    },
+    computedData: ComputedData {
+      computed: [Object],
+      templateStringKeyLookup: [Object],
+      computedKeys: [Set],
+      declaredDependencies: [Object],
+      queue: [ComputedDataQueue]
+    }
+  },
+  inputPath: './src/objects.html',
+  fileSlug: 'objects',
+  filePathStem: '/objects',
+  data: {
+    metadata: {
+      title: 'zul',
+      description: '\n' +
+        '      Array of writings I want to share with the world.\n' +
+        "      I haven't write much though.\n" +
+        '      '
+    },
+    pkg: {
+      name: 'zulvkr.github.io',
+      version: '1.0.0',
+      description: 'Personal website',
+      main: '.eleventy.js',
+      scripts: [Object],
+      repository: [Object],
+      keywords: [],
+      author: '',
+      license: 'ISC',
+      bugs: [Object],
+      homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
+      dependencies: [Object],
+      devDependencies: {}
+    },
+    layout: 'main.html',
+    page: {
+      date: 2021-06-19T12:45:10.264Z,
+      inputPath: './src/objects.html',
+      fileSlug: 'objects',
+      filePathStem: '/objects',
+      url: '/objects/',
+      outputPath: '_site/objects/index.html'
+    },
+    collections: {
+      all: [Array],
+      post: [Array],
+      eleventy: [Array],
+      nunjucks: [Array],
+      javascript: [Array],
+      example: [Array]
+    }
+  },
+  date: 2021-06-19T12:45:10.264Z,
+  outputPath: '_site/objects/index.html',
+  url: '/objects/',
+  templateContent: [Getter/Setter]
+}</pre>
+<br>
+<hr>
+<br>
+
+</div>
+    </div>
+  </div>
+
+  <!-- Right Side -->
+  
+</div>
+</body>

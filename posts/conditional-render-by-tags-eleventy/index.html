@@ -1,0 +1,85 @@
+<!DOCTYPE html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/main.css"><title>Conditional Render by Tags in Eleventy</title></head><body>
+<!-- Left Side -->
+<header class="lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8">
+  <div class="mx-auto max-w-prose">
+    <nav class="p-4 text-sm lg:px-6">
+      <ul class="flex flex-wrap">
+        <li class="flex-shrink-0 font-black">
+          <a class="block px-3 pt-6 rounded-sm" href="/">/zul/</a>
+        </li>
+        <li class="flex-shrink-0">
+          <a class="block px-3 pt-6" href="/objects">Contact</a>
+        </li>
+        <li class="flex-shrink-0">
+          <a
+            class="block px-3 pt-6"
+            href="/posts/conditional-render-by-tags-eleventy"
+            >Profile</a
+          >
+        </li>
+        <li class="flex-shrink-0">
+          <a class="block px-3 pt-6" href="/for-hire">For Hire</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="px-4 py-8 lg:px-6">
+      <p class="pb-4 text-sm">— June 17th, 2021</p><h1 id="title" class="pb-6 text-5xl font-bold text-gray-800">
+        Conditional Render by Tags in Eleventy
+      </h1>
+      <h2 id="description" class="text-xl italic text-gray-600">
+        How to render item conditionally based on tags in Eleventy using Nunjucks
+      </h2>
+    </div>
+  </div>
+</header>
+<div class="lg:grid lg:grid-cols-6">
+  <!-- Middle -->
+  <div class="lg:col-start-3 lg:col-span-3">
+    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">
+      
+      <div>
+<article class="prose">
+  <div class="font-serif"><p>Nunjucks are funny templating language. It seems to have a lot of unusual behavior that doesn't match with JavaScript syntax. Maybe because it's inspired by Jinja 2 that makes it has some Python characteristics.</p>
+<p>Recently I was trying to find a clean way to render items conditionally based on availabililty of tags and met a stumble block. At first, I tried to make custom filter like this:</p>
+<pre><code class="language-nunjucks">eleventyConfig.addFilter('includesPost', arr =&gt; arr.includes('post'))
+</code></pre>
+<p>The custom filter supposed to check if <code>tags</code> of a post includes <code>post</code> tag as its member. Tags are array in Eleventy so I expected a smooth journey, but things go awry in the console. Eleventy crashed when rendering root <code>/index.html</code> file.</p>
+<p>After careful inspection on the rendering error, I realized that the filter always trying to iterate over uniterable item before crashing.</p>
+<p>This makes me utterly confused, how could that be possible? Is it possible that tags didn't always return array but stringified value?</p>
+<p>One trick I managed to learn is to print the value of objects using built-in Nunjucks <code>dump()</code> filter. It turned out that <code>tags</code> is array as expected.</p>
+<pre><code class="language-nunjucks">{{ tags | dump(2) }}
+
+{# it prints ['tag1', 'post'] just fine #}
+</code></pre>
+<p>Some testing and an hour of debugging later, the culprit was found! Not every post in Eleventy has <code>tags</code> as property, which makes caling <code>tags</code> key will return <code>undefined</code> when reaching some pages. Wild <code>undefined</code> tags consistently appeared in any posts that has no tags assigned in their frontmatter.</p>
+<p>So, I need to prevent <code>tags</code> being iterated when <code>tags</code> is <code>undefined</code>:</p>
+<pre><code class="language-nunjucks">{% if not tags %}
+{% elif (tags | includesPost) %}
+  render something
+{% endif %}
+</code></pre>
+<p>Well, some Googling later I found a gem! See the second line.</p>
+<pre><code class="language-nunjucks">{% if not tags %}
+{% elif 'post' in tags %}
+  render something
+{% endif %}
+</code></pre>
+<p>The code above is my latest solution. The <code>in</code> syntax works similarly as <code>arr.includes()</code> in JavaScript. This syntax is borrowed from Python and not available in the Nunjucks documentation. So you have to have some familiarity with Python and Jinja to know it. Ugh, what a painful way to learn!</p>
+<p>The <code>.includes()</code> method surprisingly also works inline in Nunjucks.</p>
+<pre><code class="language-nunjucks">{% if not tags %}
+{% elif tags.includes('post') %}
+  render something
+{% endif %}
+</code></pre>
+<p>Does all array methods work in Nunjucks? I don't even find this notion in the documentation, or is it obscured somewhere? I hope the ability to use built-in JavaScript object methods is written in prominent way in Nunjucks documentation. It's a game changer.</p>
+<p>Anyway, both solutions are amazing for my use case! I ditched my custom filter and used these semantic syntax for this blog. Lots of thanks to Ryuno-ki who pointed <a href="https://github.com/11ty/eleventy/issues/524">this out in this thread</a> and all folks who contributed to that thread.</p>
+</div>
+</article>
+</div>
+    </div>
+  </div>
+
+  <!-- Right Side -->
+  
+</div>
+</body>
