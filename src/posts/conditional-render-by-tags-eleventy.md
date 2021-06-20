@@ -20,7 +20,7 @@ eleventyConfig.addFilter('includesPost', arr => arr.includes('post'))
 
 The custom filter supposed to check if `tags` of a post includes `post` tag as its member. Tags are array in Eleventy so I expected a smooth journey, but things go awry in the console. Eleventy crashed when rendering root `/index.html` file.
 
-After careful inspection on the rendering error, I realized that the filter always trying to iterate over uniterable item before crashing.
+After careful inspection on the rendering error, I realized that the filter were always trying to iterate over uniterable item before crashing.
 
 This makes me utterly confused, how could that be possible? Is it possible that tags didn't always return array but stringified value?
 
@@ -29,8 +29,9 @@ One trick I managed to learn is to print the value of objects using built-in Nun
 ```nunjucks
 {%- raw -%}
 {{ tags | dump(2) }}
-{%- endraw %}
+
 {# it prints ['tag1', 'post'] just fine #}
+{%- endraw -%}
 ```
 
 Some testing and an hour of debugging later, the culprit was found! Not every post in Eleventy has `tags` as property, which makes caling `tags` key will return `undefined` when reaching some pages. Wild `undefined` tags consistently appeared in any posts that has no tags assigned in their frontmatter.
