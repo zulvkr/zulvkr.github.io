@@ -3,12 +3,12 @@ layout: root.pug
 ---
 
 <!-- Left Side -->
-<header class="lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8">
+<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 bg-gray-50 lg:border-b-0">
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
       <ul class="flex flex-wrap">
         <li class="flex-shrink-0 font-black">
-          <a class="block px-3 pt-6 rounded-sm" href="/">/zul/</a>
+          <a class="block px-3 pt-6 text-white bg-gray-700 rounded-sm" href="/">/zul/</a>
         </li>
         <li class="flex-shrink-0">
           <a class="block px-3 pt-6" href="/objects">Contact</a>
@@ -40,7 +40,7 @@ layout: root.pug
 </header>
 <div class="lg:grid lg:grid-cols-6">
   <!-- Middle -->
-  <div class="lg:col-start-3 lg:col-span-3">
+  <div class="shadow-lg lg:col-start-3 lg:col-span-3">
     <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">
       {#
       <div>{{ page | debug | safe }}</div>
@@ -50,7 +50,7 @@ layout: root.pug
   </div>
 
   <!-- Right Side -->
-  {#
-  <div class="bg-gray-100 lg:col-start-6 lg:col-span-1">aaa</div>
-  #}
+  
+  <div class="lg:border-l lg:col-start-6 lg:col-span-1 bg-gray-50"></div>
+ 
 </div>
