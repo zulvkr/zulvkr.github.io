@@ -1,6 +1,7 @@
 const env = process.env
 const { format } = require('date-fns')
 const { inspect } = require('util')
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation')
 
 module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy({
@@ -12,6 +13,8 @@ module.exports = eleventyConfig => {
   )
 
   eleventyConfig.addFilter('debug', content => `<pre>${inspect(content)}</pre>`)
+
+  eleventyConfig.addPlugin(eleventyNavigationPlugin)
 
   const configObject = {
     dir: {

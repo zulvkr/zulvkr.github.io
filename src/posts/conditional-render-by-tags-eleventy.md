@@ -5,9 +5,9 @@ description: How to render item conditionally based on tags in Eleventy using Nu
 date: 2021-06-17
 tags:
   - post
-  - eleventy
-  - nunjucks
-  - javascript
+  - Eleventy
+  - Nunjucks
+  - Javascript
 ---
 
 Nunjucks are funny templating language. It seems to have a lot of unusual behavior that doesn't match with JavaScript syntax. Maybe because it's inspired by Jinja 2 that makes it has some Python characteristics.

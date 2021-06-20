@@ -7,23 +7,13 @@ layout: root.pug
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
       <ul class="flex flex-wrap">
-        <li class="flex-shrink-0 font-black">
-          <a class="block px-3 pt-6 text-white bg-gray-700 rounded-sm" href="/">/zul/</a>
-        </li>
-        <li class="flex-shrink-0">
-          <a class="block px-3 pt-6" href="/objects">Contact</a>
-        </li>
-        <li class="flex-shrink-0">
-          <a
-            class="block px-3 pt-6"
-            href="/posts/conditional-render-by-tags-eleventy"
-            >Profile</a
-          >
-        </li>
-        <li class="flex-shrink-0">
-          <a class="block px-3 pt-6" href="/for-hire">For Hire</a>
-        </li>
-      </ul>
+        {% set navPages = collections.all | eleventyNavigation %}
+        {% for item in navPages %}
+          {% set selected = " text-white font-black bg-gray-900 rounded-sm" %}
+          <li class="flex-shrink-0 {{ selected if item.url === page.url }}">
+            <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>
+          </li>   
+        {% endfor %}
     </nav>
     <div class="px-4 py-8 lg:px-6">
       {% if not tags -%} {%- elif 'post' in tags -%}

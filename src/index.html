@@ -1,5 +1,8 @@
 ---
 layout: main.html
+eleventyNavigation:
+  key: /zul/
+  order: 1
 ---
 
 <section id="preface" class="my-5 prose">
@@ -9,37 +12,15 @@ layout: main.html
   </p>
   <img src="./image/1280px-Java_region_map.png" alt="java-island" />
 </section>
+{% for post in collections.post | reverse %}
 <hr />
 <article class="my-10 font-serif prose">
-  <h2>Ad esse qui magna ex laboris ipsum excepteur.</h2>
-  <p>
-    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.
-    Bigger screen can have aside, with easy navigation, smaller screen has
-    button
-  </p>
-  <h3>
-    Enim in reprehenderit sunt dolor irure voluptate.
-  </h3>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
-    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta
-    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,
-    eos minima.
-  </p>
-  <p class="prose-purple"><a href="/post1">Go to Post 1...</a></p>
+  <a href="{{ post.url }}">  
+    <h2 class="font-serif text-2xl font-bold text-gray-700">
+      {{ post.data.title }}
+    </h2>
+  </a>
+    <p>{{ post.data.date | toReadableDate }} - {{ post.data.description }}</p>
+  <p class="prose-yellow"><a href="{{ post.url }}">Read more...</a></p>
 </article>
-<article class="my-10 font-serif prose">
-  <h2>Second blog post</h2>
-  <p>
-    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.
-    Bigger screen can have aside, with easy navigation, smaller screen has
-    button
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
-    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta
-    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,
-    eos minima.
-  </p>
-  <p class="prose-purple"><a href="/post2">Go to Post 2...</a></p>
-</article>
+{% endfor %}

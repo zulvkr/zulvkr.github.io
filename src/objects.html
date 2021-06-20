@@ -2,8 +2,9 @@
 layout: main.html
 ---
 {% for post in collections.all %}
-
-{{ post | debug | safe }}
+<article class="prose">
+  {{ post | debug | safe }}
+</article>
 <br>
 <hr>
 <br>
