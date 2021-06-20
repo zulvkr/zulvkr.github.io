@@ -4,6 +4,7 @@ title: How to deploy Eleventy to GitHub Pages
 description: How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.
 date: 2021-06-20
 tags:
+  - post
   - GitHub Pages
   - Eleventy
   - GitHub Action
