@@ -4,23 +4,23 @@
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
       <ul class="flex flex-wrap">
-        <li class="flex-shrink-0 font-black">
-          <a class="block px-3 pt-6 text-white bg-gray-700 rounded-sm" href="/">/zul/</a>
-        </li>
-        <li class="flex-shrink-0">
-          <a class="block px-3 pt-6" href="/objects">Contact</a>
-        </li>
-        <li class="flex-shrink-0">
-          <a
-            class="block px-3 pt-6"
-            href="/posts/conditional-render-by-tags-eleventy"
-            >Profile</a
-          >
-        </li>
-        <li class="flex-shrink-0">
-          <a class="block px-3 pt-6" href="/for-hire">For Hire</a>
-        </li>
-      </ul>
+        
+        
+          
+          <li class="flex-shrink-0 ">
+            <a class="block px-3 pt-6" href="/">/zul/</a>
+          </li>   
+        
+          
+          <li class="flex-shrink-0 ">
+            <a class="block px-3 pt-6" href="/about/">About</a>
+          </li>   
+        
+          
+          <li class="flex-shrink-0 ">
+            <a class="block px-3 pt-6" href="https://github.com/zulvkr">Hire me</a>
+          </li>   
+        
     </nav>
     <div class="px-4 py-8 lg:px-6">
       <h1 id="title" class="pb-6 text-5xl font-bold text-gray-800">
@@ -41,8 +41,8 @@
     <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">
       
       <div>
-
-<pre>{
+<article class="prose">
+  <pre>{
   template: Template {
     inputPath: './src/posts/conditional-render-by-tags-eleventy.md',
     inputDir: 'src',
@@ -119,9 +119,9 @@
       'date: 2021-06-17\n' +
       'tags:\n' +
       '  - post\n' +
-      '  - eleventy\n' +
-      '  - nunjucks\n' +
-      '  - javascript\n' +
+      '  - Eleventy\n' +
+      '  - Nunjucks\n' +
+      '  - Javascript\n' +
       '---\n' +
       '\n' +
       "Nunjucks are funny templating language. It seems to have a lot of unusual behavior that doesn't match with JavaScript syntax. Maybe because it's inspired by Jinja 2 that makes it has some Python characteristics.\n" +
@@ -374,13 +374,13 @@
       bugs: [Object],
       homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
       dependencies: [Object],
-      devDependencies: {}
+      devDependencies: [Object]
     },
     layout: 'blog.html',
     title: 'Conditional Render by Tags in Eleventy',
     description: 'How to render item conditionally based on tags in Eleventy using Nunjucks',
     date: 2021-06-17T00:00:00.000Z,
-    tags: [ 'post', 'eleventy', 'nunjucks', 'javascript' ],
+    tags: [ 'post', 'Eleventy', 'Nunjucks', 'Javascript' ],
     page: {
       date: 2021-06-17T00:00:00.000Z,
       inputPath: './src/posts/conditional-render-by-tags-eleventy.md',
@@ -392,11 +392,10 @@
     collections: {
       all: [Array],
       post: [Array],
-      eleventy: [Array],
-      nunjucks: [Array],
-      javascript: [Array],
-      'GitHub Pages': [Array],
       Eleventy: [Array],
+      Nunjucks: [Array],
+      Javascript: [Array],
+      'GitHub Pages': [Array],
       'GitHub Action': [Array]
     },
     references: { '1': [Object] }
@@ -440,13 +439,14 @@
     "<p>Does all array methods work in Nunjucks? I don't even find this notion in the documentation, or is it obscured somewhere? I hope the ability to use built-in JavaScript object methods is written in prominent way in Nunjucks documentation. It's a game changer.</p>\n" +
     '<p>Anyway, both solutions are amazing for my use case! I ditched my custom filter and used these semantic syntax for this blog. Lots of thanks to Ryuno-ki who pointed <a href="https://github.com/11ty/eleventy/issues/524">this out in this thread</a> and all folks who contributed to that thread.</p>\n'
 }</pre>
+</article>
 <br>
 <hr>
 <br>
 
 
-
-<pre>{
+<article class="prose">
+  <pre>{
   template: Template {
     inputPath: './src/posts/how-to-deploy-11ty-gh-pages.md',
     inputDir: 'src',
@@ -522,6 +522,7 @@
       'description: How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.\n' +
       'date: 2021-06-20\n' +
       'tags:\n' +
+      '  - post\n' +
       '  - GitHub Pages\n' +
       '  - Eleventy\n' +
       '  - GitHub Action\n' +
@@ -777,13 +778,13 @@
       bugs: [Object],
       homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
       dependencies: [Object],
-      devDependencies: {}
+      devDependencies: [Object]
     },
     layout: 'blog.html',
     title: 'How to deploy Eleventy to GitHub Pages',
     description: 'How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.',
     date: 2021-06-20T00:00:00.000Z,
-    tags: [ 'GitHub Pages', 'Eleventy', 'GitHub Action' ],
+    tags: [ 'post', 'GitHub Pages', 'Eleventy', 'GitHub Action' ],
     page: {
       date: 2021-06-20T00:00:00.000Z,
       inputPath: './src/posts/how-to-deploy-11ty-gh-pages.md',
@@ -795,11 +796,10 @@
     collections: {
       all: [Array],
       post: [Array],
-      eleventy: [Array],
-      nunjucks: [Array],
-      javascript: [Array],
-      'GitHub Pages': [Array],
       Eleventy: [Array],
+      Nunjucks: [Array],
+      Javascript: [Array],
+      'GitHub Pages': [Array],
       'GitHub Action': [Array]
     },
     references: { '1': [Object], '2': [Object], '3': [Object] }
@@ -856,13 +856,496 @@
     "<p>The official tutorial said GitHub Pages action will add <code>.nojekyll</code> automatically so you don't have to add them yourself.</p>\n" +
     '<p>GitHub Pages action also support scheduled action, pretty cool.</p>\n'
 }</pre>
+</article>
 <br>
 <hr>
 <br>
 
 
+<article class="prose">
+  <pre>{
+  template: Template {
+    inputPath: './src/about.md',
+    inputDir: 'src',
+    parsed: {
+      root: '',
+      dir: './src',
+      base: 'about.md',
+      ext: '.md',
+      name: 'about',
+      extname: '.md',
+      basename: 'about.md',
+      dirname: './src',
+      stem: 'about',
+      path: './src/about.md',
+      absolute: [Getter/Setter],
+      isAbsolute: [Getter/Setter]
+    },
+    extraOutputSubdirectory: '',
+    outputDir: '_site',
+    _extensionMap: EleventyExtensionMap {
+      formatKeys: [Array],
+      unfilteredFormatKeys: [Array],
+      _extensionToKeyMap: [Object],
+      validTemplateLanguageKeys: [Array],
+      passthroughCopyKeys: [],
+      configOverride: [Object],
+      _engineManager: [TemplateEngineManager]
+    },
+    linters: [],
+    transforms: [],
+    plugins: {},
+    templateData: TemplateData {
+      config: [Object],
+      dataTemplateEngine: 'liquid',
+      inputDirNeedsCheck: true,
+      inputDir: 'src',
+      dataDir: 'src/_data',
+      rawImports: [Object],
+      globalData: [Object],
+      _extensionMap: [EleventyExtensionMap],
+      pathCache: [Array]
+    },
+    paginationData: {},
+    isVerbose: true,
+    isDryRun: false,
+    writeCount: 0,
+    skippedCount: 0,
+    wrapWithLayouts: true,
+    fileSlug: TemplateFileSlug {
+      inputPath: 'about.md',
+      cleanInputPath: 'about.md',
+      dirs: [],
+      parsed: [Object],
+      filenameNoExt: 'about'
+    },
+    fileSlugStr: 'about',
+    filePathStem: '/about',
+    _templateRender: TemplateRender {
+      engineNameOrPath: './src/about.md',
+      inputDir: 'src',
+      _config: [Object],
+      includesDir: 'src/_includes',
+      parseMarkdownWith: 'liquid',
+      parseHtmlWith: 'njk',
+      _extensionMap: [EleventyExtensionMap],
+      _engineName: 'md',
+      _engine: [Markdown],
+      useMarkdown: true
+    },
+    inputContent: '---\n' +
+      'layout: blog.html\n' +
+      'eleventyNavigation:\n' +
+      '  key: About\n' +
+      '  order: 2\n' +
+      '---\n' +
+      '### Hi there 👋\n' +
+      '\n' +
+      "I am Zul. I'm active as student in Fullstack JS Bootcamp now, learning Next.js in this week.\n" +
+      "I'm Open for hire. My competencies mostly in front-end JavaScript. Currently learning more for back-end and React.\n" +
+      '\n' +
+      'I love to work in the open, see my projects!\n' +
+      '\n' +
+      '- 🌱 I’m currently learning JavaScript and web development ecosystem in general\n' +
+      '- 👯 I’m looking to collaborate on interesting OSS, related to JavaScript. \n' +
+      '- 🤔 I’m looking for help with learning all this web stack! So much! soo much! Also how to get a job.\n' +
+      '- 💬 Ask me about: Basic JavaScript, SASS, Eleventy, Tailwind CSS/\n' +
+      "- 📫 How to reach me: `ivan dot zulfikar` + `gmail`. I don't use social media much.\n" +
+      "- ⚡ Fun fact: I'm not a very fun guy.\n" +
+      '\n' +
+      '<!--\n' +
+      '**zulvkr/zulvkr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.\n' +
+      '\n' +
+      'Here are some ideas to get you started:\n' +
+      '\n' +
+      '- 🔭 I’m currently working on ...\n' +
+      '- 🌱 I’m currently learning ...\n' +
+      '- 👯 I’m looking to collaborate on ...\n' +
+      '- 🤔 I’m looking for help with ...\n' +
+      '- 💬 Ask me about ...\n' +
+      '- 📫 How to reach me: ...\n' +
+      '- 😄 Pronouns: ...\n' +
+      '- ⚡ Fun fact: ...\n' +
+      '-->\n',
+    _config: {
+      templateFormats: [Array],
+      pathPrefix: '/',
+      markdownTemplateEngine: 'liquid',
+      htmlTemplateEngine: 'njk',
+      dataTemplateEngine: 'liquid',
+      passthroughFileCopy: true,
+      htmlOutputSuffix: '-o',
+      jsDataFileSuffix: '.11tydata',
+      keys: [Object],
+      dir: [Object],
+      filters: {},
+      handlebarsHelpers: [Object],
+      nunjucksFilters: [Object],
+      linters: {},
+      layoutAliases: {},
+      passthroughCopies: [Object],
+      liquidOptions: {},
+      liquidTags: {},
+      liquidFilters: [Object],
+      liquidShortcodes: {},
+      liquidPairedShortcodes: {},
+      nunjucksAsyncFilters: {},
+      nunjucksTags: {},
+      nunjucksAsyncShortcodes: {},
+      nunjucksShortcodes: {},
+      nunjucksAsyncPairedShortcodes: {},
+      nunjucksPairedShortcodes: {},
+      handlebarsShortcodes: {},
+      handlebarsPairedShortcodes: {},
+      javascriptFunctions: [Object],
+      pugOptions: {},
+      ejsOptions: {},
+      markdownHighlighter: null,
+      libraryOverrides: {},
+      dynamicPermalinks: true,
+      useGitIgnore: true,
+      dataDeepMerge: false,
+      watchJavaScriptDependencies: true,
+      additionalWatchTargets: [],
+      browserSyncConfig: {},
+      chokidarConfig: {},
+      watchThrottleWaitTime: 0,
+      frontMatterParsingOptions: undefined,
+      dataExtensions: Map(0) {},
+      extensionMap: Set(0) {},
+      quietMode: false,
+      events: [EventEmitter],
+      inputDir: 'src'
+    },
+    frontMatter: {
+      content: '### Hi there 👋\n' +
+        '\n' +
+        "I am Zul. I'm active as student in Fullstack JS Bootcamp now, learning Next.js in this week.\n" +
+        "I'm Open for hire. My competencies mostly in front-end JavaScript. Currently learning more for back-end and React.\n" +
+        '\n' +
+        'I love to work in the open, see my projects!\n' +
+        '\n' +
+        '- 🌱 I’m currently learning JavaScript and web development ecosystem in general\n' +
+        '- 👯 I’m looking to collaborate on interesting OSS, related to JavaScript. \n' +
+        '- 🤔 I’m looking for help with learning all this web stack! So much! soo much! Also how to get a job.\n' +
+        '- 💬 Ask me about: Basic JavaScript, SASS, Eleventy, Tailwind CSS/\n' +
+        "- 📫 How to reach me: `ivan dot zulfikar` + `gmail`. I don't use social media much.\n" +
+        "- ⚡ Fun fact: I'm not a very fun guy.\n" +
+        '\n' +
+        '<!--\n' +
+        '**zulvkr/zulvkr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.\n' +
+        '\n' +
+        'Here are some ideas to get you started:\n' +
+        '\n' +
+        '- 🔭 I’m currently working on ...\n' +
+        '- 🌱 I’m currently learning ...\n' +
+        '- 👯 I’m looking to collaborate on ...\n' +
+        '- 🤔 I’m looking for help with ...\n' +
+        '- 💬 Ask me about ...\n' +
+        '- 📫 How to reach me: ...\n' +
+        '- 😄 Pronouns: ...\n' +
+        '- ⚡ Fun fact: ...\n' +
+        '-->\n',
+      data: [Object],
+      isEmpty: false,
+      excerpt: ''
+    },
+    _layoutKey: 'blog.html',
+    _layout: TemplateLayout {
+      inputPath: './src/_includes/blog.html',
+      inputDir: 'src',
+      _extensionMap: [EleventyExtensionMap],
+      dataKeyLayoutPath: 'blog.html',
+      _config: [Object],
+      _templateRender: [TemplateRender],
+      inputContent: '---\n' +
+        'layout: main.html\n' +
+        '---\n' +
+        '\n' +
+        '<article class="prose">\n' +
+        '  <div class="font-serif">{{ content | safe }}</div>\n' +
+        '</article>\n',
+      frontMatter: [Object],
+      mapCache: [Array],
+      layoutChain: [Array],
+      dataCache: {}
+    },
+    dataCache: {
+      metadata: [Object],
+      pkg: [Object],
+      layout: 'blog.html',
+      eleventyNavigation: [Object],
+      page: [Object]
+    },
+    computedData: ComputedData {
+      computed: [Object],
+      templateStringKeyLookup: [Object],
+      computedKeys: [Set],
+      declaredDependencies: [Object],
+      queue: [ComputedDataQueue]
+    }
+  },
+  inputPath: './src/about.md',
+  fileSlug: 'about',
+  filePathStem: '/about',
+  data: {
+    metadata: {
+      title: 'zul',
+      description: '\n' +
+        '      Array of writings I want to share with the world.\n' +
+        "      I haven't write much though.\n" +
+        '      '
+    },
+    pkg: {
+      name: 'zulvkr.github.io',
+      version: '1.0.0',
+      description: 'Personal website',
+      main: '.eleventy.js',
+      scripts: [Object],
+      repository: [Object],
+      keywords: [],
+      author: '',
+      license: 'ISC',
+      bugs: [Object],
+      homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
+      dependencies: [Object],
+      devDependencies: [Object]
+    },
+    layout: 'blog.html',
+    eleventyNavigation: { key: 'About', order: 2 },
+    page: {
+      date: 2021-06-20T15:48:18.224Z,
+      inputPath: './src/about.md',
+      fileSlug: 'about',
+      filePathStem: '/about',
+      url: '/about/',
+      outputPath: '_site/about/index.html'
+    },
+    collections: {
+      all: [Array],
+      post: [Array],
+      Eleventy: [Array],
+      Nunjucks: [Array],
+      Javascript: [Array],
+      'GitHub Pages': [Array],
+      'GitHub Action': [Array]
+    }
+  },
+  date: 2021-06-20T15:48:18.224Z,
+  outputPath: '_site/about/index.html',
+  url: '/about/',
+  templateContent: [Getter/Setter]
+}</pre>
+</article>
+<br>
+<hr>
+<br>
 
-<pre>{
+
+<article class="prose">
+  <pre>{
+  template: Template {
+    inputPath: './src/hireme.md',
+    inputDir: 'src',
+    parsed: {
+      root: '',
+      dir: './src',
+      base: 'hireme.md',
+      ext: '.md',
+      name: 'hireme',
+      extname: '.md',
+      basename: 'hireme.md',
+      dirname: './src',
+      stem: 'hireme',
+      path: './src/hireme.md',
+      absolute: [Getter/Setter],
+      isAbsolute: [Getter/Setter]
+    },
+    extraOutputSubdirectory: '',
+    outputDir: '_site',
+    _extensionMap: EleventyExtensionMap {
+      formatKeys: [Array],
+      unfilteredFormatKeys: [Array],
+      _extensionToKeyMap: [Object],
+      validTemplateLanguageKeys: [Array],
+      passthroughCopyKeys: [],
+      configOverride: [Object],
+      _engineManager: [TemplateEngineManager]
+    },
+    linters: [],
+    transforms: [],
+    plugins: {},
+    templateData: TemplateData {
+      config: [Object],
+      dataTemplateEngine: 'liquid',
+      inputDirNeedsCheck: true,
+      inputDir: 'src',
+      dataDir: 'src/_data',
+      rawImports: [Object],
+      globalData: [Object],
+      _extensionMap: [EleventyExtensionMap],
+      pathCache: [Array]
+    },
+    paginationData: {},
+    isVerbose: true,
+    isDryRun: false,
+    writeCount: 0,
+    skippedCount: 0,
+    wrapWithLayouts: true,
+    fileSlug: TemplateFileSlug {
+      inputPath: 'hireme.md',
+      cleanInputPath: 'hireme.md',
+      dirs: [],
+      parsed: [Object],
+      filenameNoExt: 'hireme'
+    },
+    fileSlugStr: 'hireme',
+    filePathStem: '/hireme',
+    _templateRender: TemplateRender {
+      engineNameOrPath: './src/hireme.md',
+      inputDir: 'src',
+      _config: [Object],
+      includesDir: 'src/_includes',
+      parseMarkdownWith: 'liquid',
+      parseHtmlWith: 'njk',
+      _extensionMap: [EleventyExtensionMap],
+      _engineName: 'md',
+      _engine: [Markdown],
+      useMarkdown: true
+    },
+    inputContent: '---\n' +
+      'eleventyNavigation:\n' +
+      '  key: Hire me\n' +
+      '  order: 3\n' +
+      '  url: https://github.com/zulvkr\n' +
+      'permalink: false\n' +
+      '---',
+    _config: {
+      templateFormats: [Array],
+      pathPrefix: '/',
+      markdownTemplateEngine: 'liquid',
+      htmlTemplateEngine: 'njk',
+      dataTemplateEngine: 'liquid',
+      passthroughFileCopy: true,
+      htmlOutputSuffix: '-o',
+      jsDataFileSuffix: '.11tydata',
+      keys: [Object],
+      dir: [Object],
+      filters: {},
+      handlebarsHelpers: [Object],
+      nunjucksFilters: [Object],
+      linters: {},
+      layoutAliases: {},
+      passthroughCopies: [Object],
+      liquidOptions: {},
+      liquidTags: {},
+      liquidFilters: [Object],
+      liquidShortcodes: {},
+      liquidPairedShortcodes: {},
+      nunjucksAsyncFilters: {},
+      nunjucksTags: {},
+      nunjucksAsyncShortcodes: {},
+      nunjucksShortcodes: {},
+      nunjucksAsyncPairedShortcodes: {},
+      nunjucksPairedShortcodes: {},
+      handlebarsShortcodes: {},
+      handlebarsPairedShortcodes: {},
+      javascriptFunctions: [Object],
+      pugOptions: {},
+      ejsOptions: {},
+      markdownHighlighter: null,
+      libraryOverrides: {},
+      dynamicPermalinks: true,
+      useGitIgnore: true,
+      dataDeepMerge: false,
+      watchJavaScriptDependencies: true,
+      additionalWatchTargets: [],
+      browserSyncConfig: {},
+      chokidarConfig: {},
+      watchThrottleWaitTime: 0,
+      frontMatterParsingOptions: undefined,
+      dataExtensions: Map(0) {},
+      extensionMap: Set(0) {},
+      quietMode: false,
+      events: [EventEmitter],
+      inputDir: 'src'
+    },
+    frontMatter: { content: '', data: [Object], isEmpty: false, excerpt: '' },
+    dataCache: {
+      metadata: [Object],
+      pkg: [Object],
+      eleventyNavigation: [Object],
+      permalink: false,
+      page: [Object]
+    },
+    computedData: ComputedData {
+      computed: [Object],
+      templateStringKeyLookup: [Object],
+      computedKeys: [Set],
+      declaredDependencies: [Object],
+      queue: [ComputedDataQueue]
+    }
+  },
+  inputPath: './src/hireme.md',
+  fileSlug: 'hireme',
+  filePathStem: '/hireme',
+  data: {
+    metadata: {
+      title: 'zul',
+      description: '\n' +
+        '      Array of writings I want to share with the world.\n' +
+        "      I haven't write much though.\n" +
+        '      '
+    },
+    pkg: {
+      name: 'zulvkr.github.io',
+      version: '1.0.0',
+      description: 'Personal website',
+      main: '.eleventy.js',
+      scripts: [Object],
+      repository: [Object],
+      keywords: [],
+      author: '',
+      license: 'ISC',
+      bugs: [Object],
+      homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
+      dependencies: [Object],
+      devDependencies: [Object]
+    },
+    eleventyNavigation: { key: 'Hire me', order: 3, url: 'https://github.com/zulvkr' },
+    permalink: false,
+    page: {
+      date: 2021-06-20T15:48:18.224Z,
+      inputPath: './src/hireme.md',
+      fileSlug: 'hireme',
+      filePathStem: '/hireme',
+      url: false,
+      outputPath: false
+    },
+    collections: {
+      all: [Array],
+      post: [Array],
+      Eleventy: [Array],
+      Nunjucks: [Array],
+      Javascript: [Array],
+      'GitHub Pages': [Array],
+      'GitHub Action': [Array]
+    }
+  },
+  date: 2021-06-20T15:48:18.224Z,
+  outputPath: false,
+  url: false,
+  templateContent: [Getter/Setter],
+  _templateContent: ''
+}</pre>
+</article>
+<br>
+<hr>
+<br>
+
+
+<article class="prose">
+  <pre>{
   template: Template {
     inputPath: './src/index.html',
     inputDir: 'src',
@@ -934,6 +1417,9 @@
     },
     inputContent: '---\n' +
       'layout: main.html\n' +
+      'eleventyNavigation:\n' +
+      '  key: /zul/\n' +
+      '  order: 1\n' +
       '---\n' +
       '\n' +
       '<section id="preface" class="my-5 prose">\n' +
@@ -943,40 +1429,18 @@
       '  </p>\n' +
       '  <img src="./image/1280px-Java_region_map.png" alt="java-island" />\n' +
       '</section>\n' +
+      '{% for post in collections.post | reverse %}\n' +
       '<hr />\n' +
       '<article class="my-10 font-serif prose">\n' +
-      '  <h2>Ad esse qui magna ex laboris ipsum excepteur.</h2>\n' +
-      '  <p>\n' +
-      '    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.\n' +
-      '    Bigger screen can have aside, with easy navigation, smaller screen has\n' +
-      '    button\n' +
-      '  </p>\n' +
-      '  <h3>\n' +
-      '    Enim in reprehenderit sunt dolor irure voluptate.\n' +
-      '  </h3>\n' +
-      '  <p>\n' +
-      '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,\n' +
-      '    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta\n' +
-      '    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,\n' +
-      '    eos minima.\n' +
-      '  </p>\n' +
-      '  <p class="prose-purple"><a href="/post1">Go to Post 1...</a></p>\n' +
+      '  <a href="{{ post.url }}">  \n' +
+      '    <h2 class="font-serif text-2xl font-bold text-gray-700">\n' +
+      '      {{ post.data.title }}\n' +
+      '    </h2>\n' +
+      '  </a>\n' +
+      '    <p>{{ post.data.date | toReadableDate }} - {{ post.data.description }}</p>\n' +
+      '  <p class="prose-yellow"><a href="{{ post.url }}">Read more...</a></p>\n' +
       '</article>\n' +
-      '<article class="my-10 font-serif prose">\n' +
-      '  <h2>Second blog post</h2>\n' +
-      '  <p>\n' +
-      '    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.\n' +
-      '    Bigger screen can have aside, with easy navigation, smaller screen has\n' +
-      '    button\n' +
-      '  </p>\n' +
-      '  <p>\n' +
-      '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,\n' +
-      '    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta\n' +
-      '    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,\n' +
-      '    eos minima.\n' +
-      '  </p>\n' +
-      '  <p class="prose-purple"><a href="/post2">Go to Post 2...</a></p>\n' +
-      '</article>\n',
+      '{% endfor %}\n',
     _config: {
       templateFormats: [Array],
       pathPrefix: '/',
@@ -1036,40 +1500,18 @@
         '  </p>\n' +
         '  <img src="./image/1280px-Java_region_map.png" alt="java-island" />\n' +
         '</section>\n' +
+        '{% for post in collections.post | reverse %}\n' +
         '<hr />\n' +
         '<article class="my-10 font-serif prose">\n' +
-        '  <h2>Ad esse qui magna ex laboris ipsum excepteur.</h2>\n' +
-        '  <p>\n' +
-        '    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.\n' +
-        '    Bigger screen can have aside, with easy navigation, smaller screen has\n' +
-        '    button\n' +
-        '  </p>\n' +
-        '  <h3>\n' +
-        '    Enim in reprehenderit sunt dolor irure voluptate.\n' +
-        '  </h3>\n' +
-        '  <p>\n' +
-        '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,\n' +
-        '    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta\n' +
-        '    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,\n' +
-        '    eos minima.\n' +
-        '  </p>\n' +
-        '  <p class="prose-purple"><a href="/post1">Go to Post 1...</a></p>\n' +
+        '  <a href="{{ post.url }}">  \n' +
+        '    <h2 class="font-serif text-2xl font-bold text-gray-700">\n' +
+        '      {{ post.data.title }}\n' +
+        '    </h2>\n' +
+        '  </a>\n' +
+        '    <p>{{ post.data.date | toReadableDate }} - {{ post.data.description }}</p>\n' +
+        '  <p class="prose-yellow"><a href="{{ post.url }}">Read more...</a></p>\n' +
         '</article>\n' +
-        '<article class="my-10 font-serif prose">\n' +
-        '  <h2>Second blog post</h2>\n' +
-        '  <p>\n' +
-        '    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.\n' +
-        '    Bigger screen can have aside, with easy navigation, smaller screen has\n' +
-        '    button\n' +
-        '  </p>\n' +
-        '  <p>\n' +
-        '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,\n' +
-        '    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta\n' +
-        '    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,\n' +
-        '    eos minima.\n' +
-        '  </p>\n' +
-        '  <p class="prose-purple"><a href="/post2">Go to Post 2...</a></p>\n' +
-        '</article>\n',
+        '{% endfor %}\n',
       data: [Object],
       isEmpty: false,
       excerpt: ''
@@ -1091,23 +1533,13 @@
         '  <div class="mx-auto max-w-prose">\n' +
         '    <nav class="p-4 text-sm lg:px-6">\n' +
         '      <ul class="flex flex-wrap">\n' +
-        '        <li class="flex-shrink-0 font-black">\n' +
-        '          <a class="block px-3 pt-6 text-white bg-gray-700 rounded-sm" href="/">/zul/</a>\n' +
-        '        </li>\n' +
-        '        <li class="flex-shrink-0">\n' +
-        '          <a class="block px-3 pt-6" href="/objects">Contact</a>\n' +
-        '        </li>\n' +
-        '        <li class="flex-shrink-0">\n' +
-        '          <a\n' +
-        '            class="block px-3 pt-6"\n' +
-        '            href="/posts/conditional-render-by-tags-eleventy"\n' +
-        '            >Profile</a\n' +
-        '          >\n' +
-        '        </li>\n' +
-        '        <li class="flex-shrink-0">\n' +
-        '          <a class="block px-3 pt-6" href="/for-hire">For Hire</a>\n' +
-        '        </li>\n' +
-        '      </ul>\n' +
+        '        {% set navPages = collections.all | eleventyNavigation %}\n' +
+        '        {% for item in navPages %}\n' +
+        '          {% set selected = " text-white font-black bg-gray-900 rounded-sm" %}\n' +
+        '          <li class="flex-shrink-0 {{ selected if item.url === page.url }}">\n' +
+        '            <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>\n' +
+        '          </li>   \n' +
+        '        {% endfor %}\n' +
         '    </nav>\n' +
         '    <div class="px-4 py-8 lg:px-6">\n' +
         "      {% if not tags -%} {%- elif 'post' in tags -%}\n" +
@@ -1147,6 +1579,7 @@
       metadata: [Object],
       pkg: [Object],
       layout: 'main.html',
+      eleventyNavigation: [Object],
       page: [Object]
     },
     computedData: ComputedData {
@@ -1181,11 +1614,12 @@
       bugs: [Object],
       homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
       dependencies: [Object],
-      devDependencies: {}
+      devDependencies: [Object]
     },
     layout: 'main.html',
+    eleventyNavigation: { key: '/zul/', order: 1 },
     page: {
-      date: 2021-06-20T14:21:16.557Z,
+      date: 2021-06-20T15:48:18.224Z,
       inputPath: './src/index.html',
       fileSlug: '',
       filePathStem: '/index',
@@ -1195,15 +1629,14 @@
     collections: {
       all: [Array],
       post: [Array],
-      eleventy: [Array],
-      nunjucks: [Array],
-      javascript: [Array],
-      'GitHub Pages': [Array],
       Eleventy: [Array],
+      Nunjucks: [Array],
+      Javascript: [Array],
+      'GitHub Pages': [Array],
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-20T14:21:16.557Z,
+  date: 2021-06-20T15:48:18.224Z,
   outputPath: '_site/index.html',
   url: '/',
   templateContent: [Getter/Setter],
@@ -1215,48 +1648,38 @@
     '  </p>\n' +
     '  <img src="./image/1280px-Java_region_map.png" alt="java-island" />\n' +
     '</section>\n' +
+    '\n' +
     '<hr />\n' +
     '<article class="my-10 font-serif prose">\n' +
-    '  <h2>Ad esse qui magna ex laboris ipsum excepteur.</h2>\n' +
-    '  <p>\n' +
-    '    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.\n' +
-    '    Bigger screen can have aside, with easy navigation, smaller screen has\n' +
-    '    button\n' +
-    '  </p>\n' +
-    '  <h3>\n' +
-    '    Enim in reprehenderit sunt dolor irure voluptate.\n' +
-    '  </h3>\n' +
-    '  <p>\n' +
-    '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,\n' +
-    '    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta\n' +
-    '    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,\n' +
-    '    eos minima.\n' +
-    '  </p>\n' +
-    '  <p class="prose-purple"><a href="/post1">Go to Post 1...</a></p>\n' +
+    '  <a href="/posts/how-to-deploy-11ty-gh-pages/">  \n' +
+    '    <h2 class="font-serif text-2xl font-bold text-gray-700">\n' +
+    '      How to deploy Eleventy to GitHub Pages\n' +
+    '    </h2>\n' +
+    '  </a>\n' +
+    '    <p>June 20th, 2021 - How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.</p>\n' +
+    '  <p class="prose-yellow"><a href="/posts/how-to-deploy-11ty-gh-pages/">Read more...</a></p>\n' +
     '</article>\n' +
+    '\n' +
+    '<hr />\n' +
     '<article class="my-10 font-serif prose">\n' +
-    '  <h2>Second blog post</h2>\n' +
-    '  <p>\n' +
-    '    Simple website with: code highlighting, dark mode, sharp yet fun and birdy.\n' +
-    '    Bigger screen can have aside, with easy navigation, smaller screen has\n' +
-    '    button\n' +
-    '  </p>\n' +
-    '  <p>\n' +
-    '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,\n' +
-    '    incidunt nemo consequuntur modi aspernatur commodi a laudantium rem dicta\n' +
-    '    repellat officiis, tenetur maxime nostrum corporis soluta cumque similique,\n' +
-    '    eos minima.\n' +
-    '  </p>\n' +
-    '  <p class="prose-purple"><a href="/post2">Go to Post 2...</a></p>\n' +
-    '</article>\n'
+    '  <a href="/posts/conditional-render-by-tags-eleventy/">  \n' +
+    '    <h2 class="font-serif text-2xl font-bold text-gray-700">\n' +
+    '      Conditional Render by Tags in Eleventy\n' +
+    '    </h2>\n' +
+    '  </a>\n' +
+    '    <p>June 17th, 2021 - How to render item conditionally based on tags in Eleventy using Nunjucks</p>\n' +
+    '  <p class="prose-yellow"><a href="/posts/conditional-render-by-tags-eleventy/">Read more...</a></p>\n' +
+    '</article>\n' +
+    '\n'
 }</pre>
+</article>
 <br>
 <hr>
 <br>
 
 
-
-<pre>{
+<article class="prose">
+  <pre>{
   template: Template {
     inputPath: './src/objects.html',
     inputDir: 'src',
@@ -1330,8 +1753,9 @@
       'layout: main.html\n' +
       '---\n' +
       '{% for post in collections.all %}\n' +
-      '\n' +
-      '{{ post | debug | safe }}\n' +
+      '<article class="prose">\n' +
+      '  {{ post | debug | safe }}\n' +
+      '</article>\n' +
       '<br>\n' +
       '<hr>\n' +
       '<br>\n' +
@@ -1389,8 +1813,9 @@
     },
     frontMatter: {
       content: '{% for post in collections.all %}\n' +
-        '\n' +
-        '{{ post | debug | safe }}\n' +
+        '<article class="prose">\n' +
+        '  {{ post | debug | safe }}\n' +
+        '</article>\n' +
         '<br>\n' +
         '<hr>\n' +
         '<br>\n' +
@@ -1417,23 +1842,13 @@
         '  <div class="mx-auto max-w-prose">\n' +
         '    <nav class="p-4 text-sm lg:px-6">\n' +
         '      <ul class="flex flex-wrap">\n' +
-        '        <li class="flex-shrink-0 font-black">\n' +
-        '          <a class="block px-3 pt-6 text-white bg-gray-700 rounded-sm" href="/">/zul/</a>\n' +
-        '        </li>\n' +
-        '        <li class="flex-shrink-0">\n' +
-        '          <a class="block px-3 pt-6" href="/objects">Contact</a>\n' +
-        '        </li>\n' +
-        '        <li class="flex-shrink-0">\n' +
-        '          <a\n' +
-        '            class="block px-3 pt-6"\n' +
-        '            href="/posts/conditional-render-by-tags-eleventy"\n' +
-        '            >Profile</a\n' +
-        '          >\n' +
-        '        </li>\n' +
-        '        <li class="flex-shrink-0">\n' +
-        '          <a class="block px-3 pt-6" href="/for-hire">For Hire</a>\n' +
-        '        </li>\n' +
-        '      </ul>\n' +
+        '        {% set navPages = collections.all | eleventyNavigation %}\n' +
+        '        {% for item in navPages %}\n' +
+        '          {% set selected = " text-white font-black bg-gray-900 rounded-sm" %}\n' +
+        '          <li class="flex-shrink-0 {{ selected if item.url === page.url }}">\n' +
+        '            <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>\n' +
+        '          </li>   \n' +
+        '        {% endfor %}\n' +
         '    </nav>\n' +
         '    <div class="px-4 py-8 lg:px-6">\n' +
         "      {% if not tags -%} {%- elif 'post' in tags -%}\n" +
@@ -1507,11 +1922,11 @@
       bugs: [Object],
       homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
       dependencies: [Object],
-      devDependencies: {}
+      devDependencies: [Object]
     },
     layout: 'main.html',
     page: {
-      date: 2021-06-20T14:21:16.557Z,
+      date: 2021-06-20T15:48:18.224Z,
       inputPath: './src/objects.html',
       fileSlug: 'objects',
       filePathStem: '/objects',
@@ -1521,19 +1936,19 @@
     collections: {
       all: [Array],
       post: [Array],
-      eleventy: [Array],
-      nunjucks: [Array],
-      javascript: [Array],
-      'GitHub Pages': [Array],
       Eleventy: [Array],
+      Nunjucks: [Array],
+      Javascript: [Array],
+      'GitHub Pages': [Array],
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-20T14:21:16.557Z,
+  date: 2021-06-20T15:48:18.224Z,
   outputPath: '_site/objects/index.html',
   url: '/objects/',
   templateContent: [Getter/Setter]
 }</pre>
+</article>
 <br>
 <hr>
 <br>
