@@ -1,11 +1,11 @@
 <!DOCTYPE html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/main.css"><title>Conditional Render by Tags in Eleventy</title></head><body>
 <!-- Left Side -->
-<header class="lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8">
+<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 bg-gray-50 lg:border-b-0">
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
       <ul class="flex flex-wrap">
         <li class="flex-shrink-0 font-black">
-          <a class="block px-3 pt-6 rounded-sm" href="/">/zul/</a>
+          <a class="block px-3 pt-6 text-white bg-gray-700 rounded-sm" href="/">/zul/</a>
         </li>
         <li class="flex-shrink-0">
           <a class="block px-3 pt-6" href="/objects">Contact</a>
@@ -34,7 +34,7 @@
 </header>
 <div class="lg:grid lg:grid-cols-6">
   <!-- Middle -->
-  <div class="lg:col-start-3 lg:col-span-3">
+  <div class="shadow-lg lg:col-start-3 lg:col-span-3">
     <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">
       
       <div>
@@ -44,7 +44,7 @@
 <pre><code class="language-nunjucks">eleventyConfig.addFilter('includesPost', arr =&gt; arr.includes('post'))
 </code></pre>
 <p>The custom filter supposed to check if <code>tags</code> of a post includes <code>post</code> tag as its member. Tags are array in Eleventy so I expected a smooth journey, but things go awry in the console. Eleventy crashed when rendering root <code>/index.html</code> file.</p>
-<p>After careful inspection on the rendering error, I realized that the filter always trying to iterate over uniterable item before crashing.</p>
+<p>After careful inspection on the rendering error, I realized that the filter were always trying to iterate over uniterable item before crashing.</p>
 <p>This makes me utterly confused, how could that be possible? Is it possible that tags didn't always return array but stringified value?</p>
 <p>One trick I managed to learn is to print the value of objects using built-in Nunjucks <code>dump()</code> filter. It turned out that <code>tags</code> is array as expected.</p>
 <pre><code class="language-nunjucks">{{ tags | dump(2) }}
@@ -81,5 +81,7 @@
 
   <!-- Right Side -->
   
+  <div class="lg:border-l lg:col-start-6 lg:col-span-1 bg-gray-50"></div>
+ 
 </div>
 </body>

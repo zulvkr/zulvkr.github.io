@@ -1,0 +1,100 @@
+<!DOCTYPE html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/main.css"><title>How to deploy Eleventy to GitHub Pages</title></head><body>
+<!-- Left Side -->
+<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 bg-gray-50 lg:border-b-0">
+  <div class="mx-auto max-w-prose">
+    <nav class="p-4 text-sm lg:px-6">
+      <ul class="flex flex-wrap">
+        <li class="flex-shrink-0 font-black">
+          <a class="block px-3 pt-6 text-white bg-gray-700 rounded-sm" href="/">/zul/</a>
+        </li>
+        <li class="flex-shrink-0">
+          <a class="block px-3 pt-6" href="/objects">Contact</a>
+        </li>
+        <li class="flex-shrink-0">
+          <a
+            class="block px-3 pt-6"
+            href="/posts/conditional-render-by-tags-eleventy"
+            >Profile</a
+          >
+        </li>
+        <li class="flex-shrink-0">
+          <a class="block px-3 pt-6" href="/for-hire">For Hire</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="px-4 py-8 lg:px-6">
+      <h1 id="title" class="pb-6 text-5xl font-bold text-gray-800">
+        How to deploy Eleventy to GitHub Pages
+      </h1>
+      <h2 id="description" class="text-xl italic text-gray-600">
+        How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.
+      </h2>
+    </div>
+  </div>
+</header>
+<div class="lg:grid lg:grid-cols-6">
+  <!-- Middle -->
+  <div class="shadow-lg lg:col-start-3 lg:col-span-3">
+    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">
+      
+      <div>
+<article class="prose">
+  <div class="font-serif"><p>Setting up a GitHub action for a static site generator surprisingly easy without any hassle. GitHub action supports various language and they posted lots of boilerplate configuration for a whole bunch of SSG. You can check the official tutorial <a href="https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-static-site-generators-with-nodejs">here</a>.</p>
+<p>There is no official boilerplate for eleventy, but the configuration is easy to learn.</p>
+<h2>Configuration</h2>
+<pre><code class="language-YAML">name: github pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+      
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04 
+    steps:
+        - uses: actions/checkout@v2
+
+        - name: Setup Node
+          uses: actions/setup-node@v2
+          with:
+            node-version: '14'
+
+        - name: Cache dependencies
+          uses: actions/cache@v2
+          with:
+            path: ~/.npm
+            key: $-node-$
+            restore-keys: |
+              $-node-
+
+        - run: npm ci
+        - run: npm run build # Your build script in package.json
+
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          if: github.ref == 'refs/heads/main'
+          with:
+            github_token: $
+            publish_dir: ./_site # Your eleventy output folder
+</code></pre>
+<p>This configuration is adapted from official tutorial and <a href="https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay/">lea-tortay post</a>. You just have to save it and in <code>.github/workflows/gh-pages.yml</code>. Replace commented part with your own build script and output folder.</p>
+<p>You may want to add <code>.nojekyll</code> file to your root folder for fail-safe.</p>
+<h2>What this configuration will do</h2>
+<p>This configuration will tell GitHub to run <code>npm run build</code> every time you push to main branch. <code>GITHUB_TOKEN</code> will work without any SSH configuration with small caveats: you have to configure GitHub Pages to use <code>gh-pages</code> branch as its source.</p>
+<p><code>gh-pages</code> branch will be created automatically after first deployment, so you have to change it after first deploy. You can check the detail in <a href="https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-first-deployment-with-github_token">the official tutorial here</a>.</p>
+<p>The official tutorial said GitHub Pages action will add <code>.nojekyll</code> automatically so you don't have to add them yourself.</p>
+<p>GitHub Pages action also support scheduled action, pretty cool.</p>
+</div>
+</article>
+</div>
+    </div>
+  </div>
+
+  <!-- Right Side -->
+  
+  <div class="lg:border-l lg:col-start-6 lg:col-span-1 bg-gray-50"></div>
+ 
+</div>
+</body>

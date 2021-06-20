@@ -1,11 +1,11 @@
 <!DOCTYPE html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/main.css"><title>zul</title></head><body>
 <!-- Left Side -->
-<header class="lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8">
+<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 bg-gray-50 lg:border-b-0">
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
       <ul class="flex flex-wrap">
         <li class="flex-shrink-0 font-black">
-          <a class="block px-3 pt-6 rounded-sm" href="/">/zul/</a>
+          <a class="block px-3 pt-6 text-white bg-gray-700 rounded-sm" href="/">/zul/</a>
         </li>
         <li class="flex-shrink-0">
           <a class="block px-3 pt-6" href="/objects">Contact</a>
@@ -37,264 +37,10 @@
 </header>
 <div class="lg:grid lg:grid-cols-6">
   <!-- Middle -->
-  <div class="lg:col-start-3 lg:col-span-3">
+  <div class="shadow-lg lg:col-start-3 lg:col-span-3">
     <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">
       
       <div>
-
-<pre>{
-  template: Template {
-    inputPath: './src/posts/post1.md',
-    inputDir: 'src',
-    parsed: {
-      root: '',
-      dir: './src/posts',
-      base: 'post1.md',
-      ext: '.md',
-      name: 'post1',
-      extname: '.md',
-      basename: 'post1.md',
-      dirname: './src/posts',
-      stem: 'post1',
-      path: './src/posts/post1.md',
-      absolute: [Getter/Setter],
-      isAbsolute: [Getter/Setter]
-    },
-    extraOutputSubdirectory: '',
-    outputDir: '_site',
-    _extensionMap: EleventyExtensionMap {
-      formatKeys: [Array],
-      unfilteredFormatKeys: [Array],
-      _extensionToKeyMap: [Object],
-      validTemplateLanguageKeys: [Array],
-      passthroughCopyKeys: [],
-      configOverride: [Object],
-      _engineManager: [TemplateEngineManager]
-    },
-    linters: [],
-    transforms: [],
-    plugins: {},
-    templateData: TemplateData {
-      config: [Object],
-      dataTemplateEngine: 'liquid',
-      inputDirNeedsCheck: true,
-      inputDir: 'src',
-      dataDir: 'src/_data',
-      rawImports: [Object],
-      globalData: [Object],
-      _extensionMap: [EleventyExtensionMap],
-      pathCache: [Array]
-    },
-    paginationData: {},
-    isVerbose: true,
-    isDryRun: false,
-    writeCount: 0,
-    skippedCount: 0,
-    wrapWithLayouts: true,
-    fileSlug: TemplateFileSlug {
-      inputPath: 'posts/post1.md',
-      cleanInputPath: 'posts/post1.md',
-      dirs: [Array],
-      parsed: [Object],
-      filenameNoExt: 'post1'
-    },
-    fileSlugStr: 'post1',
-    filePathStem: '/posts/post1',
-    _templateRender: TemplateRender {
-      engineNameOrPath: './src/posts/post1.md',
-      inputDir: 'src',
-      _config: [Object],
-      includesDir: 'src/_includes',
-      parseMarkdownWith: 'liquid',
-      parseHtmlWith: 'njk',
-      _extensionMap: [EleventyExtensionMap],
-      _engineName: 'md',
-      _engine: [Markdown],
-      useMarkdown: true
-    },
-    inputContent: '---\n' +
-      'layout: blog.html\n' +
-      'title: Lorem Post 1\n' +
-      'description: Nulla ut consequat minim officia magna culpa sint occaecat laborum.\n' +
-      'date: 2021-06-01\n' +
-      'tags:\n' +
-      '  - post\n' +
-      '  - example\n' +
-      '---\n' +
-      'Sint cupidatat in aliquip ad officia qui cillum cillum veniam nulla cupidatat esse. Pariatur ad ad ipsum sit non nostrud sint proident. Nulla et laborum dolor aliquip excepteur anim enim enim esse exercitation pariatur et deserunt proident. Ipsum tempor veniam voluptate exercitation veniam reprehenderit cillum duis proident. Elit deserunt deserunt laborum irure veniam est. Anim magna ex incididunt do do culpa cupidatat occaecat anim laborum elit. Commodo occaecat nulla quis eu consectetur.\n' +
-      '\n' +
-      'Velit mollit sit nisi proident aliquip magna non aliquip proident nostrud culpa consectetur aliqua. Irure exercitation fugiat elit dolor. Labore amet labore ad pariatur elit ea aute.\n' +
-      '\n' +
-      'Aliquip aliqua et enim qui cillum. In laboris sit sint labore ut consectetur. Exercitation mollit consequat non nulla nisi. Dolore elit nulla enim sit amet cupidatat nulla est sit culpa irure. Aute ipsum elit amet dolore. Fugiat pariatur qui aute in dolore voluptate pariatur elit excepteur consectetur. Anim sunt cillum do magna laboris pariatur enim velit amet.\n' +
-      '\n' +
-      'Sint anim laborum commodo ex ea anim amet mollit. Ullamco excepteur aute velit qui ullamco occaecat cillum labore cillum commodo proident. Aute voluptate do laborum consequat consectetur quis consequat. Minim nostrud consectetur fugiat magna pariatur nostrud et amet incididunt duis deserunt ullamco enim in. Laboris aute elit est quis adipisicing laboris.\n' +
-      '\n' +
-      'Velit cillum ullamco ex laborum adipisicing esse enim ipsum culpa ea commodo ut deserunt irure. Reprehenderit duis veniam qui ut nulla non eiusmod occaecat in fugiat consectetur excepteur laborum. Reprehenderit pariatur aute aliquip pariatur exercitation est laborum nostrud dolor anim nulla. Nisi nisi nulla magna esse enim id consequat labore ullamco Lorem dolore qui.\n',
-    _config: {
-      templateFormats: [Array],
-      pathPrefix: '/',
-      markdownTemplateEngine: 'liquid',
-      htmlTemplateEngine: 'njk',
-      dataTemplateEngine: 'liquid',
-      passthroughFileCopy: true,
-      htmlOutputSuffix: '-o',
-      jsDataFileSuffix: '.11tydata',
-      keys: [Object],
-      dir: [Object],
-      filters: {},
-      handlebarsHelpers: [Object],
-      nunjucksFilters: [Object],
-      linters: {},
-      layoutAliases: {},
-      passthroughCopies: [Object],
-      liquidOptions: {},
-      liquidTags: {},
-      liquidFilters: [Object],
-      liquidShortcodes: {},
-      liquidPairedShortcodes: {},
-      nunjucksAsyncFilters: {},
-      nunjucksTags: {},
-      nunjucksAsyncShortcodes: {},
-      nunjucksShortcodes: {},
-      nunjucksAsyncPairedShortcodes: {},
-      nunjucksPairedShortcodes: {},
-      handlebarsShortcodes: {},
-      handlebarsPairedShortcodes: {},
-      javascriptFunctions: [Object],
-      pugOptions: {},
-      ejsOptions: {},
-      markdownHighlighter: null,
-      libraryOverrides: {},
-      dynamicPermalinks: true,
-      useGitIgnore: true,
-      dataDeepMerge: false,
-      watchJavaScriptDependencies: true,
-      additionalWatchTargets: [],
-      browserSyncConfig: {},
-      chokidarConfig: {},
-      watchThrottleWaitTime: 0,
-      frontMatterParsingOptions: undefined,
-      dataExtensions: Map(0) {},
-      extensionMap: Set(0) {},
-      quietMode: false,
-      events: [EventEmitter],
-      inputDir: 'src'
-    },
-    frontMatter: {
-      content: 'Sint cupidatat in aliquip ad officia qui cillum cillum veniam nulla cupidatat esse. Pariatur ad ad ipsum sit non nostrud sint proident. Nulla et laborum dolor aliquip excepteur anim enim enim esse exercitation pariatur et deserunt proident. Ipsum tempor veniam voluptate exercitation veniam reprehenderit cillum duis proident. Elit deserunt deserunt laborum irure veniam est. Anim magna ex incididunt do do culpa cupidatat occaecat anim laborum elit. Commodo occaecat nulla quis eu consectetur.\n' +
-        '\n' +
-        'Velit mollit sit nisi proident aliquip magna non aliquip proident nostrud culpa consectetur aliqua. Irure exercitation fugiat elit dolor. Labore amet labore ad pariatur elit ea aute.\n' +
-        '\n' +
-        'Aliquip aliqua et enim qui cillum. In laboris sit sint labore ut consectetur. Exercitation mollit consequat non nulla nisi. Dolore elit nulla enim sit amet cupidatat nulla est sit culpa irure. Aute ipsum elit amet dolore. Fugiat pariatur qui aute in dolore voluptate pariatur elit excepteur consectetur. Anim sunt cillum do magna laboris pariatur enim velit amet.\n' +
-        '\n' +
-        'Sint anim laborum commodo ex ea anim amet mollit. Ullamco excepteur aute velit qui ullamco occaecat cillum labore cillum commodo proident. Aute voluptate do laborum consequat consectetur quis consequat. Minim nostrud consectetur fugiat magna pariatur nostrud et amet incididunt duis deserunt ullamco enim in. Laboris aute elit est quis adipisicing laboris.\n' +
-        '\n' +
-        'Velit cillum ullamco ex laborum adipisicing esse enim ipsum culpa ea commodo ut deserunt irure. Reprehenderit duis veniam qui ut nulla non eiusmod occaecat in fugiat consectetur excepteur laborum. Reprehenderit pariatur aute aliquip pariatur exercitation est laborum nostrud dolor anim nulla. Nisi nisi nulla magna esse enim id consequat labore ullamco Lorem dolore qui.\n',
-      data: [Object],
-      isEmpty: false,
-      excerpt: ''
-    },
-    _layoutKey: 'blog.html',
-    _layout: TemplateLayout {
-      inputPath: './src/_includes/blog.html',
-      inputDir: 'src',
-      _extensionMap: [EleventyExtensionMap],
-      dataKeyLayoutPath: 'blog.html',
-      _config: [Object],
-      _templateRender: [TemplateRender],
-      inputContent: '---\n' +
-        'layout: main.html\n' +
-        '---\n' +
-        '\n' +
-        '<article class="prose">\n' +
-        '  <div class="font-serif">{{ content | safe }}</div>\n' +
-        '</article>\n',
-      frontMatter: [Object],
-      mapCache: [Array],
-      layoutChain: [Array],
-      dataCache: {}
-    },
-    dataCache: {
-      metadata: [Object],
-      pkg: [Object],
-      layout: 'blog.html',
-      title: 'Lorem Post 1',
-      description: 'Nulla ut consequat minim officia magna culpa sint occaecat laborum.',
-      date: 2021-06-01T00:00:00.000Z,
-      tags: [Array],
-      page: [Object]
-    },
-    computedData: ComputedData {
-      computed: [Object],
-      templateStringKeyLookup: [Object],
-      computedKeys: [Set],
-      declaredDependencies: [Object],
-      queue: [ComputedDataQueue]
-    }
-  },
-  inputPath: './src/posts/post1.md',
-  fileSlug: 'post1',
-  filePathStem: '/posts/post1',
-  data: {
-    metadata: {
-      title: 'zul',
-      description: '\n' +
-        '      Array of writings I want to share with the world.\n' +
-        "      I haven't write much though.\n" +
-        '      '
-    },
-    pkg: {
-      name: 'zulvkr.github.io',
-      version: '1.0.0',
-      description: 'Personal website',
-      main: '.eleventy.js',
-      scripts: [Object],
-      repository: [Object],
-      keywords: [],
-      author: '',
-      license: 'ISC',
-      bugs: [Object],
-      homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
-      dependencies: [Object],
-      devDependencies: {}
-    },
-    layout: 'blog.html',
-    title: 'Lorem Post 1',
-    description: 'Nulla ut consequat minim officia magna culpa sint occaecat laborum.',
-    date: 2021-06-01T00:00:00.000Z,
-    tags: [ 'post', 'example' ],
-    page: {
-      date: 2021-06-01T00:00:00.000Z,
-      inputPath: './src/posts/post1.md',
-      fileSlug: 'post1',
-      filePathStem: '/posts/post1',
-      url: '/posts/post1/',
-      outputPath: '_site/posts/post1/index.html'
-    },
-    collections: {
-      all: [Array],
-      post: [Array],
-      eleventy: [Array],
-      nunjucks: [Array],
-      javascript: [Array],
-      example: [Array]
-    }
-  },
-  date: 2021-06-01T00:00:00.000Z,
-  outputPath: '_site/posts/post1/index.html',
-  url: '/posts/post1/',
-  templateContent: [Getter/Setter],
-  _templateContent: '<p>Sint cupidatat in aliquip ad officia qui cillum cillum veniam nulla cupidatat esse. Pariatur ad ad ipsum sit non nostrud sint proident. Nulla et laborum dolor aliquip excepteur anim enim enim esse exercitation pariatur et deserunt proident. Ipsum tempor veniam voluptate exercitation veniam reprehenderit cillum duis proident. Elit deserunt deserunt laborum irure veniam est. Anim magna ex incididunt do do culpa cupidatat occaecat anim laborum elit. Commodo occaecat nulla quis eu consectetur.</p>\n' +
-    '<p>Velit mollit sit nisi proident aliquip magna non aliquip proident nostrud culpa consectetur aliqua. Irure exercitation fugiat elit dolor. Labore amet labore ad pariatur elit ea aute.</p>\n' +
-    '<p>Aliquip aliqua et enim qui cillum. In laboris sit sint labore ut consectetur. Exercitation mollit consequat non nulla nisi. Dolore elit nulla enim sit amet cupidatat nulla est sit culpa irure. Aute ipsum elit amet dolore. Fugiat pariatur qui aute in dolore voluptate pariatur elit excepteur consectetur. Anim sunt cillum do magna laboris pariatur enim velit amet.</p>\n' +
-    '<p>Sint anim laborum commodo ex ea anim amet mollit. Ullamco excepteur aute velit qui ullamco occaecat cillum labore cillum commodo proident. Aute voluptate do laborum consequat consectetur quis consequat. Minim nostrud consectetur fugiat magna pariatur nostrud et amet incididunt duis deserunt ullamco enim in. Laboris aute elit est quis adipisicing laboris.</p>\n' +
-    '<p>Velit cillum ullamco ex laborum adipisicing esse enim ipsum culpa ea commodo ut deserunt irure. Reprehenderit duis veniam qui ut nulla non eiusmod occaecat in fugiat consectetur excepteur laborum. Reprehenderit pariatur aute aliquip pariatur exercitation est laborum nostrud dolor anim nulla. Nisi nisi nulla magna esse enim id consequat labore ullamco Lorem dolore qui.</p>\n'
-}</pre>
-<br>
-<hr>
-<br>
-
-
 
 <pre>{
   template: Template {
@@ -388,7 +134,7 @@
       '\n' +
       'The custom filter supposed to check if `tags` of a post includes `post` tag as its member. Tags are array in Eleventy so I expected a smooth journey, but things go awry in the console. Eleventy crashed when rendering root `/index.html` file.\n' +
       '\n' +
-      'After careful inspection on the rendering error, I realized that the filter always trying to iterate over uniterable item before crashing.\n' +
+      'After careful inspection on the rendering error, I realized that the filter were always trying to iterate over uniterable item before crashing.\n' +
       '\n' +
       "This makes me utterly confused, how could that be possible? Is it possible that tags didn't always return array but stringified value?\n" +
       '\n' +
@@ -397,8 +143,9 @@
       '```nunjucks\n' +
       '{%- raw -%}\n' +
       '{{ tags | dump(2) }}\n' +
-      '{%- endraw %}\n' +
+      '\n' +
       "{# it prints ['tag1', 'post'] just fine #}\n" +
+      '{%- endraw -%}\n' +
       '```\n' +
       '\n' +
       'Some testing and an hour of debugging later, the culprit was found! Not every post in Eleventy has `tags` as property, which makes caling `tags` key will return `undefined` when reaching some pages. Wild `undefined` tags consistently appeared in any posts that has no tags assigned in their frontmatter.\n' +
@@ -505,7 +252,7 @@
         '\n' +
         'The custom filter supposed to check if `tags` of a post includes `post` tag as its member. Tags are array in Eleventy so I expected a smooth journey, but things go awry in the console. Eleventy crashed when rendering root `/index.html` file.\n' +
         '\n' +
-        'After careful inspection on the rendering error, I realized that the filter always trying to iterate over uniterable item before crashing.\n' +
+        'After careful inspection on the rendering error, I realized that the filter were always trying to iterate over uniterable item before crashing.\n' +
         '\n' +
         "This makes me utterly confused, how could that be possible? Is it possible that tags didn't always return array but stringified value?\n" +
         '\n' +
@@ -514,8 +261,9 @@
         '```nunjucks\n' +
         '{%- raw -%}\n' +
         '{{ tags | dump(2) }}\n' +
-        '{%- endraw %}\n' +
+        '\n' +
         "{# it prints ['tag1', 'post'] just fine #}\n" +
+        '{%- endraw -%}\n' +
         '```\n' +
         '\n' +
         'Some testing and an hour of debugging later, the culprit was found! Not every post in Eleventy has `tags` as property, which makes caling `tags` key will return `undefined` when reaching some pages. Wild `undefined` tags consistently appeared in any posts that has no tags assigned in their frontmatter.\n' +
@@ -647,7 +395,9 @@
       eleventy: [Array],
       nunjucks: [Array],
       javascript: [Array],
-      example: [Array]
+      'GitHub Pages': [Array],
+      Eleventy: [Array],
+      'GitHub Action': [Array]
     },
     references: { '1': [Object] }
   },
@@ -660,7 +410,7 @@
     `<pre><code class="language-nunjucks">eleventyConfig.addFilter('includesPost', arr =&gt; arr.includes('post'))\n` +
     '</code></pre>\n' +
     '<p>The custom filter supposed to check if <code>tags</code> of a post includes <code>post</code> tag as its member. Tags are array in Eleventy so I expected a smooth journey, but things go awry in the console. Eleventy crashed when rendering root <code>/index.html</code> file.</p>\n' +
-    '<p>After careful inspection on the rendering error, I realized that the filter always trying to iterate over uniterable item before crashing.</p>\n' +
+    '<p>After careful inspection on the rendering error, I realized that the filter were always trying to iterate over uniterable item before crashing.</p>\n' +
     "<p>This makes me utterly confused, how could that be possible? Is it possible that tags didn't always return array but stringified value?</p>\n" +
     '<p>One trick I managed to learn is to print the value of objects using built-in Nunjucks <code>dump()</code> filter. It turned out that <code>tags</code> is array as expected.</p>\n' +
     '<pre><code class="language-nunjucks">{{ tags | dump(2) }}\n' +
@@ -689,6 +439,422 @@
     '</code></pre>\n' +
     "<p>Does all array methods work in Nunjucks? I don't even find this notion in the documentation, or is it obscured somewhere? I hope the ability to use built-in JavaScript object methods is written in prominent way in Nunjucks documentation. It's a game changer.</p>\n" +
     '<p>Anyway, both solutions are amazing for my use case! I ditched my custom filter and used these semantic syntax for this blog. Lots of thanks to Ryuno-ki who pointed <a href="https://github.com/11ty/eleventy/issues/524">this out in this thread</a> and all folks who contributed to that thread.</p>\n'
+}</pre>
+<br>
+<hr>
+<br>
+
+
+
+<pre>{
+  template: Template {
+    inputPath: './src/posts/how-to-deploy-11ty-gh-pages.md',
+    inputDir: 'src',
+    parsed: {
+      root: '',
+      dir: './src/posts',
+      base: 'how-to-deploy-11ty-gh-pages.md',
+      ext: '.md',
+      name: 'how-to-deploy-11ty-gh-pages',
+      extname: '.md',
+      basename: 'how-to-deploy-11ty-gh-pages.md',
+      dirname: './src/posts',
+      stem: 'how-to-deploy-11ty-gh-pages',
+      path: './src/posts/how-to-deploy-11ty-gh-pages.md',
+      absolute: [Getter/Setter],
+      isAbsolute: [Getter/Setter]
+    },
+    extraOutputSubdirectory: '',
+    outputDir: '_site',
+    _extensionMap: EleventyExtensionMap {
+      formatKeys: [Array],
+      unfilteredFormatKeys: [Array],
+      _extensionToKeyMap: [Object],
+      validTemplateLanguageKeys: [Array],
+      passthroughCopyKeys: [],
+      configOverride: [Object],
+      _engineManager: [TemplateEngineManager]
+    },
+    linters: [],
+    transforms: [],
+    plugins: {},
+    templateData: TemplateData {
+      config: [Object],
+      dataTemplateEngine: 'liquid',
+      inputDirNeedsCheck: true,
+      inputDir: 'src',
+      dataDir: 'src/_data',
+      rawImports: [Object],
+      globalData: [Object],
+      _extensionMap: [EleventyExtensionMap],
+      pathCache: [Array]
+    },
+    paginationData: {},
+    isVerbose: true,
+    isDryRun: false,
+    writeCount: 0,
+    skippedCount: 0,
+    wrapWithLayouts: true,
+    fileSlug: TemplateFileSlug {
+      inputPath: 'posts/how-to-deploy-11ty-gh-pages.md',
+      cleanInputPath: 'posts/how-to-deploy-11ty-gh-pages.md',
+      dirs: [Array],
+      parsed: [Object],
+      filenameNoExt: 'how-to-deploy-11ty-gh-pages'
+    },
+    fileSlugStr: 'how-to-deploy-11ty-gh-pages',
+    filePathStem: '/posts/how-to-deploy-11ty-gh-pages',
+    _templateRender: TemplateRender {
+      engineNameOrPath: './src/posts/how-to-deploy-11ty-gh-pages.md',
+      inputDir: 'src',
+      _config: [Object],
+      includesDir: 'src/_includes',
+      parseMarkdownWith: 'liquid',
+      parseHtmlWith: 'njk',
+      _extensionMap: [EleventyExtensionMap],
+      _engineName: 'md',
+      _engine: [Markdown],
+      useMarkdown: true
+    },
+    inputContent: '---\n' +
+      'layout: blog.html\n' +
+      'title: How to deploy Eleventy to GitHub Pages\n' +
+      'description: How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.\n' +
+      'date: 2021-06-20\n' +
+      'tags:\n' +
+      '  - GitHub Pages\n' +
+      '  - Eleventy\n' +
+      '  - GitHub Action\n' +
+      '---\n' +
+      '\n' +
+      'Setting up a GitHub action for a static site generator surprisingly easy without any hassle. GitHub action supports various language and they posted lots of boilerplate configuration for a whole bunch of SSG. You can check the official tutorial [here][1].\n' +
+      '\n' +
+      'There is no official boilerplate for eleventy, but the configuration is easy to learn.\n' +
+      '\n' +
+      '## Configuration\n' +
+      '\n' +
+      '```YAML\n' +
+      'name: github pages\n' +
+      '\n' +
+      'on:\n' +
+      '  push:\n' +
+      '    branches:\n' +
+      '      - main\n' +
+      '  pull_request:\n' +
+      '      \n' +
+      'jobs:\n' +
+      '  deploy:\n' +
+      '    runs-on: ubuntu-18.04 \n' +
+      '    steps:\n' +
+      '        - uses: actions/checkout@v2\n' +
+      '\n' +
+      '        - name: Setup Node\n' +
+      '          uses: actions/setup-node@v2\n' +
+      '          with:\n' +
+      "            node-version: '14'\n" +
+      '\n' +
+      '        - name: Cache dependencies\n' +
+      '          uses: actions/cache@v2\n' +
+      '          with:\n' +
+      '            path: ~/.npm\n' +
+      "            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}\n" +
+      '            restore-keys: |\n' +
+      '              ${{ runner.os }}-node-\n' +
+      '\n' +
+      '        - run: npm ci\n' +
+      '        - run: npm run build # Your build script in package.json\n' +
+      '\n' +
+      '        - name: Deploy\n' +
+      '          uses: peaceiris/actions-gh-pages@v3\n' +
+      "          if: github.ref == 'refs/heads/main'\n" +
+      '          with:\n' +
+      '            github_token: ${{ secrets.GITHUB_TOKEN }}\n' +
+      '            publish_dir: ./_site # Your eleventy output folder\n' +
+      '```\n' +
+      '\n' +
+      'This configuration is adapted from official tutorial and [lea-tortay post][2]. You just have to save it and in `.github/workflows/gh-pages.yml`. Replace commented part with your own build script and output folder.\n' +
+      '\n' +
+      'You may want to add `.nojekyll` file to your root folder for fail-safe.\n' +
+      '\n' +
+      '## What this configuration will do\n' +
+      '\n' +
+      'This configuration will tell GitHub to run `npm run build` every time you push to main branch. `GITHUB_TOKEN` will work without any SSH configuration with small caveats: you have to configure GitHub Pages to use `gh-pages` branch as its source.\n' +
+      '\n' +
+      '`gh-pages` branch will be created automatically after first deployment, so you have to change it after first deploy. You can check the detail in [the official tutorial here][3].\n' +
+      '\n' +
+      "The official tutorial said GitHub Pages action will add `.nojekyll` automatically so you don't have to add them yourself.\n" +
+      '\n' +
+      'GitHub Pages action also support scheduled action, pretty cool.\n' +
+      '\n' +
+      '\n' +
+      '\n' +
+      '[1]: https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-static-site-generators-with-nodejs\n' +
+      '\n' +
+      '[2]: https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay/\n' +
+      '\n' +
+      '[3]: https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-first-deployment-with-github_token',
+    _config: {
+      templateFormats: [Array],
+      pathPrefix: '/',
+      markdownTemplateEngine: 'liquid',
+      htmlTemplateEngine: 'njk',
+      dataTemplateEngine: 'liquid',
+      passthroughFileCopy: true,
+      htmlOutputSuffix: '-o',
+      jsDataFileSuffix: '.11tydata',
+      keys: [Object],
+      dir: [Object],
+      filters: {},
+      handlebarsHelpers: [Object],
+      nunjucksFilters: [Object],
+      linters: {},
+      layoutAliases: {},
+      passthroughCopies: [Object],
+      liquidOptions: {},
+      liquidTags: {},
+      liquidFilters: [Object],
+      liquidShortcodes: {},
+      liquidPairedShortcodes: {},
+      nunjucksAsyncFilters: {},
+      nunjucksTags: {},
+      nunjucksAsyncShortcodes: {},
+      nunjucksShortcodes: {},
+      nunjucksAsyncPairedShortcodes: {},
+      nunjucksPairedShortcodes: {},
+      handlebarsShortcodes: {},
+      handlebarsPairedShortcodes: {},
+      javascriptFunctions: [Object],
+      pugOptions: {},
+      ejsOptions: {},
+      markdownHighlighter: null,
+      libraryOverrides: {},
+      dynamicPermalinks: true,
+      useGitIgnore: true,
+      dataDeepMerge: false,
+      watchJavaScriptDependencies: true,
+      additionalWatchTargets: [],
+      browserSyncConfig: {},
+      chokidarConfig: {},
+      watchThrottleWaitTime: 0,
+      frontMatterParsingOptions: undefined,
+      dataExtensions: Map(0) {},
+      extensionMap: Set(0) {},
+      quietMode: false,
+      events: [EventEmitter],
+      inputDir: 'src'
+    },
+    frontMatter: {
+      content: '\n' +
+        'Setting up a GitHub action for a static site generator surprisingly easy without any hassle. GitHub action supports various language and they posted lots of boilerplate configuration for a whole bunch of SSG. You can check the official tutorial [here][1].\n' +
+        '\n' +
+        'There is no official boilerplate for eleventy, but the configuration is easy to learn.\n' +
+        '\n' +
+        '## Configuration\n' +
+        '\n' +
+        '```YAML\n' +
+        'name: github pages\n' +
+        '\n' +
+        'on:\n' +
+        '  push:\n' +
+        '    branches:\n' +
+        '      - main\n' +
+        '  pull_request:\n' +
+        '      \n' +
+        'jobs:\n' +
+        '  deploy:\n' +
+        '    runs-on: ubuntu-18.04 \n' +
+        '    steps:\n' +
+        '        - uses: actions/checkout@v2\n' +
+        '\n' +
+        '        - name: Setup Node\n' +
+        '          uses: actions/setup-node@v2\n' +
+        '          with:\n' +
+        "            node-version: '14'\n" +
+        '\n' +
+        '        - name: Cache dependencies\n' +
+        '          uses: actions/cache@v2\n' +
+        '          with:\n' +
+        '            path: ~/.npm\n' +
+        "            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}\n" +
+        '            restore-keys: |\n' +
+        '              ${{ runner.os }}-node-\n' +
+        '\n' +
+        '        - run: npm ci\n' +
+        '        - run: npm run build # Your build script in package.json\n' +
+        '\n' +
+        '        - name: Deploy\n' +
+        '          uses: peaceiris/actions-gh-pages@v3\n' +
+        "          if: github.ref == 'refs/heads/main'\n" +
+        '          with:\n' +
+        '            github_token: ${{ secrets.GITHUB_TOKEN }}\n' +
+        '            publish_dir: ./_site # Your eleventy output folder\n' +
+        '```\n' +
+        '\n' +
+        'This configuration is adapted from official tutorial and [lea-tortay post][2]. You just have to save it and in `.github/workflows/gh-pages.yml`. Replace commented part with your own build script and output folder.\n' +
+        '\n' +
+        'You may want to add `.nojekyll` file to your root folder for fail-safe.\n' +
+        '\n' +
+        '## What this configuration will do\n' +
+        '\n' +
+        'This configuration will tell GitHub to run `npm run build` every time you push to main branch. `GITHUB_TOKEN` will work without any SSH configuration with small caveats: you have to configure GitHub Pages to use `gh-pages` branch as its source.\n' +
+        '\n' +
+        '`gh-pages` branch will be created automatically after first deployment, so you have to change it after first deploy. You can check the detail in [the official tutorial here][3].\n' +
+        '\n' +
+        "The official tutorial said GitHub Pages action will add `.nojekyll` automatically so you don't have to add them yourself.\n" +
+        '\n' +
+        'GitHub Pages action also support scheduled action, pretty cool.\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '[1]: https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-static-site-generators-with-nodejs\n' +
+        '\n' +
+        '[2]: https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay/\n' +
+        '\n' +
+        '[3]: https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-first-deployment-with-github_token',
+      data: [Object],
+      isEmpty: false,
+      excerpt: ''
+    },
+    _layoutKey: 'blog.html',
+    _layout: TemplateLayout {
+      inputPath: './src/_includes/blog.html',
+      inputDir: 'src',
+      _extensionMap: [EleventyExtensionMap],
+      dataKeyLayoutPath: 'blog.html',
+      _config: [Object],
+      _templateRender: [TemplateRender],
+      inputContent: '---\n' +
+        'layout: main.html\n' +
+        '---\n' +
+        '\n' +
+        '<article class="prose">\n' +
+        '  <div class="font-serif">{{ content | safe }}</div>\n' +
+        '</article>\n',
+      frontMatter: [Object],
+      mapCache: [Array],
+      layoutChain: [Array],
+      dataCache: {}
+    },
+    dataCache: {
+      metadata: [Object],
+      pkg: [Object],
+      layout: 'blog.html',
+      title: 'How to deploy Eleventy to GitHub Pages',
+      description: 'How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.',
+      date: 2021-06-20T00:00:00.000Z,
+      tags: [Array],
+      page: [Object]
+    },
+    computedData: ComputedData {
+      computed: [Object],
+      templateStringKeyLookup: [Object],
+      computedKeys: [Set],
+      declaredDependencies: [Object],
+      queue: [ComputedDataQueue]
+    }
+  },
+  inputPath: './src/posts/how-to-deploy-11ty-gh-pages.md',
+  fileSlug: 'how-to-deploy-11ty-gh-pages',
+  filePathStem: '/posts/how-to-deploy-11ty-gh-pages',
+  data: {
+    metadata: {
+      title: 'zul',
+      description: '\n' +
+        '      Array of writings I want to share with the world.\n' +
+        "      I haven't write much though.\n" +
+        '      '
+    },
+    pkg: {
+      name: 'zulvkr.github.io',
+      version: '1.0.0',
+      description: 'Personal website',
+      main: '.eleventy.js',
+      scripts: [Object],
+      repository: [Object],
+      keywords: [],
+      author: '',
+      license: 'ISC',
+      bugs: [Object],
+      homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
+      dependencies: [Object],
+      devDependencies: {}
+    },
+    layout: 'blog.html',
+    title: 'How to deploy Eleventy to GitHub Pages',
+    description: 'How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.',
+    date: 2021-06-20T00:00:00.000Z,
+    tags: [ 'GitHub Pages', 'Eleventy', 'GitHub Action' ],
+    page: {
+      date: 2021-06-20T00:00:00.000Z,
+      inputPath: './src/posts/how-to-deploy-11ty-gh-pages.md',
+      fileSlug: 'how-to-deploy-11ty-gh-pages',
+      filePathStem: '/posts/how-to-deploy-11ty-gh-pages',
+      url: '/posts/how-to-deploy-11ty-gh-pages/',
+      outputPath: '_site/posts/how-to-deploy-11ty-gh-pages/index.html'
+    },
+    collections: {
+      all: [Array],
+      post: [Array],
+      eleventy: [Array],
+      nunjucks: [Array],
+      javascript: [Array],
+      'GitHub Pages': [Array],
+      Eleventy: [Array],
+      'GitHub Action': [Array]
+    },
+    references: { '1': [Object], '2': [Object], '3': [Object] }
+  },
+  date: 2021-06-20T00:00:00.000Z,
+  outputPath: '_site/posts/how-to-deploy-11ty-gh-pages/index.html',
+  url: '/posts/how-to-deploy-11ty-gh-pages/',
+  templateContent: [Getter/Setter],
+  _templateContent: '<p>Setting up a GitHub action for a static site generator surprisingly easy without any hassle. GitHub action supports various language and they posted lots of boilerplate configuration for a whole bunch of SSG. You can check the official tutorial <a href="https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-static-site-generators-with-nodejs">here</a>.</p>\n' +
+    '<p>There is no official boilerplate for eleventy, but the configuration is easy to learn.</p>\n' +
+    '<h2>Configuration</h2>\n' +
+    '<pre><code class="language-YAML">name: github pages\n' +
+    '\n' +
+    'on:\n' +
+    '  push:\n' +
+    '    branches:\n' +
+    '      - main\n' +
+    '  pull_request:\n' +
+    '      \n' +
+    'jobs:\n' +
+    '  deploy:\n' +
+    '    runs-on: ubuntu-18.04 \n' +
+    '    steps:\n' +
+    '        - uses: actions/checkout@v2\n' +
+    '\n' +
+    '        - name: Setup Node\n' +
+    '          uses: actions/setup-node@v2\n' +
+    '          with:\n' +
+    "            node-version: '14'\n" +
+    '\n' +
+    '        - name: Cache dependencies\n' +
+    '          uses: actions/cache@v2\n' +
+    '          with:\n' +
+    '            path: ~/.npm\n' +
+    '            key: $-node-$\n' +
+    '            restore-keys: |\n' +
+    '              $-node-\n' +
+    '\n' +
+    '        - run: npm ci\n' +
+    '        - run: npm run build # Your build script in package.json\n' +
+    '\n' +
+    '        - name: Deploy\n' +
+    '          uses: peaceiris/actions-gh-pages@v3\n' +
+    "          if: github.ref == 'refs/heads/main'\n" +
+    '          with:\n' +
+    '            github_token: $\n' +
+    '            publish_dir: ./_site # Your eleventy output folder\n' +
+    '</code></pre>\n' +
+    '<p>This configuration is adapted from official tutorial and <a href="https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay/">lea-tortay post</a>. You just have to save it and in <code>.github/workflows/gh-pages.yml</code>. Replace commented part with your own build script and output folder.</p>\n' +
+    '<p>You may want to add <code>.nojekyll</code> file to your root folder for fail-safe.</p>\n' +
+    '<h2>What this configuration will do</h2>\n' +
+    '<p>This configuration will tell GitHub to run <code>npm run build</code> every time you push to main branch. <code>GITHUB_TOKEN</code> will work without any SSH configuration with small caveats: you have to configure GitHub Pages to use <code>gh-pages</code> branch as its source.</p>\n' +
+    '<p><code>gh-pages</code> branch will be created automatically after first deployment, so you have to change it after first deploy. You can check the detail in <a href="https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-first-deployment-with-github_token">the official tutorial here</a>.</p>\n' +
+    "<p>The official tutorial said GitHub Pages action will add <code>.nojekyll</code> automatically so you don't have to add them yourself.</p>\n" +
+    '<p>GitHub Pages action also support scheduled action, pretty cool.</p>\n'
 }</pre>
 <br>
 <hr>
@@ -921,12 +1087,12 @@
         '---\n' +
         '\n' +
         '<!-- Left Side -->\n' +
-        '<header class="lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8">\n' +
+        '<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 bg-gray-50 lg:border-b-0">\n' +
         '  <div class="mx-auto max-w-prose">\n' +
         '    <nav class="p-4 text-sm lg:px-6">\n' +
         '      <ul class="flex flex-wrap">\n' +
         '        <li class="flex-shrink-0 font-black">\n' +
-        '          <a class="block px-3 pt-6 rounded-sm" href="/">/zul/</a>\n' +
+        '          <a class="block px-3 pt-6 text-white bg-gray-700 rounded-sm" href="/">/zul/</a>\n' +
         '        </li>\n' +
         '        <li class="flex-shrink-0">\n' +
         '          <a class="block px-3 pt-6" href="/objects">Contact</a>\n' +
@@ -958,7 +1124,7 @@
         '</header>\n' +
         '<div class="lg:grid lg:grid-cols-6">\n' +
         '  <!-- Middle -->\n' +
-        '  <div class="lg:col-start-3 lg:col-span-3">\n' +
+        '  <div class="shadow-lg lg:col-start-3 lg:col-span-3">\n' +
         '    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">\n' +
         '      {#\n' +
         '      <div>{{ page | debug | safe }}</div>\n' +
@@ -968,9 +1134,9 @@
         '  </div>\n' +
         '\n' +
         '  <!-- Right Side -->\n' +
-        '  {#\n' +
-        '  <div class="bg-gray-100 lg:col-start-6 lg:col-span-1">aaa</div>\n' +
-        '  #}\n' +
+        '  \n' +
+        '  <div class="lg:border-l lg:col-start-6 lg:col-span-1 bg-gray-50"></div>\n' +
+        ' \n' +
         '</div>\n',
       frontMatter: [Object],
       mapCache: [Array],
@@ -1019,7 +1185,7 @@
     },
     layout: 'main.html',
     page: {
-      date: 2021-06-19T12:52:10.216Z,
+      date: 2021-06-20T14:21:16.557Z,
       inputPath: './src/index.html',
       fileSlug: '',
       filePathStem: '/index',
@@ -1032,10 +1198,12 @@
       eleventy: [Array],
       nunjucks: [Array],
       javascript: [Array],
-      example: [Array]
+      'GitHub Pages': [Array],
+      Eleventy: [Array],
+      'GitHub Action': [Array]
     }
   },
-  date: 2021-06-19T12:52:10.216Z,
+  date: 2021-06-20T14:21:16.557Z,
   outputPath: '_site/index.html',
   url: '/',
   templateContent: [Getter/Setter],
@@ -1245,12 +1413,12 @@
         '---\n' +
         '\n' +
         '<!-- Left Side -->\n' +
-        '<header class="lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8">\n' +
+        '<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 bg-gray-50 lg:border-b-0">\n' +
         '  <div class="mx-auto max-w-prose">\n' +
         '    <nav class="p-4 text-sm lg:px-6">\n' +
         '      <ul class="flex flex-wrap">\n' +
         '        <li class="flex-shrink-0 font-black">\n' +
-        '          <a class="block px-3 pt-6 rounded-sm" href="/">/zul/</a>\n' +
+        '          <a class="block px-3 pt-6 text-white bg-gray-700 rounded-sm" href="/">/zul/</a>\n' +
         '        </li>\n' +
         '        <li class="flex-shrink-0">\n' +
         '          <a class="block px-3 pt-6" href="/objects">Contact</a>\n' +
@@ -1282,7 +1450,7 @@
         '</header>\n' +
         '<div class="lg:grid lg:grid-cols-6">\n' +
         '  <!-- Middle -->\n' +
-        '  <div class="lg:col-start-3 lg:col-span-3">\n' +
+        '  <div class="shadow-lg lg:col-start-3 lg:col-span-3">\n' +
         '    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">\n' +
         '      {#\n' +
         '      <div>{{ page | debug | safe }}</div>\n' +
@@ -1292,9 +1460,9 @@
         '  </div>\n' +
         '\n' +
         '  <!-- Right Side -->\n' +
-        '  {#\n' +
-        '  <div class="bg-gray-100 lg:col-start-6 lg:col-span-1">aaa</div>\n' +
-        '  #}\n' +
+        '  \n' +
+        '  <div class="lg:border-l lg:col-start-6 lg:col-span-1 bg-gray-50"></div>\n' +
+        ' \n' +
         '</div>\n',
       frontMatter: [Object],
       mapCache: [Array],
@@ -1343,7 +1511,7 @@
     },
     layout: 'main.html',
     page: {
-      date: 2021-06-19T12:52:10.216Z,
+      date: 2021-06-20T14:21:16.557Z,
       inputPath: './src/objects.html',
       fileSlug: 'objects',
       filePathStem: '/objects',
@@ -1356,10 +1524,12 @@
       eleventy: [Array],
       nunjucks: [Array],
       javascript: [Array],
-      example: [Array]
+      'GitHub Pages': [Array],
+      Eleventy: [Array],
+      'GitHub Action': [Array]
     }
   },
-  date: 2021-06-19T12:52:10.216Z,
+  date: 2021-06-20T14:21:16.557Z,
   outputPath: '_site/objects/index.html',
   url: '/objects/',
   templateContent: [Getter/Setter]
@@ -1374,5 +1544,7 @@
 
   <!-- Right Side -->
   
+  <div class="lg:border-l lg:col-start-6 lg:col-span-1 bg-gray-50"></div>
+ 
 </div>
 </body>
