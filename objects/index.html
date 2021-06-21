@@ -29,7 +29,7 @@
       <h1 id="title" class="pb-6 text-5xl font-bold text-gray-900">
         zulvkr
       </h1>
-      <h2 id="description" class="text-xl italic text-gray-600">
+      <h2 id="description" class="text-lg max-w-xs italic text-gray-600">
         
       Array of writings I want to share with the world.
       I haven&#39;t write much though.
@@ -41,7 +41,7 @@
 <div class="lg:grid lg:grid-cols-6">
   <!-- Middle -->
   <div class="lg:col-start-3 lg:col-span-3">
-    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">
+    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-12 max-w-prose">
       
       <div>
 <article class="prose">
@@ -395,6 +395,8 @@
     collections: {
       all: [Array],
       post: [Array],
+      Critics: [Array],
+      Design: [Array],
       Eleventy: [Array],
       Nunjucks: [Array],
       Javascript: [Array],
@@ -799,6 +801,8 @@
     collections: {
       all: [Array],
       post: [Array],
+      Critics: [Array],
+      Design: [Array],
       Eleventy: [Array],
       Nunjucks: [Array],
       Javascript: [Array],
@@ -858,6 +862,317 @@
     '<p><code>gh-pages</code> branch will be created automatically after first deployment, so you have to change it after first deploy. You can check the detail in <a href="https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-first-deployment-with-github_token">the official tutorial here</a>.</p>\n' +
     "<p>The official tutorial said GitHub Pages action will add <code>.nojekyll</code> automatically so you don't have to add them yourself.</p>\n" +
     '<p>GitHub Pages action also support scheduled action, pretty cool.</p>\n'
+}</pre>
+</article>
+<br>
+<hr>
+<br>
+
+
+<article class="prose">
+  <pre>{
+  template: Template {
+    inputPath: './src/posts/a-honest-review-of-my-blog-design.md',
+    inputDir: 'src',
+    parsed: {
+      root: '',
+      dir: './src/posts',
+      base: 'a-honest-review-of-my-blog-design.md',
+      ext: '.md',
+      name: 'a-honest-review-of-my-blog-design',
+      extname: '.md',
+      basename: 'a-honest-review-of-my-blog-design.md',
+      dirname: './src/posts',
+      stem: 'a-honest-review-of-my-blog-design',
+      path: './src/posts/a-honest-review-of-my-blog-design.md',
+      absolute: [Getter/Setter],
+      isAbsolute: [Getter/Setter]
+    },
+    extraOutputSubdirectory: '',
+    outputDir: '_site',
+    _extensionMap: EleventyExtensionMap {
+      formatKeys: [Array],
+      unfilteredFormatKeys: [Array],
+      _extensionToKeyMap: [Object],
+      validTemplateLanguageKeys: [Array],
+      passthroughCopyKeys: [],
+      configOverride: [Object],
+      _engineManager: [TemplateEngineManager]
+    },
+    linters: [],
+    transforms: [],
+    plugins: {},
+    templateData: TemplateData {
+      config: [Object],
+      dataTemplateEngine: 'liquid',
+      inputDirNeedsCheck: true,
+      inputDir: 'src',
+      dataDir: 'src/_data',
+      rawImports: [Object],
+      globalData: [Object],
+      _extensionMap: [EleventyExtensionMap],
+      pathCache: [Array]
+    },
+    paginationData: {},
+    isVerbose: true,
+    isDryRun: false,
+    writeCount: 0,
+    skippedCount: 0,
+    wrapWithLayouts: true,
+    fileSlug: TemplateFileSlug {
+      inputPath: 'posts/a-honest-review-of-my-blog-design.md',
+      cleanInputPath: 'posts/a-honest-review-of-my-blog-design.md',
+      dirs: [Array],
+      parsed: [Object],
+      filenameNoExt: 'a-honest-review-of-my-blog-design'
+    },
+    fileSlugStr: 'a-honest-review-of-my-blog-design',
+    filePathStem: '/posts/a-honest-review-of-my-blog-design',
+    _templateRender: TemplateRender {
+      engineNameOrPath: './src/posts/a-honest-review-of-my-blog-design.md',
+      inputDir: 'src',
+      _config: [Object],
+      includesDir: 'src/_includes',
+      parseMarkdownWith: 'liquid',
+      parseHtmlWith: 'njk',
+      _extensionMap: [EleventyExtensionMap],
+      _engineName: 'md',
+      _engine: [Markdown],
+      useMarkdown: true
+    },
+    inputContent: '---\n' +
+      'layout: blog.html\n' +
+      'title: A Honest Review of My Blog Design\n' +
+      'description: This is a honest review of the state of my blog, given by myself.\n' +
+      'date: 2021-06-21\n' +
+      'tags:\n' +
+      '  - post\n' +
+      '  - Critics\n' +
+      '  - Design\n' +
+      '---\n' +
+      '\n' +
+      'After a few hours editing. I see my blog home in utter disgust. Sometimes the more you do thungs, the more you make a mess of it.\n' +
+      '\n' +
+      '![home](/image/blog.jpg)\n' +
+      '\n' +
+      'There are several point of critics:\n' +
+      '\n' +
+      '### Where is the focus?\n' +
+      '\n' +
+      "I couldn't help my self get distracted by big eye catching words and image in the left when I read the right side. The color has to be toned down to allow it to go to the background.\n" +
+      '\n' +
+      '### Why so many asymmetrical empty space\n' +
+      '\n' +
+      'The asymmetry must be balanced out with other item.\n' +
+      '\n' +
+      '### The Big Java is annoying\n' +
+      '\n' +
+      'It reminded me of banner that blotting the sky. It must be taken down.\n' +
+      '\n' +
+      '### Why is there 2 Hi like paragraph?\n' +
+      '\n' +
+      'I have 2 paragraph which describe 1. my blog, 2. myself. Which are overwhelming.\n' +
+      '\n' +
+      '### The good part\n' +
+      '\n' +
+      'I actually like how the paragraphs and each post are organized. Typographically aesthetic.\n' +
+      '\n' +
+      '### A few minutes later\n' +
+      '\n' +
+      "Actually, after evaluating eiwing my own design, I feel more confident in deleting some things taht are unnecessary to the blog. It's awesome feeling you get liken when you refactor some codes. I guess I have to practice this work - stop - review workflow to get more productive.\n",
+    _config: {
+      templateFormats: [Array],
+      pathPrefix: '/',
+      markdownTemplateEngine: 'liquid',
+      htmlTemplateEngine: 'njk',
+      dataTemplateEngine: 'liquid',
+      passthroughFileCopy: true,
+      htmlOutputSuffix: '-o',
+      jsDataFileSuffix: '.11tydata',
+      keys: [Object],
+      dir: [Object],
+      filters: {},
+      handlebarsHelpers: [Object],
+      nunjucksFilters: [Object],
+      linters: {},
+      layoutAliases: {},
+      passthroughCopies: [Object],
+      liquidOptions: {},
+      liquidTags: {},
+      liquidFilters: [Object],
+      liquidShortcodes: {},
+      liquidPairedShortcodes: {},
+      nunjucksAsyncFilters: {},
+      nunjucksTags: {},
+      nunjucksAsyncShortcodes: {},
+      nunjucksShortcodes: {},
+      nunjucksAsyncPairedShortcodes: {},
+      nunjucksPairedShortcodes: {},
+      handlebarsShortcodes: {},
+      handlebarsPairedShortcodes: {},
+      javascriptFunctions: [Object],
+      pugOptions: {},
+      ejsOptions: {},
+      markdownHighlighter: null,
+      libraryOverrides: {},
+      dynamicPermalinks: true,
+      useGitIgnore: true,
+      dataDeepMerge: false,
+      watchJavaScriptDependencies: true,
+      additionalWatchTargets: [],
+      browserSyncConfig: {},
+      chokidarConfig: {},
+      watchThrottleWaitTime: 0,
+      frontMatterParsingOptions: undefined,
+      dataExtensions: Map(0) {},
+      extensionMap: Set(0) {},
+      quietMode: false,
+      events: [EventEmitter],
+      inputDir: 'src'
+    },
+    frontMatter: {
+      content: '\n' +
+        'After a few hours editing. I see my blog home in utter disgust. Sometimes the more you do thungs, the more you make a mess of it.\n' +
+        '\n' +
+        '![home](/image/blog.jpg)\n' +
+        '\n' +
+        'There are several point of critics:\n' +
+        '\n' +
+        '### Where is the focus?\n' +
+        '\n' +
+        "I couldn't help my self get distracted by big eye catching words and image in the left when I read the right side. The color has to be toned down to allow it to go to the background.\n" +
+        '\n' +
+        '### Why so many asymmetrical empty space\n' +
+        '\n' +
+        'The asymmetry must be balanced out with other item.\n' +
+        '\n' +
+        '### The Big Java is annoying\n' +
+        '\n' +
+        'It reminded me of banner that blotting the sky. It must be taken down.\n' +
+        '\n' +
+        '### Why is there 2 Hi like paragraph?\n' +
+        '\n' +
+        'I have 2 paragraph which describe 1. my blog, 2. myself. Which are overwhelming.\n' +
+        '\n' +
+        '### The good part\n' +
+        '\n' +
+        'I actually like how the paragraphs and each post are organized. Typographically aesthetic.\n' +
+        '\n' +
+        '### A few minutes later\n' +
+        '\n' +
+        "Actually, after evaluating eiwing my own design, I feel more confident in deleting some things taht are unnecessary to the blog. It's awesome feeling you get liken when you refactor some codes. I guess I have to practice this work - stop - review workflow to get more productive.\n",
+      data: [Object],
+      isEmpty: false,
+      excerpt: ''
+    },
+    _layoutKey: 'blog.html',
+    _layout: TemplateLayout {
+      inputPath: './src/_includes/blog.html',
+      inputDir: 'src',
+      _extensionMap: [EleventyExtensionMap],
+      dataKeyLayoutPath: 'blog.html',
+      _config: [Object],
+      _templateRender: [TemplateRender],
+      inputContent: '---\n' +
+        'layout: main.html\n' +
+        '---\n' +
+        '\n' +
+        '<article class="prose">\n' +
+        '  <div class="font-serif">{{ content | safe }}</div>\n' +
+        '</article>\n',
+      frontMatter: [Object],
+      mapCache: [Array],
+      layoutChain: [Array],
+      dataCache: {}
+    },
+    dataCache: {
+      metadata: [Object],
+      pkg: [Object],
+      layout: 'blog.html',
+      title: 'A Honest Review of My Blog Design',
+      description: 'This is a honest review of the state of my blog, given by myself.',
+      date: 2021-06-21T00:00:00.000Z,
+      tags: [Array],
+      page: [Object]
+    },
+    computedData: ComputedData {
+      computed: [Object],
+      templateStringKeyLookup: [Object],
+      computedKeys: [Set],
+      declaredDependencies: [Object],
+      queue: [ComputedDataQueue]
+    }
+  },
+  inputPath: './src/posts/a-honest-review-of-my-blog-design.md',
+  fileSlug: 'a-honest-review-of-my-blog-design',
+  filePathStem: '/posts/a-honest-review-of-my-blog-design',
+  data: {
+    metadata: {
+      title: 'zulvkr',
+      description: '\n' +
+        '      Array of writings I want to share with the world.\n' +
+        "      I haven't write much though.\n" +
+        '      '
+    },
+    pkg: {
+      name: 'zulvkr.github.io',
+      version: '1.0.0',
+      description: 'Personal website',
+      main: '.eleventy.js',
+      scripts: [Object],
+      repository: [Object],
+      keywords: [],
+      author: '',
+      license: 'ISC',
+      bugs: [Object],
+      homepage: 'https://github.com/zulvkr/zulvkr.github.io#readme',
+      dependencies: [Object],
+      devDependencies: [Object]
+    },
+    layout: 'blog.html',
+    title: 'A Honest Review of My Blog Design',
+    description: 'This is a honest review of the state of my blog, given by myself.',
+    date: 2021-06-21T00:00:00.000Z,
+    tags: [ 'post', 'Critics', 'Design' ],
+    page: {
+      date: 2021-06-21T00:00:00.000Z,
+      inputPath: './src/posts/a-honest-review-of-my-blog-design.md',
+      fileSlug: 'a-honest-review-of-my-blog-design',
+      filePathStem: '/posts/a-honest-review-of-my-blog-design',
+      url: '/posts/a-honest-review-of-my-blog-design/',
+      outputPath: '_site/posts/a-honest-review-of-my-blog-design/index.html'
+    },
+    collections: {
+      all: [Array],
+      post: [Array],
+      Critics: [Array],
+      Design: [Array],
+      Eleventy: [Array],
+      Nunjucks: [Array],
+      Javascript: [Array],
+      'GitHub Pages': [Array],
+      'GitHub Action': [Array]
+    }
+  },
+  date: 2021-06-21T00:00:00.000Z,
+  outputPath: '_site/posts/a-honest-review-of-my-blog-design/index.html',
+  url: '/posts/a-honest-review-of-my-blog-design/',
+  templateContent: [Getter/Setter],
+  _templateContent: '<p>After a few hours editing. I see my blog home in utter disgust. Sometimes the more you do thungs, the more you make a mess of it.</p>\n' +
+    '<p><img src="/image/blog.jpg" alt="home"></p>\n' +
+    '<p>There are several point of critics:</p>\n' +
+    '<h3>Where is the focus?</h3>\n' +
+    "<p>I couldn't help my self get distracted by big eye catching words and image in the left when I read the right side. The color has to be toned down to allow it to go to the background.</p>\n" +
+    '<h3>Why so many asymmetrical empty space</h3>\n' +
+    '<p>The asymmetry must be balanced out with other item.</p>\n' +
+    '<h3>The Big Java is annoying</h3>\n' +
+    '<p>It reminded me of banner that blotting the sky. It must be taken down.</p>\n' +
+    '<h3>Why is there 2 Hi like paragraph?</h3>\n' +
+    '<p>I have 2 paragraph which describe 1. my blog, 2. myself. Which are overwhelming.</p>\n' +
+    '<h3>The good part</h3>\n' +
+    '<p>I actually like how the paragraphs and each post are organized. Typographically aesthetic.</p>\n' +
+    '<h3>A few minutes later</h3>\n' +
+    "<p>Actually, after evaluating eiwing my own design, I feel more confident in deleting some things taht are unnecessary to the blog. It's awesome feeling you get liken when you refactor some codes. I guess I have to practice this work - stop - review workflow to get more productive.</p>\n"
 }</pre>
 </article>
 <br>
@@ -1117,7 +1432,7 @@
     layout: 'blog.html',
     eleventyNavigation: { key: 'About', order: 2 },
     page: {
-      date: 2021-06-21T13:08:36.233Z,
+      date: 2021-06-21T13:58:20.151Z,
       inputPath: './src/about.md',
       fileSlug: 'about',
       filePathStem: '/about',
@@ -1127,6 +1442,8 @@
     collections: {
       all: [Array],
       post: [Array],
+      Critics: [Array],
+      Design: [Array],
       Eleventy: [Array],
       Nunjucks: [Array],
       Javascript: [Array],
@@ -1134,7 +1451,7 @@
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-21T13:08:36.233Z,
+  date: 2021-06-21T13:58:20.151Z,
   outputPath: '_site/about/index.html',
   url: '/about/',
   templateContent: [Getter/Setter]
@@ -1318,7 +1635,7 @@
     eleventyNavigation: { key: 'Hire me', order: 3, url: 'https://github.com/zulvkr' },
     permalink: false,
     page: {
-      date: 2021-06-21T13:08:36.233Z,
+      date: 2021-06-21T13:58:20.151Z,
       inputPath: './src/hireme.md',
       fileSlug: 'hireme',
       filePathStem: '/hireme',
@@ -1328,6 +1645,8 @@
     collections: {
       all: [Array],
       post: [Array],
+      Critics: [Array],
+      Design: [Array],
       Eleventy: [Array],
       Nunjucks: [Array],
       Javascript: [Array],
@@ -1335,7 +1654,7 @@
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-21T13:08:36.233Z,
+  date: 2021-06-21T13:58:20.151Z,
   outputPath: false,
   url: false,
   templateContent: [Getter/Setter],
@@ -1430,7 +1749,6 @@
       "    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently hopping\n" +
       '    on programmer-land and mostly coding JavaScript.\n' +
       '  </p>\n' +
-      '  <img src="./image/1280px-Java_region_map.png" alt="java-island" />\n' +
       '</section>\n' +
       '{% for post in collections.post | reverse %}\n' +
       '<hr />\n' +
@@ -1444,9 +1762,13 @@
       '  <section class="font-serif prose">\n' +
       '    <p>{{ post.data.description }}</p>\n' +
       '  </section>\n' +
-      '  <p class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900">\n' +
-      '    <a href="{{ post.url }}">Read more</a>\n' +
-      '  </p>\n' +
+      '  <a href="{{ post.url }}">\n' +
+      '    <p\n' +
+      '      class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900 "\n' +
+      '    >\n' +
+      '      Read more\n' +
+      '    </p>\n' +
+      '  </a>\n' +
       '</article>\n' +
       '{% endfor %}\n',
     _config: {
@@ -1506,7 +1828,6 @@
         "    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently hopping\n" +
         '    on programmer-land and mostly coding JavaScript.\n' +
         '  </p>\n' +
-        '  <img src="./image/1280px-Java_region_map.png" alt="java-island" />\n' +
         '</section>\n' +
         '{% for post in collections.post | reverse %}\n' +
         '<hr />\n' +
@@ -1520,9 +1841,13 @@
         '  <section class="font-serif prose">\n' +
         '    <p>{{ post.data.description }}</p>\n' +
         '  </section>\n' +
-        '  <p class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900">\n' +
-        '    <a href="{{ post.url }}">Read more</a>\n' +
-        '  </p>\n' +
+        '  <a href="{{ post.url }}">\n' +
+        '    <p\n' +
+        '      class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900 "\n' +
+        '    >\n' +
+        '      Read more\n' +
+        '    </p>\n' +
+        '  </a>\n' +
         '</article>\n' +
         '{% endfor %}\n',
       data: [Object],
@@ -1544,7 +1869,7 @@
         '<!-- Left Side -->\n' +
         "{% set isHome = page.url === '/' %}\n" +
         '\n' +
-        `<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0">\n` +
+        `<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 text-gray-300' if isHome else 'bg-gray-50' }} lg:border-b-0">\n` +
         '  <div class="mx-auto max-w-prose">\n' +
         '    <nav class="p-4 text-sm lg:px-6">\n' +
         '      <ul class="flex flex-wrap">\n' +
@@ -1558,17 +1883,17 @@
         '    </nav>\n' +
         '    <div class="px-4 py-8 lg:px-6">\n' +
         '      {% if isHome %}\n' +
-        '      <div class="mb-8 overflow-hidden border-4 rounded-full shadow-md w-28">\n' +
+        '      <div class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 lg:block">\n' +
         '        <img src="/image/profile.jpeg" class="object-contain" alt="">\n' +
         '      </div>\n' +
         '      {% endif %}\n' +
         "      {% if not tags -%} {%- elif 'post' in tags -%}\n" +
         '      <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>\n' +
         '      {%- endif -%}\n' +
-        `      <h1 id="title" class="pb-6 text-5xl font-bold {{ 'text-white' if isHome else 'text-gray-900' }}">\n` +
+        `      <h1 id="title" class="pb-6 text-5xl font-bold {{ '' if isHome else 'text-gray-900' }}">\n` +
         '        {{ title or metadata.title }}\n' +
         '      </h1>\n' +
-        `      <h2 id="description" class="text-xl italic {{ 'text-yellow-300' if isHome else 'text-gray-600' }}">\n` +
+        `      <h2 id="description" class="text-lg max-w-xs italic {{ 'text-yellow-300' if isHome else 'text-gray-600' }}">\n` +
         '        {{ description or metadata.description }}\n' +
         '      </h2>\n' +
         '    </div>\n' +
@@ -1577,7 +1902,7 @@
         '<div class="lg:grid lg:grid-cols-6">\n' +
         '  <!-- Middle -->\n' +
         '  <div class="lg:col-start-3 lg:col-span-3">\n' +
-        '    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">\n' +
+        '    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-12 max-w-prose">\n' +
         '      {#\n' +
         '      <div>{{ page | debug | safe }}</div>\n' +
         '      #}\n' +
@@ -1639,7 +1964,7 @@
     layout: 'main.html',
     eleventyNavigation: { key: '/zul/', order: 1 },
     page: {
-      date: 2021-06-21T13:08:36.237Z,
+      date: 2021-06-21T13:58:20.151Z,
       inputPath: './src/index.html',
       fileSlug: '',
       filePathStem: '/index',
@@ -1649,6 +1974,8 @@
     collections: {
       all: [Array],
       post: [Array],
+      Critics: [Array],
+      Design: [Array],
       Eleventy: [Array],
       Nunjucks: [Array],
       Javascript: [Array],
@@ -1656,7 +1983,7 @@
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-21T13:08:36.237Z,
+  date: 2021-06-21T13:58:20.151Z,
   outputPath: '_site/index.html',
   url: '/',
   templateContent: [Getter/Setter],
@@ -1666,8 +1993,27 @@
     "    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently hopping\n" +
     '    on programmer-land and mostly coding JavaScript.\n' +
     '  </p>\n' +
-    '  <img src="./image/1280px-Java_region_map.png" alt="java-island" />\n' +
     '</section>\n' +
+    '\n' +
+    '<hr />\n' +
+    '<article class="py-10">\n' +
+    '  <p class="pb-2 text-sm text-gray-600">\n' +
+    '    — June 21st, 2021\n' +
+    '  </p>\n' +
+    '  <a href="/posts/a-honest-review-of-my-blog-design/">\n' +
+    '    <h2 class="pb-3 text-2xl font-bold text-gray-900">A Honest Review of My Blog Design</h2>\n' +
+    '  </a>\n' +
+    '  <section class="font-serif prose">\n' +
+    '    <p>This is a honest review of the state of my blog, given by myself.</p>\n' +
+    '  </section>\n' +
+    '  <a href="/posts/a-honest-review-of-my-blog-design/">\n' +
+    '    <p\n' +
+    '      class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900 "\n' +
+    '    >\n' +
+    '      Read more\n' +
+    '    </p>\n' +
+    '  </a>\n' +
+    '</article>\n' +
     '\n' +
     '<hr />\n' +
     '<article class="py-10">\n' +
@@ -1680,9 +2026,13 @@
     '  <section class="font-serif prose">\n' +
     '    <p>How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.</p>\n' +
     '  </section>\n' +
-    '  <p class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900">\n' +
-    '    <a href="/posts/how-to-deploy-11ty-gh-pages/">Read more</a>\n' +
-    '  </p>\n' +
+    '  <a href="/posts/how-to-deploy-11ty-gh-pages/">\n' +
+    '    <p\n' +
+    '      class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900 "\n' +
+    '    >\n' +
+    '      Read more\n' +
+    '    </p>\n' +
+    '  </a>\n' +
     '</article>\n' +
     '\n' +
     '<hr />\n' +
@@ -1696,9 +2046,13 @@
     '  <section class="font-serif prose">\n' +
     '    <p>How to render item conditionally based on tags in Eleventy using Nunjucks</p>\n' +
     '  </section>\n' +
-    '  <p class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900">\n' +
-    '    <a href="/posts/conditional-render-by-tags-eleventy/">Read more</a>\n' +
-    '  </p>\n' +
+    '  <a href="/posts/conditional-render-by-tags-eleventy/">\n' +
+    '    <p\n' +
+    '      class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900 "\n' +
+    '    >\n' +
+    '      Read more\n' +
+    '    </p>\n' +
+    '  </a>\n' +
     '</article>\n' +
     '\n'
 }</pre>
@@ -1870,7 +2224,7 @@
         '<!-- Left Side -->\n' +
         "{% set isHome = page.url === '/' %}\n" +
         '\n' +
-        `<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0">\n` +
+        `<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 text-gray-300' if isHome else 'bg-gray-50' }} lg:border-b-0">\n` +
         '  <div class="mx-auto max-w-prose">\n' +
         '    <nav class="p-4 text-sm lg:px-6">\n' +
         '      <ul class="flex flex-wrap">\n' +
@@ -1884,17 +2238,17 @@
         '    </nav>\n' +
         '    <div class="px-4 py-8 lg:px-6">\n' +
         '      {% if isHome %}\n' +
-        '      <div class="mb-8 overflow-hidden border-4 rounded-full shadow-md w-28">\n' +
+        '      <div class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 lg:block">\n' +
         '        <img src="/image/profile.jpeg" class="object-contain" alt="">\n' +
         '      </div>\n' +
         '      {% endif %}\n' +
         "      {% if not tags -%} {%- elif 'post' in tags -%}\n" +
         '      <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>\n' +
         '      {%- endif -%}\n' +
-        `      <h1 id="title" class="pb-6 text-5xl font-bold {{ 'text-white' if isHome else 'text-gray-900' }}">\n` +
+        `      <h1 id="title" class="pb-6 text-5xl font-bold {{ '' if isHome else 'text-gray-900' }}">\n` +
         '        {{ title or metadata.title }}\n' +
         '      </h1>\n' +
-        `      <h2 id="description" class="text-xl italic {{ 'text-yellow-300' if isHome else 'text-gray-600' }}">\n` +
+        `      <h2 id="description" class="text-lg max-w-xs italic {{ 'text-yellow-300' if isHome else 'text-gray-600' }}">\n` +
         '        {{ description or metadata.description }}\n' +
         '      </h2>\n' +
         '    </div>\n' +
@@ -1903,7 +2257,7 @@
         '<div class="lg:grid lg:grid-cols-6">\n' +
         '  <!-- Middle -->\n' +
         '  <div class="lg:col-start-3 lg:col-span-3">\n' +
-        '    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">\n' +
+        '    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-12 max-w-prose">\n' +
         '      {#\n' +
         '      <div>{{ page | debug | safe }}</div>\n' +
         '      #}\n' +
@@ -1963,7 +2317,7 @@
     },
     layout: 'main.html',
     page: {
-      date: 2021-06-21T13:08:36.237Z,
+      date: 2021-06-21T13:58:20.151Z,
       inputPath: './src/objects.html',
       fileSlug: 'objects',
       filePathStem: '/objects',
@@ -1973,6 +2327,8 @@
     collections: {
       all: [Array],
       post: [Array],
+      Critics: [Array],
+      Design: [Array],
       Eleventy: [Array],
       Nunjucks: [Array],
       Javascript: [Array],
@@ -1980,7 +2336,7 @@
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-21T13:08:36.237Z,
+  date: 2021-06-21T13:58:20.151Z,
   outputPath: '_site/objects/index.html',
   url: '/objects/',
   templateContent: [Getter/Setter]
