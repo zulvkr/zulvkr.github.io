@@ -6,7 +6,7 @@ eleventyNavigation:
 ---
 
 <section id="preface" class="my-5 prose">
-  <p>
+  <p class="italic">
     Hi! I'm Ivan Zulfikar. A Muslim Indonesian, living in Java Island. Currently
     hopping on programmer-land and mostly coding JavaScript.
   </p>
@@ -14,13 +14,15 @@ eleventyNavigation:
 </section>
 {% for post in collections.post | reverse %}
 <hr />
-<article class="my-10 font-serif prose">
-  <a href="{{ post.url }}">  
-    <h2 class="font-serif text-2xl font-bold text-gray-700">
+<article class="py-10">
+  <a href="{{ post.url }}">
+    <h2 class="pb-4 text-2xl font-bold text-gray-700">
       {{ post.data.title }}
     </h2>
   </a>
+  <section class="font-serif prose">
     <p>{{ post.data.date | toReadableDate }} - {{ post.data.description }}</p>
-  <p class="prose-yellow"><a href="{{ post.url }}">Read more...</a></p>
+    <p class="prose-yellow"><a href="{{ post.url }}">Read more...</a></p>
+  </section>
 </article>
 {% endfor %}
