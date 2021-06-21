@@ -7,22 +7,25 @@ eleventyNavigation:
 
 <section id="preface" class="my-5 prose">
   <p class="italic">
-    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently
-    hopping on programmer-land and mostly coding JavaScript.
+    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently hopping
+    on programmer-land and mostly coding JavaScript.
   </p>
   <img src="./image/1280px-Java_region_map.png" alt="java-island" />
 </section>
 {% for post in collections.post | reverse %}
 <hr />
 <article class="py-10">
+  <p class="pb-2 text-sm text-gray-600">
+    — {{ post.data.date | toReadableDate }}
+  </p>
   <a href="{{ post.url }}">
-    <h2 class="pb-4 text-2xl font-bold text-gray-700">
-      {{ post.data.title }}
-    </h2>
+    <h2 class="pb-3 text-2xl font-bold text-gray-900">{{ post.data.title }}</h2>
   </a>
   <section class="font-serif prose">
-    <p>{{ post.data.date | toReadableDate }} - {{ post.data.description }}</p>
-    <p class="prose-yellow"><a href="{{ post.url }}">Read more...</a></p>
+    <p>{{ post.data.description }}</p>
   </section>
+  <p class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900">
+    <a href="{{ post.url }}">Read more</a>
+  </p>
 </article>
 {% endfor %}
