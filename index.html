@@ -1,6 +1,8 @@
-<!DOCTYPE html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/main.css"><title>zul</title></head><body>
+<!DOCTYPE html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/main.css"><title>zulvkr</title></head><body>
 <!-- Left Side -->
-<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 bg-gray-50 lg:border-b-0">
+
+
+<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 bg-gray-900 text-white lg:border-b-0">
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
       <ul class="flex flex-wrap">
@@ -23,10 +25,15 @@
         
     </nav>
     <div class="px-4 py-8 lg:px-6">
-      <h1 id="title" class="pb-6 text-5xl font-bold text-gray-800">
-        zul
+      
+      <div class="mb-8 overflow-hidden border-4 rounded-full shadow-md w-28">
+        <img src="/image/profile.jpeg" class="object-contain" alt="">
+      </div>
+      
+      <h1 id="title" class="pb-6 text-5xl font-bold text-white">
+        zulvkr
       </h1>
-      <h2 id="description" class="text-xl italic text-gray-600">
+      <h2 id="description" class="text-xl italic text-yellow-300">
         
       Array of writings I want to share with the world.
       I haven&#39;t write much though.
@@ -37,42 +44,48 @@
 </header>
 <div class="lg:grid lg:grid-cols-6">
   <!-- Middle -->
-  <div class="shadow-lg lg:col-start-3 lg:col-span-3">
+  <div class="lg:col-start-3 lg:col-span-3">
     <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">
       
       <div>
 <section id="preface" class="my-5 prose">
   <p class="italic">
-    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently
-    hopping on programmer-land and mostly coding JavaScript.
+    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently hopping
+    on programmer-land and mostly coding JavaScript.
   </p>
   <img src="./image/1280px-Java_region_map.png" alt="java-island" />
 </section>
 
 <hr />
 <article class="py-10">
+  <p class="pb-2 text-sm text-gray-600">
+    — June 20th, 2021
+  </p>
   <a href="/posts/how-to-deploy-11ty-gh-pages/">
-    <h2 class="pb-4 text-2xl font-bold text-gray-700">
-      How to deploy Eleventy to GitHub Pages
-    </h2>
+    <h2 class="pb-3 text-2xl font-bold text-gray-900">How to deploy Eleventy to GitHub Pages</h2>
   </a>
   <section class="font-serif prose">
-    <p>June 20th, 2021 - How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.</p>
-    <p class="prose-yellow"><a href="/posts/how-to-deploy-11ty-gh-pages/">Read more...</a></p>
+    <p>How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.</p>
   </section>
+  <p class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900">
+    <a href="/posts/how-to-deploy-11ty-gh-pages/">Read more</a>
+  </p>
 </article>
 
 <hr />
 <article class="py-10">
+  <p class="pb-2 text-sm text-gray-600">
+    — June 17th, 2021
+  </p>
   <a href="/posts/conditional-render-by-tags-eleventy/">
-    <h2 class="pb-4 text-2xl font-bold text-gray-700">
-      Conditional Render by Tags in Eleventy
-    </h2>
+    <h2 class="pb-3 text-2xl font-bold text-gray-900">Conditional Render by Tags in Eleventy</h2>
   </a>
   <section class="font-serif prose">
-    <p>June 17th, 2021 - How to render item conditionally based on tags in Eleventy using Nunjucks</p>
-    <p class="prose-yellow"><a href="/posts/conditional-render-by-tags-eleventy/">Read more...</a></p>
+    <p>How to render item conditionally based on tags in Eleventy using Nunjucks</p>
   </section>
+  <p class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900">
+    <a href="/posts/conditional-render-by-tags-eleventy/">Read more</a>
+  </p>
 </article>
 
 </div>
@@ -81,7 +94,7 @@
 
   <!-- Right Side -->
   
-  <div class="lg:border-l lg:col-start-6 lg:col-span-1 bg-gray-50"></div>
+  <div class="lg:col-start-6 lg:col-span-1"></div>
  
 </div>
 </body>

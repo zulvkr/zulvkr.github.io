@@ -1,5 +1,7 @@
-<!DOCTYPE html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/main.css"><title>zul</title></head><body>
+<!DOCTYPE html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/main.css"><title>zulvkr</title></head><body>
 <!-- Left Side -->
+
+
 <header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 bg-gray-50 lg:border-b-0">
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
@@ -23,8 +25,9 @@
         
     </nav>
     <div class="px-4 py-8 lg:px-6">
-      <h1 id="title" class="pb-6 text-5xl font-bold text-gray-800">
-        zul
+      
+      <h1 id="title" class="pb-6 text-5xl font-bold text-gray-900">
+        zulvkr
       </h1>
       <h2 id="description" class="text-xl italic text-gray-600">
         
@@ -37,7 +40,7 @@
 </header>
 <div class="lg:grid lg:grid-cols-6">
   <!-- Middle -->
-  <div class="shadow-lg lg:col-start-3 lg:col-span-3">
+  <div class="lg:col-start-3 lg:col-span-3">
     <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">
       
       <div>
@@ -355,7 +358,7 @@
   filePathStem: '/posts/conditional-render-by-tags-eleventy',
   data: {
     metadata: {
-      title: 'zul',
+      title: 'zulvkr',
       description: '\n' +
         '      Array of writings I want to share with the world.\n' +
         "      I haven't write much though.\n" +
@@ -759,7 +762,7 @@
   filePathStem: '/posts/how-to-deploy-11ty-gh-pages',
   data: {
     metadata: {
-      title: 'zul',
+      title: 'zulvkr',
       description: '\n' +
         '      Array of writings I want to share with the world.\n' +
         "      I haven't write much though.\n" +
@@ -1090,7 +1093,7 @@
   filePathStem: '/about',
   data: {
     metadata: {
-      title: 'zul',
+      title: 'zulvkr',
       description: '\n' +
         '      Array of writings I want to share with the world.\n' +
         "      I haven't write much though.\n" +
@@ -1114,7 +1117,7 @@
     layout: 'blog.html',
     eleventyNavigation: { key: 'About', order: 2 },
     page: {
-      date: 2021-06-21T12:00:53.111Z,
+      date: 2021-06-21T13:08:36.233Z,
       inputPath: './src/about.md',
       fileSlug: 'about',
       filePathStem: '/about',
@@ -1131,7 +1134,7 @@
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-21T12:00:53.111Z,
+  date: 2021-06-21T13:08:36.233Z,
   outputPath: '_site/about/index.html',
   url: '/about/',
   templateContent: [Getter/Setter]
@@ -1291,7 +1294,7 @@
   filePathStem: '/hireme',
   data: {
     metadata: {
-      title: 'zul',
+      title: 'zulvkr',
       description: '\n' +
         '      Array of writings I want to share with the world.\n' +
         "      I haven't write much though.\n" +
@@ -1315,7 +1318,7 @@
     eleventyNavigation: { key: 'Hire me', order: 3, url: 'https://github.com/zulvkr' },
     permalink: false,
     page: {
-      date: 2021-06-21T12:00:53.111Z,
+      date: 2021-06-21T13:08:36.233Z,
       inputPath: './src/hireme.md',
       fileSlug: 'hireme',
       filePathStem: '/hireme',
@@ -1332,7 +1335,7 @@
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-21T12:00:53.111Z,
+  date: 2021-06-21T13:08:36.233Z,
   outputPath: false,
   url: false,
   templateContent: [Getter/Setter],
@@ -1424,23 +1427,26 @@
       '\n' +
       '<section id="preface" class="my-5 prose">\n' +
       '  <p class="italic">\n' +
-      "    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently\n" +
-      '    hopping on programmer-land and mostly coding JavaScript.\n' +
+      "    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently hopping\n" +
+      '    on programmer-land and mostly coding JavaScript.\n' +
       '  </p>\n' +
       '  <img src="./image/1280px-Java_region_map.png" alt="java-island" />\n' +
       '</section>\n' +
       '{% for post in collections.post | reverse %}\n' +
       '<hr />\n' +
       '<article class="py-10">\n' +
+      '  <p class="pb-2 text-sm text-gray-600">\n' +
+      '    — {{ post.data.date | toReadableDate }}\n' +
+      '  </p>\n' +
       '  <a href="{{ post.url }}">\n' +
-      '    <h2 class="pb-4 text-2xl font-bold text-gray-700">\n' +
-      '      {{ post.data.title }}\n' +
-      '    </h2>\n' +
+      '    <h2 class="pb-3 text-2xl font-bold text-gray-900">{{ post.data.title }}</h2>\n' +
       '  </a>\n' +
       '  <section class="font-serif prose">\n' +
-      '    <p>{{ post.data.date | toReadableDate }} - {{ post.data.description }}</p>\n' +
-      '    <p class="prose-yellow"><a href="{{ post.url }}">Read more...</a></p>\n' +
+      '    <p>{{ post.data.description }}</p>\n' +
       '  </section>\n' +
+      '  <p class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900">\n' +
+      '    <a href="{{ post.url }}">Read more</a>\n' +
+      '  </p>\n' +
       '</article>\n' +
       '{% endfor %}\n',
     _config: {
@@ -1497,23 +1503,26 @@
       content: '\n' +
         '<section id="preface" class="my-5 prose">\n' +
         '  <p class="italic">\n' +
-        "    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently\n" +
-        '    hopping on programmer-land and mostly coding JavaScript.\n' +
+        "    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently hopping\n" +
+        '    on programmer-land and mostly coding JavaScript.\n' +
         '  </p>\n' +
         '  <img src="./image/1280px-Java_region_map.png" alt="java-island" />\n' +
         '</section>\n' +
         '{% for post in collections.post | reverse %}\n' +
         '<hr />\n' +
         '<article class="py-10">\n' +
+        '  <p class="pb-2 text-sm text-gray-600">\n' +
+        '    — {{ post.data.date | toReadableDate }}\n' +
+        '  </p>\n' +
         '  <a href="{{ post.url }}">\n' +
-        '    <h2 class="pb-4 text-2xl font-bold text-gray-700">\n' +
-        '      {{ post.data.title }}\n' +
-        '    </h2>\n' +
+        '    <h2 class="pb-3 text-2xl font-bold text-gray-900">{{ post.data.title }}</h2>\n' +
         '  </a>\n' +
         '  <section class="font-serif prose">\n' +
-        '    <p>{{ post.data.date | toReadableDate }} - {{ post.data.description }}</p>\n' +
-        '    <p class="prose-yellow"><a href="{{ post.url }}">Read more...</a></p>\n' +
+        '    <p>{{ post.data.description }}</p>\n' +
         '  </section>\n' +
+        '  <p class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900">\n' +
+        '    <a href="{{ post.url }}">Read more</a>\n' +
+        '  </p>\n' +
         '</article>\n' +
         '{% endfor %}\n',
       data: [Object],
@@ -1533,7 +1542,9 @@
         '---\n' +
         '\n' +
         '<!-- Left Side -->\n' +
-        '<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 bg-gray-50 lg:border-b-0">\n' +
+        "{% set isHome = page.url === '/' %}\n" +
+        '\n' +
+        `<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0">\n` +
         '  <div class="mx-auto max-w-prose">\n' +
         '    <nav class="p-4 text-sm lg:px-6">\n' +
         '      <ul class="flex flex-wrap">\n' +
@@ -1546,13 +1557,18 @@
         '        {% endfor %}\n' +
         '    </nav>\n' +
         '    <div class="px-4 py-8 lg:px-6">\n' +
+        '      {% if isHome %}\n' +
+        '      <div class="mb-8 overflow-hidden border-4 rounded-full shadow-md w-28">\n' +
+        '        <img src="/image/profile.jpeg" class="object-contain" alt="">\n' +
+        '      </div>\n' +
+        '      {% endif %}\n' +
         "      {% if not tags -%} {%- elif 'post' in tags -%}\n" +
         '      <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>\n' +
         '      {%- endif -%}\n' +
-        '      <h1 id="title" class="pb-6 text-5xl font-bold text-gray-800">\n' +
+        `      <h1 id="title" class="pb-6 text-5xl font-bold {{ 'text-white' if isHome else 'text-gray-900' }}">\n` +
         '        {{ title or metadata.title }}\n' +
         '      </h1>\n' +
-        '      <h2 id="description" class="text-xl italic text-gray-600">\n' +
+        `      <h2 id="description" class="text-xl italic {{ 'text-yellow-300' if isHome else 'text-gray-600' }}">\n` +
         '        {{ description or metadata.description }}\n' +
         '      </h2>\n' +
         '    </div>\n' +
@@ -1560,7 +1576,7 @@
         '</header>\n' +
         '<div class="lg:grid lg:grid-cols-6">\n' +
         '  <!-- Middle -->\n' +
-        '  <div class="shadow-lg lg:col-start-3 lg:col-span-3">\n' +
+        '  <div class="lg:col-start-3 lg:col-span-3">\n' +
         '    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">\n' +
         '      {#\n' +
         '      <div>{{ page | debug | safe }}</div>\n' +
@@ -1571,7 +1587,7 @@
         '\n' +
         '  <!-- Right Side -->\n' +
         '  \n' +
-        '  <div class="lg:border-l lg:col-start-6 lg:col-span-1 bg-gray-50"></div>\n' +
+        '  <div class="lg:col-start-6 lg:col-span-1"></div>\n' +
         ' \n' +
         '</div>\n',
       frontMatter: [Object],
@@ -1599,7 +1615,7 @@
   filePathStem: '/index',
   data: {
     metadata: {
-      title: 'zul',
+      title: 'zulvkr',
       description: '\n' +
         '      Array of writings I want to share with the world.\n' +
         "      I haven't write much though.\n" +
@@ -1623,7 +1639,7 @@
     layout: 'main.html',
     eleventyNavigation: { key: '/zul/', order: 1 },
     page: {
-      date: 2021-06-21T12:00:53.115Z,
+      date: 2021-06-21T13:08:36.237Z,
       inputPath: './src/index.html',
       fileSlug: '',
       filePathStem: '/index',
@@ -1640,43 +1656,49 @@
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-21T12:00:53.115Z,
+  date: 2021-06-21T13:08:36.237Z,
   outputPath: '_site/index.html',
   url: '/',
   templateContent: [Getter/Setter],
   _templateContent: '\n' +
     '<section id="preface" class="my-5 prose">\n' +
     '  <p class="italic">\n' +
-    "    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently\n" +
-    '    hopping on programmer-land and mostly coding JavaScript.\n' +
+    "    Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently hopping\n" +
+    '    on programmer-land and mostly coding JavaScript.\n' +
     '  </p>\n' +
     '  <img src="./image/1280px-Java_region_map.png" alt="java-island" />\n' +
     '</section>\n' +
     '\n' +
     '<hr />\n' +
     '<article class="py-10">\n' +
+    '  <p class="pb-2 text-sm text-gray-600">\n' +
+    '    — June 20th, 2021\n' +
+    '  </p>\n' +
     '  <a href="/posts/how-to-deploy-11ty-gh-pages/">\n' +
-    '    <h2 class="pb-4 text-2xl font-bold text-gray-700">\n' +
-    '      How to deploy Eleventy to GitHub Pages\n' +
-    '    </h2>\n' +
+    '    <h2 class="pb-3 text-2xl font-bold text-gray-900">How to deploy Eleventy to GitHub Pages</h2>\n' +
     '  </a>\n' +
     '  <section class="font-serif prose">\n' +
-    '    <p>June 20th, 2021 - How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.</p>\n' +
-    '    <p class="prose-yellow"><a href="/posts/how-to-deploy-11ty-gh-pages/">Read more...</a></p>\n' +
+    '    <p>How to Setup GitHub Pages for Eleventy without SSH setup using GitHub Token. Any other Node.js SSG work as well.</p>\n' +
     '  </section>\n' +
+    '  <p class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900">\n' +
+    '    <a href="/posts/how-to-deploy-11ty-gh-pages/">Read more</a>\n' +
+    '  </p>\n' +
     '</article>\n' +
     '\n' +
     '<hr />\n' +
     '<article class="py-10">\n' +
+    '  <p class="pb-2 text-sm text-gray-600">\n' +
+    '    — June 17th, 2021\n' +
+    '  </p>\n' +
     '  <a href="/posts/conditional-render-by-tags-eleventy/">\n' +
-    '    <h2 class="pb-4 text-2xl font-bold text-gray-700">\n' +
-    '      Conditional Render by Tags in Eleventy\n' +
-    '    </h2>\n' +
+    '    <h2 class="pb-3 text-2xl font-bold text-gray-900">Conditional Render by Tags in Eleventy</h2>\n' +
     '  </a>\n' +
     '  <section class="font-serif prose">\n' +
-    '    <p>June 17th, 2021 - How to render item conditionally based on tags in Eleventy using Nunjucks</p>\n' +
-    '    <p class="prose-yellow"><a href="/posts/conditional-render-by-tags-eleventy/">Read more...</a></p>\n' +
+    '    <p>How to render item conditionally based on tags in Eleventy using Nunjucks</p>\n' +
     '  </section>\n' +
+    '  <p class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900">\n' +
+    '    <a href="/posts/conditional-render-by-tags-eleventy/">Read more</a>\n' +
+    '  </p>\n' +
     '</article>\n' +
     '\n'
 }</pre>
@@ -1846,7 +1868,9 @@
         '---\n' +
         '\n' +
         '<!-- Left Side -->\n' +
-        '<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 bg-gray-50 lg:border-b-0">\n' +
+        "{% set isHome = page.url === '/' %}\n" +
+        '\n' +
+        `<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0">\n` +
         '  <div class="mx-auto max-w-prose">\n' +
         '    <nav class="p-4 text-sm lg:px-6">\n' +
         '      <ul class="flex flex-wrap">\n' +
@@ -1859,13 +1883,18 @@
         '        {% endfor %}\n' +
         '    </nav>\n' +
         '    <div class="px-4 py-8 lg:px-6">\n' +
+        '      {% if isHome %}\n' +
+        '      <div class="mb-8 overflow-hidden border-4 rounded-full shadow-md w-28">\n' +
+        '        <img src="/image/profile.jpeg" class="object-contain" alt="">\n' +
+        '      </div>\n' +
+        '      {% endif %}\n' +
         "      {% if not tags -%} {%- elif 'post' in tags -%}\n" +
         '      <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>\n' +
         '      {%- endif -%}\n' +
-        '      <h1 id="title" class="pb-6 text-5xl font-bold text-gray-800">\n' +
+        `      <h1 id="title" class="pb-6 text-5xl font-bold {{ 'text-white' if isHome else 'text-gray-900' }}">\n` +
         '        {{ title or metadata.title }}\n' +
         '      </h1>\n' +
-        '      <h2 id="description" class="text-xl italic text-gray-600">\n' +
+        `      <h2 id="description" class="text-xl italic {{ 'text-yellow-300' if isHome else 'text-gray-600' }}">\n` +
         '        {{ description or metadata.description }}\n' +
         '      </h2>\n' +
         '    </div>\n' +
@@ -1873,7 +1902,7 @@
         '</header>\n' +
         '<div class="lg:grid lg:grid-cols-6">\n' +
         '  <!-- Middle -->\n' +
-        '  <div class="shadow-lg lg:col-start-3 lg:col-span-3">\n' +
+        '  <div class="lg:col-start-3 lg:col-span-3">\n' +
         '    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">\n' +
         '      {#\n' +
         '      <div>{{ page | debug | safe }}</div>\n' +
@@ -1884,7 +1913,7 @@
         '\n' +
         '  <!-- Right Side -->\n' +
         '  \n' +
-        '  <div class="lg:border-l lg:col-start-6 lg:col-span-1 bg-gray-50"></div>\n' +
+        '  <div class="lg:col-start-6 lg:col-span-1"></div>\n' +
         ' \n' +
         '</div>\n',
       frontMatter: [Object],
@@ -1911,7 +1940,7 @@
   filePathStem: '/objects',
   data: {
     metadata: {
-      title: 'zul',
+      title: 'zulvkr',
       description: '\n' +
         '      Array of writings I want to share with the world.\n' +
         "      I haven't write much though.\n" +
@@ -1934,7 +1963,7 @@
     },
     layout: 'main.html',
     page: {
-      date: 2021-06-21T12:00:53.115Z,
+      date: 2021-06-21T13:08:36.237Z,
       inputPath: './src/objects.html',
       fileSlug: 'objects',
       filePathStem: '/objects',
@@ -1951,7 +1980,7 @@
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-21T12:00:53.115Z,
+  date: 2021-06-21T13:08:36.237Z,
   outputPath: '_site/objects/index.html',
   url: '/objects/',
   templateContent: [Getter/Setter]
@@ -1967,7 +1996,7 @@
 
   <!-- Right Side -->
   
-  <div class="lg:border-l lg:col-start-6 lg:col-span-1 bg-gray-50"></div>
+  <div class="lg:col-start-6 lg:col-span-1"></div>
  
 </div>
 </body>
