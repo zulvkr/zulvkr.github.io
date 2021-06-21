@@ -10,7 +10,6 @@ eleventyNavigation:
     Hi! I'm Zul, a muslim Indonesian, living in Java Island. Currently hopping
     on programmer-land and mostly coding JavaScript.
   </p>
-  <img src="./image/1280px-Java_region_map.png" alt="java-island" />
 </section>
 {% for post in collections.post | reverse %}
 <hr />
@@ -24,8 +23,12 @@ eleventyNavigation:
   <section class="font-serif prose">
     <p>{{ post.data.description }}</p>
   </section>
-  <p class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900">
-    <a href="{{ post.url }}">Read more</a>
-  </p>
+  <a href="{{ post.url }}">
+    <p
+      class="inline-block px-4 py-3 mt-5 text-xs font-semibold text-yellow-300 bg-gray-900 "
+    >
+      Read more
+    </p>
+  </a>
 </article>
 {% endfor %}

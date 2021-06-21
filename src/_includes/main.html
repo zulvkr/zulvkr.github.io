@@ -5,7 +5,7 @@ layout: root.pug
 <!-- Left Side -->
 {% set isHome = page.url === '/' %}
 
-<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0">
+<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 text-gray-300' if isHome else 'bg-gray-50' }} lg:border-b-0">
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
       <ul class="flex flex-wrap">
@@ -19,17 +19,17 @@ layout: root.pug
     </nav>
     <div class="px-4 py-8 lg:px-6">
       {% if isHome %}
-      <div class="mb-8 overflow-hidden border-4 rounded-full shadow-md w-28">
+      <div class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 lg:block">
         <img src="/image/profile.jpeg" class="object-contain" alt="">
       </div>
       {% endif %}
       {% if not tags -%} {%- elif 'post' in tags -%}
       <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>
       {%- endif -%}
-      <h1 id="title" class="pb-6 text-5xl font-bold {{ 'text-white' if isHome else 'text-gray-900' }}">
+      <h1 id="title" class="pb-6 text-5xl font-bold {{ '' if isHome else 'text-gray-900' }}">
         {{ title or metadata.title }}
       </h1>
-      <h2 id="description" class="text-xl italic {{ 'text-yellow-300' if isHome else 'text-gray-600' }}">
+      <h2 id="description" class="text-lg max-w-xs italic {{ 'text-yellow-300' if isHome else 'text-gray-600' }}">
         {{ description or metadata.description }}
       </h2>
     </div>
@@ -38,7 +38,7 @@ layout: root.pug
 <div class="lg:grid lg:grid-cols-6">
   <!-- Middle -->
   <div class="lg:col-start-3 lg:col-span-3">
-    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-16 max-w-prose">
+    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-12 max-w-prose">
       {#
       <div>{{ page | debug | safe }}</div>
       #}
