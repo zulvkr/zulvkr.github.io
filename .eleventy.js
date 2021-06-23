@@ -3,18 +3,20 @@ const { format } = require('date-fns')
 const { inspect } = require('util')
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation')
 
-module.exports = eleventyConfig => {
-  eleventyConfig.addPassthroughCopy({
+module.exports = config => {
+  config.addPassthroughCopy({
     'src/image/': 'image'
   })
 
-  eleventyConfig.addFilter('toReadableDate', date =>
+  config.addFilter('toReadableDate', date =>
     format(date, 'MMMM do, yyyy')
   )
 
-  eleventyConfig.addFilter('debug', content => `<pre>${inspect(content)}</pre>`)
+  config.addFilter('debug', content => `<pre>${inspect(content)}</pre>`)
 
-  eleventyConfig.addPlugin(eleventyNavigationPlugin)
+  config.addPlugin(eleventyNavigationPlugin)
+
+  config.setUseGitIgnore(false);
 
   const configObject = {
     dir: {
@@ -28,7 +30,7 @@ module.exports = eleventyConfig => {
    */
 
   if (env.NODE_ENV !== 'production') {
-    eleventyConfig.addPassthroughCopy({
+    config.addPassthroughCopy({
       'src/temp/main.css': 'main.css',
       'src/assets/red.css': 'red.css'
     })
