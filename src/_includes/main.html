@@ -5,34 +5,34 @@ layout: root.pug
 {% set isHome = page.url === '/' %}
 
 <!-- Left Side -->
+
 <header
   class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 lg:text-gray-300 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0"
 >
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
-        <ul class="flex flex-wrap">
-          <!-- prettier-ignore -->
-          {% set navPages = collections.all | eleventyNavigation %}
-          {% set bgDark = "text-white font-black bg-gray-900 rounded-sm" %}
-          {% for item in navPages %}
-          <li class="flex-shrink-0 {{ bgDark if item.url === page.url }}">
-            <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>
-          </li>
-          {% endfor %}
-          <li
-            class="flex-shrink-0 ml-auto {{ bgDark if item.url === page.url }}"
-          >
-            <a class="block pt-4 w-7" href="{{ metadata.github }}">
-              {% include 'svg/github.svg' %}
-            </a>
-          </li>
-        </ul>
-      </>
+      <ul class="flex flex-wrap">
+        <!-- prettier-ignore -->
+
+        {% set navPages = collections.all | eleventyNavigation %}
+        {% set bgDark = "text-white font-black bg-gray-900 rounded-sm" %}
+        
+        {% for item in navPages %}
+        <li class="flex-shrink-0 {{ bgDark if item.url === page.url }}">
+          <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>
+        </li>
+        {% endfor %}
+        <li class="flex-shrink-0 ml-auto {{ bgDark if item.url === page.url }}">
+          <a class="block pt-4 w-7" href="{{ metadata.github }}">
+            {% include 'svg/github.svg' %}
+          </a>
+        </li>
+      </ul>
     </nav>
     <div class="px-4 py-8 lg:px-6">
       {%- if isHome %}
       <div
-        class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 lg:block"
+        class="hidden mb-8 overflow-hidden border-4 shadow-md  rounded-3xl w-28 lg:block"
       >
         <img src="/image/profile.jpeg" class="object-contain" alt="" />
       </div>
