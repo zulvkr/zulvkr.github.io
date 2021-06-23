@@ -2,33 +2,34 @@
 
 
 <!-- Left Side -->
+
 <header
   class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 bg-gray-50 lg:border-b-0"
 >
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
-        <ul class="flex flex-wrap">
-          <!-- prettier-ignore -->
-          
-          
-          
-          <li class="flex-shrink-0 ">
-            <a class="block px-3 pt-6" href="/">/zul/</a>
-          </li>
-          
-          <li class="flex-shrink-0 ">
-            <a class="block px-3 pt-6" href="/about/">About</a>
-          </li>
-          
-          <li class="flex-shrink-0 ">
-            <a class="block px-3 pt-6" href="https://github.com/zulvkr">Hire me</a>
-          </li>
-          
-          <li
-            class="flex-shrink-0 ml-auto "
-          >
-            <a class="block pt-4 w-7" href="https://github.com/zulvkr">
-              <svg
+      <ul class="flex flex-wrap">
+        <!-- prettier-ignore -->
+
+        
+        
+        
+        
+        <li class="flex-shrink-0 ">
+          <a class="block px-3 pt-6" href="/">/zul/</a>
+        </li>
+        
+        <li class="flex-shrink-0 ">
+          <a class="block px-3 pt-6" href="/about/">About</a>
+        </li>
+        
+        <li class="flex-shrink-0 ">
+          <a class="block px-3 pt-6" href="https://github.com/zulvkr">Hire me</a>
+        </li>
+        
+        <li class="flex-shrink-0 ml-auto ">
+          <a class="block pt-4 w-7" href="https://github.com/zulvkr">
+            <svg
   width="100%"
   height="100%"
   version="1.1"
@@ -44,10 +45,9 @@
   </g>
 </svg>
 
-            </a>
-          </li>
-        </ul>
-      </>
+          </a>
+        </li>
+      </ul>
     </nav>
     <div class="px-4 py-8 lg:px-6"><h1
         id="title"
@@ -1906,7 +1906,7 @@
     title: 'About',
     eleventyNavigation: { key: 'About', order: 2 },
     page: {
-      date: 2021-06-23T16:25:14.728Z,
+      date: 2021-06-23T20:41:16.185Z,
       inputPath: './src/about.md',
       fileSlug: 'about',
       filePathStem: '/about',
@@ -1925,7 +1925,7 @@
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-23T16:25:14.728Z,
+  date: 2021-06-23T20:41:16.185Z,
   outputPath: '_site/about/index.html',
   url: '/about/',
   templateContent: [Getter/Setter]
@@ -2110,7 +2110,7 @@
     eleventyNavigation: { key: 'Hire me', order: 3, url: 'https://github.com/zulvkr' },
     permalink: false,
     page: {
-      date: 2021-06-23T16:25:14.728Z,
+      date: 2021-06-23T20:41:16.185Z,
       inputPath: './src/hireme.md',
       fileSlug: 'hireme',
       filePathStem: '/hireme',
@@ -2129,7 +2129,7 @@
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-23T16:25:14.728Z,
+  date: 2021-06-23T20:41:16.185Z,
   outputPath: false,
   url: false,
   templateContent: [Getter/Setter],
@@ -2344,34 +2344,34 @@
         "{% set isHome = page.url === '/' %}\n" +
         '\n' +
         '<!-- Left Side -->\n' +
+        '\n' +
         '<header\n' +
         `  class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 lg:text-gray-300 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0"\n` +
         '>\n' +
         '  <div class="mx-auto max-w-prose">\n' +
         '    <nav class="p-4 text-sm lg:px-6">\n' +
-        '        <ul class="flex flex-wrap">\n' +
-        '          <!-- prettier-ignore -->\n' +
-        '          {% set navPages = collections.all | eleventyNavigation %}\n' +
-        '          {% set bgDark = "text-white font-black bg-gray-900 rounded-sm" %}\n' +
-        '          {% for item in navPages %}\n' +
-        '          <li class="flex-shrink-0 {{ bgDark if item.url === page.url }}">\n' +
-        '            <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>\n' +
-        '          </li>\n' +
-        '          {% endfor %}\n' +
-        '          <li\n' +
-        '            class="flex-shrink-0 ml-auto {{ bgDark if item.url === page.url }}"\n' +
-        '          >\n' +
-        '            <a class="block pt-4 w-7" href="{{ metadata.github }}">\n' +
-        "              {% include 'svg/github.svg' %}\n" +
-        '            </a>\n' +
-        '          </li>\n' +
-        '        </ul>\n' +
-        '      </>\n' +
+        '      <ul class="flex flex-wrap">\n' +
+        '        <!-- prettier-ignore -->\n' +
+        '\n' +
+        '        {% set navPages = collections.all | eleventyNavigation %}\n' +
+        '        {% set bgDark = "text-white font-black bg-gray-900 rounded-sm" %}\n' +
+        '        \n' +
+        '        {% for item in navPages %}\n' +
+        '        <li class="flex-shrink-0 {{ bgDark if item.url === page.url }}">\n' +
+        '          <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>\n' +
+        '        </li>\n' +
+        '        {% endfor %}\n' +
+        '        <li class="flex-shrink-0 ml-auto {{ bgDark if item.url === page.url }}">\n' +
+        '          <a class="block pt-4 w-7" href="{{ metadata.github }}">\n' +
+        "            {% include 'svg/github.svg' %}\n" +
+        '          </a>\n' +
+        '        </li>\n' +
+        '      </ul>\n' +
         '    </nav>\n' +
         '    <div class="px-4 py-8 lg:px-6">\n' +
         '      {%- if isHome %}\n' +
         '      <div\n' +
-        '        class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 lg:block"\n' +
+        '        class="hidden mb-8 overflow-hidden border-4 shadow-md  rounded-3xl w-28 lg:block"\n' +
         '      >\n' +
         '        <img src="/image/profile.jpeg" class="object-contain" alt="" />\n' +
         '      </div>\n' +
@@ -2459,7 +2459,7 @@
     layout: 'main.html',
     eleventyNavigation: { key: '/zul/', order: 1 },
     page: {
-      date: 2021-06-23T16:25:14.728Z,
+      date: 2021-06-23T20:41:16.185Z,
       inputPath: './src/index.html',
       fileSlug: '',
       filePathStem: '/index',
@@ -2478,7 +2478,7 @@
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-23T16:25:14.728Z,
+  date: 2021-06-23T20:41:16.185Z,
   outputPath: '_site/index.html',
   url: '/',
   templateContent: [Getter/Setter],
@@ -2739,34 +2739,34 @@
         "{% set isHome = page.url === '/' %}\n" +
         '\n' +
         '<!-- Left Side -->\n' +
+        '\n' +
         '<header\n' +
         `  class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 lg:text-gray-300 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0"\n` +
         '>\n' +
         '  <div class="mx-auto max-w-prose">\n' +
         '    <nav class="p-4 text-sm lg:px-6">\n' +
-        '        <ul class="flex flex-wrap">\n' +
-        '          <!-- prettier-ignore -->\n' +
-        '          {% set navPages = collections.all | eleventyNavigation %}\n' +
-        '          {% set bgDark = "text-white font-black bg-gray-900 rounded-sm" %}\n' +
-        '          {% for item in navPages %}\n' +
-        '          <li class="flex-shrink-0 {{ bgDark if item.url === page.url }}">\n' +
-        '            <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>\n' +
-        '          </li>\n' +
-        '          {% endfor %}\n' +
-        '          <li\n' +
-        '            class="flex-shrink-0 ml-auto {{ bgDark if item.url === page.url }}"\n' +
-        '          >\n' +
-        '            <a class="block pt-4 w-7" href="{{ metadata.github }}">\n' +
-        "              {% include 'svg/github.svg' %}\n" +
-        '            </a>\n' +
-        '          </li>\n' +
-        '        </ul>\n' +
-        '      </>\n' +
+        '      <ul class="flex flex-wrap">\n' +
+        '        <!-- prettier-ignore -->\n' +
+        '\n' +
+        '        {% set navPages = collections.all | eleventyNavigation %}\n' +
+        '        {% set bgDark = "text-white font-black bg-gray-900 rounded-sm" %}\n' +
+        '        \n' +
+        '        {% for item in navPages %}\n' +
+        '        <li class="flex-shrink-0 {{ bgDark if item.url === page.url }}">\n' +
+        '          <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>\n' +
+        '        </li>\n' +
+        '        {% endfor %}\n' +
+        '        <li class="flex-shrink-0 ml-auto {{ bgDark if item.url === page.url }}">\n' +
+        '          <a class="block pt-4 w-7" href="{{ metadata.github }}">\n' +
+        "            {% include 'svg/github.svg' %}\n" +
+        '          </a>\n' +
+        '        </li>\n' +
+        '      </ul>\n' +
         '    </nav>\n' +
         '    <div class="px-4 py-8 lg:px-6">\n' +
         '      {%- if isHome %}\n' +
         '      <div\n' +
-        '        class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 lg:block"\n' +
+        '        class="hidden mb-8 overflow-hidden border-4 shadow-md  rounded-3xl w-28 lg:block"\n' +
         '      >\n' +
         '        <img src="/image/profile.jpeg" class="object-contain" alt="" />\n' +
         '      </div>\n' +
@@ -2852,7 +2852,7 @@
     },
     layout: 'main.html',
     page: {
-      date: 2021-06-23T16:25:14.728Z,
+      date: 2021-06-23T20:41:16.185Z,
       inputPath: './src/objects.html',
       fileSlug: 'objects',
       filePathStem: '/objects',
@@ -2871,7 +2871,7 @@
       'GitHub Action': [Array]
     }
   },
-  date: 2021-06-23T16:25:14.728Z,
+  date: 2021-06-23T20:41:16.185Z,
   outputPath: '_site/objects/index.html',
   url: '/objects/',
   templateContent: [Getter/Setter]
