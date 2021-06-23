@@ -5,39 +5,58 @@ layout: root.pug
 {% set isHome = page.url === '/' %}
 
 <!-- Left Side -->
-<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 lg:text-gray-300 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0">
+<header
+  class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 lg:text-gray-300 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0"
+>
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
-      <ul class="flex flex-wrap">
-        {% set navPages = collections.all | eleventyNavigation %}
-        {% for item in navPages %}
-          {% set bgDark = " text-white font-black bg-gray-900 rounded-sm" %}
+        <ul class="flex flex-wrap">
+          <!-- prettier-ignore -->
+          {% set navPages = collections.all | eleventyNavigation %}
+          {% set bgDark = "text-white font-black bg-gray-900 rounded-sm" %}
+          {% for item in navPages %}
           <li class="flex-shrink-0 {{ bgDark if item.url === page.url }}">
             <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>
-          </li>   
-        {% endfor %}
+          </li>
+          {% endfor %}
+          <li
+            class="flex-shrink-0 ml-auto {{ bgDark if item.url === page.url }}"
+          >
+            <a class="block pt-4 w-7" href="{{ metadata.github }}">
+              {% include 'svg/github.svg' %}
+            </a>
+          </li>
+        </ul>
+      </>
     </nav>
     <div class="px-4 py-8 lg:px-6">
       {%- if isHome %}
-      <div class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 lg:block">
-        <img src="/image/profile.jpeg" class="object-contain" alt="">
+      <div
+        class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 lg:block"
+      >
+        <img src="/image/profile.jpeg" class="object-contain" alt="" />
       </div>
-      {% endif -%}
-      {% if not tags -%} {%- elif 'post' in tags -%}
+      {% endif -%} {% if not tags -%} {%- elif 'post' in tags -%}
       <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>
       {%- endif -%}
-      <h1 id="title" class="pb-6 text-5xl font-bold {{ '' if isHome else 'text-gray-900' }}">
+      <h1
+        id="title"
+        class="pb-6 text-5xl font-bold {{ '' if isHome else 'text-gray-900' }}"
+      >
         {{ title or metadata.title }}
       </h1>
-      <h2 id="description" class="text-lg max-w-xs italic {{ 'text-yellow-300' if isHome else 'text-gray-600' }}">
-        {{ description or metadata.description }}
+      <h2
+        id="description"
+        class="text-lg max-w-xs italic {{ 'text-yellow-300' if isHome else 'text-gray-600' }}"
+      >
+        {{ metadata.description if isHome else (description or '') }}
       </h2>
     </div>
   </div>
 </header>
 <div class="lg:grid lg:grid-cols-6">
-
   <!-- Middle -->
+
   <div class="lg:col-start-3 lg:col-span-3">
     <div class="px-4 pt-5 pb-8 mx-auto lg:pt-12 max-w-prose lg:px-6">
       {#
@@ -48,7 +67,6 @@ layout: root.pug
   </div>
 
   <!-- Right Side -->
-  
+
   <div class="lg:col-start-6 lg:col-span-1"></div>
- 
 </div>
