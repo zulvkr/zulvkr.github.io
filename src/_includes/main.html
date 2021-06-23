@@ -2,27 +2,27 @@
 layout: root.pug
 ---
 
-<!-- Left Side -->
 {% set isHome = page.url === '/' %}
 
-<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 text-gray-300' if isHome else 'bg-gray-50' }} lg:border-b-0">
+<!-- Left Side -->
+<header class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 lg:text-gray-300 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0">
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
       <ul class="flex flex-wrap">
         {% set navPages = collections.all | eleventyNavigation %}
         {% for item in navPages %}
-          {% set selected = " text-white font-black bg-gray-900 rounded-sm" %}
-          <li class="flex-shrink-0 {{ selected if item.url === page.url }}">
+          {% set bgDark = " text-white font-black bg-gray-900 rounded-sm" %}
+          <li class="flex-shrink-0 {{ bgDark if item.url === page.url }}">
             <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>
           </li>   
         {% endfor %}
     </nav>
     <div class="px-4 py-8 lg:px-6">
-      {% if isHome %}
+      {%- if isHome %}
       <div class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 lg:block">
         <img src="/image/profile.jpeg" class="object-contain" alt="">
       </div>
-      {% endif %}
+      {% endif -%}
       {% if not tags -%} {%- elif 'post' in tags -%}
       <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>
       {%- endif -%}
@@ -36,9 +36,10 @@ layout: root.pug
   </div>
 </header>
 <div class="lg:grid lg:grid-cols-6">
+
   <!-- Middle -->
   <div class="lg:col-start-3 lg:col-span-3">
-    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-12 max-w-prose">
+    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-12 max-w-prose lg:px-6">
       {#
       <div>{{ page | debug | safe }}</div>
       #}
