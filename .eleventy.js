@@ -13,22 +13,9 @@ module.exports = config => {
 
   config.addFilter('toReadableDate', date => format(date, 'MMMM do, yyyy'))
 
-  config.addFilter('debug', content => `<pre>${inspect(content)}</pre>`)
-
   config.addPlugin(eleventyNavigationPlugin)
 
   config.setUseGitIgnore(false)
-
-  config.addTransform('htmlmin', function (content, outputPath) {
-    if (outputPath && outputPath.endsWith('.html')) {
-      return minified = minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true
-      })
-    }
-    return content
-  })
 
   const configObject = {
     dir: {
@@ -38,10 +25,28 @@ module.exports = config => {
   }
 
   /**
+   * Production only setting
+   */
+
+  if (env.NODE_ENV == 'production') {
+    config.addTransform('htmlmin', function (content, outputPath) {
+      if (outputPath && outputPath.endsWith('.html')) {
+        return (minified = minify(content, {
+          useShortDoctype: true,
+          removeComments: true,
+          collapseWhitespace: true
+        }))
+      }
+      return content
+    })
+  }
+
+  /**
    * Development only setting
    */
 
   if (env.NODE_ENV !== 'production') {
+    config.addFilter('debug', content => `<pre>${inspect(content)}</pre>`)
     config.addPassthroughCopy({
       'src/temp/main.css': 'main.css',
       'src/assets/red.css': 'red.css'
