@@ -36,7 +36,10 @@ layout: root.pug
       >
         <img src="/image/profile.jpeg" class="object-contain" alt="" />
       </div>
-      {% endif -%} {% if not tags -%} {%- elif 'post' in tags -%}
+      <!-- prettier-ignore -->
+      {% endif -%}
+      {% if not tags -%}
+      {%- elif 'post' in tags -%}
       <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>
       {%- endif -%}
       <h1
