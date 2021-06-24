@@ -1,12 +1,11 @@
 ---
 layout: main.html
 ---
+
 {% for post in collections.all %}
-<article class="prose">
-  {{ post | debug | safe }}
-</article>
-<br>
-<hr>
-<br>
+<article class="prose">{# {{ post | debug | safe }} #}</article>
+<br />
+<hr />
+<br />
 
 {% endfor %}

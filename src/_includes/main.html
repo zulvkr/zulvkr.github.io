@@ -59,9 +59,8 @@ layout: root.pug
 
   <div class="lg:col-start-3 lg:col-span-3">
     <div class="px-4 pt-5 pb-8 mx-auto lg:pt-12 max-w-prose lg:px-6">
-      {#
-      <div>{{ page | debug | safe }}</div>
-      #}
+      <!-- prettier-ignore -->
+      {# {{ page | debug | safe }} #}
       <div>{{ content | safe }}</div>
     </div>
   </div>
