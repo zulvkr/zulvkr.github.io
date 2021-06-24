@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="14.622894mm"
+   height="14.622894mm"
+   viewBox="0 0 14.622894 14.622894"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="inkscape-icon.svg"
+   inkscape:export-filename="/home/navi/DEVBOX/zulvkr.github.io/src/image/apple-touch-icon.png"
+   inkscape:export-xdpi="55.584068"
+   inkscape:export-ydpi="55.584068"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.90271189"
+     inkscape:cx="-27.140442"
+     inkscape:cy="145.11828"
+     inkscape:window-width="1366"
+     inkscape:window-height="707"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-17.939121,-66.970604)">
+    <rect
+       style="fill:#1a1a1a;fill-rule:evenodd;stroke-width:0.264583"
+       id="rect31"
+       width="14.622894"
+       height="14.622894"
+       x="17.939121"
+       y="67.068146"
+       inkscape:export-filename="/home/navi/DEVBOX/zulvkr.github.io/_site/image/favicon.png"
+       inkscape:export-xdpi="55.584068"
+       inkscape:export-ydpi="55.584068" />
+    <g
+       aria-label="z"
+       id="text739"
+       style="font-size:20.3828px;line-height:1.25;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, ';fill:#ffffff;stroke-width:0.50957"
+       transform="translate(0.23175614,0.17481014)"
+       inkscape:export-filename="/home/navi/DEVBOX/zulvkr.github.io/_site/image/favicon.png"
+       inkscape:export-xdpi="55.584068"
+       inkscape:export-ydpi="55.584068">
+      <path
+         d="m 27.862213,70.061255 q -0.448422,0.754164 -1.01914,1.793686 -0.570719,1.039523 -1.141437,2.140194 -0.550336,1.080289 -1.059906,2.140194 -0.489187,1.039523 -0.794929,1.814069 h 4.158091 v 1.508328 h -5.97216 v -1.263734 q 0.326125,-0.896843 0.835695,-1.997514 0.50957,-1.100671 1.059905,-2.201343 0.570719,-1.100671 1.100672,-2.079045 0.550335,-0.998757 0.937608,-1.651007 h -3.689286 v -1.508327 h 5.584887 z"
+         id="path7311" />
+    </g>
+  </g>
+</svg>
