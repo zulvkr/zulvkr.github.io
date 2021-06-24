@@ -5,10 +5,10 @@
   "main": ".eleventy.js",
   "scripts": {
     "test": "DEBUG=Eleventy* npx eleventy --dryrun",
-    "seed": "npx postcss src/assets/main.tailwind.css -o src/temp/main.css",
+    "seed": "NODE_ENV=seed npx postcss src/assets/main.tailwind.css -o src/temp/main.css",
     "dev": "npm start",
     "start": "npx eleventy --serve",
-    "clean": "rm -r _site",
+    "clean": "rm -r _site src/temp",
     "build": "NODE_ENV=production npx eleventy && NODE_ENV=production npx postcss src/assets/main.tailwind.css -o _site/main.css"
   },
   "repository": {
@@ -30,7 +30,6 @@
     "cssnano": "^5.0.6",
     "date-fns": "^2.22.1",
     "dotenv": "^10.0.0",
-    "eleventy-favicon": "^1.1.1",
     "html-minifier-terser": "^5.1.1",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.2"
