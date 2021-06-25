@@ -14,7 +14,7 @@ Nunjucks are funny templating language. It seems to have a lot of unusual behavi
 
 Recently I was trying to find a clean way to render items conditionally based on availabililty of tags and met a stumble block. At first, I tried to make custom filter like this:
 
-```nunjucks
+```js
 eleventyConfig.addFilter('includesPost', arr => arr.includes('post'))
 ```
 
@@ -26,7 +26,7 @@ This makes me utterly confused, how could that be possible? Is it possible that 
 
 One trick I managed to learn is to print the value of objects using built-in Nunjucks `dump()` filter. It turned out that `tags` is array as expected.
 
-```nunjucks
+```jinja2
 {%- raw -%}
 {{ tags | dump(2) }}
 
@@ -38,7 +38,7 @@ Some testing and an hour of debugging later, the culprit was found! Not every po
 
 So, I need to prevent `tags` being iterated when `tags` is `undefined`:
 
-```nunjucks
+```jinja2
 {%- raw -%}
 {% if not tags %}
 {% elif (tags | includesPost) %}
@@ -49,7 +49,7 @@ So, I need to prevent `tags` being iterated when `tags` is `undefined`:
 
 Well, some Googling later I found a gem! See the second line.
 
-```nunjucks
+```jinja2
 {%- raw -%}
 {% if not tags %}
 {% elif 'post' in tags %}
@@ -62,7 +62,7 @@ The code above is my latest solution. The `in` syntax works similarly as `arr.in
 
 The `.includes()` method surprisingly also works inline in Nunjucks.
 
-```nunjucks
+```jinja2
 {%- raw -%}
 {% if not tags %}
 {% elif tags.includes('post') %}

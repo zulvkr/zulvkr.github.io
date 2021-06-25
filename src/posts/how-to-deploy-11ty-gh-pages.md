@@ -16,7 +16,7 @@ There is no official boilerplate for eleventy, but the configuration is easy to 
 
 ## Configuration
 
-```YAML
+```yaml
 name: github pages
 
 on:

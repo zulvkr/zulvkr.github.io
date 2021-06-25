@@ -3,6 +3,7 @@ const { format } = require('date-fns')
 const { inspect } = require('util')
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation')
 const { minify } = require('html-minifier-terser')
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 
 module.exports = config => {
   config.addPassthroughCopy({
@@ -14,6 +15,8 @@ module.exports = config => {
   config.addFilter('toReadableDate', date => format(date, 'MMMM do, yyyy'))
 
   config.addPlugin(eleventyNavigationPlugin)
+
+  config.addPlugin(syntaxHighlight)
 
   config.setUseGitIgnore(false)
 
