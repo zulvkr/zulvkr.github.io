@@ -4,7 +4,7 @@ layout: root.pug
 
 {% set isHome = page.url === '/' %}
 
-<!-- Left Side -->
+<!-- Left Side / Header -->
 
 <header
   class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 lg:text-gray-300 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0"
@@ -15,14 +15,14 @@ layout: root.pug
         <!-- prettier-ignore -->
 
         {% set navPages = collections.all | eleventyNavigation %}
-        {% set bgDark = "text-white font-black bg-gray-900 rounded-sm" %}
+        {% set bgDark = "text-white font-black bg-gray-900 rounded-sm" if item.url === page.url %}
         
         {% for item in navPages %}
-        <li class="flex-shrink-0 {{ bgDark if item.url === page.url }}">
+        <li class="flex-shrink-0 {{ bgDark }}">
           <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>
         </li>
         {% endfor %}
-        <li class="flex-shrink-0 ml-auto {{ bgDark if item.url === page.url }}">
+        <li class="flex-shrink-0 ml-auto {{ bgDark }}">
           <a class="block pt-4 w-7" href="{{ metadata.github }}">
             {% include 'svg/github.svg' %}
           </a>
@@ -32,7 +32,7 @@ layout: root.pug
     <div class="px-4 py-8 lg:px-6">
       {%- if isHome %}
       <div
-        class="hidden mb-8 overflow-hidden border-4 shadow-md  rounded-3xl w-28 lg:block"
+        class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 lg:block"
       >
         <img src="/image/profile.jpeg" class="object-contain" alt="" />
       </div>
@@ -44,7 +44,7 @@ layout: root.pug
       {%- endif -%}
       <h1
         id="title"
-        class="pb-6 text-5xl font-bold {{ '' if isHome else 'text-gray-900' }}"
+        class="pb-6 text-5xl font-display {{ '' if isHome else 'text-gray-900' }}"
       >
         {{ title or metadata.title }}
       </h1>
@@ -58,7 +58,7 @@ layout: root.pug
   </div>
 </header>
 <div class="lg:grid lg:grid-cols-6">
-  <!-- Middle -->
+  <!-- Middle / Body text -->
 
   <div class="lg:col-start-3 lg:col-span-3">
     <div class="px-4 pt-5 pb-8 mx-auto lg:pt-12 max-w-prose lg:px-6">
