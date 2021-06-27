@@ -8,8 +8,6 @@ title: Portfolio
 
 Employer seems to love to ask for portfolio. So for now I just made this page. Sadly, no fancy GitHub API call yet.
 
-I don't have any particular fullstack web app to be shared yet, but here is some things I made on my past time.
-
 ## Personal project
 
 ### Staticform.click
