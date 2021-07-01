@@ -4,6 +4,7 @@ eleventyNavigation:
   key: Portfolio
   order: 3
 title: Portfolio
+published: true
 ---
 
 Employer seems to love to ask for portfolio. So for now I just made this page. Sadly, no fancy GitHub API call yet.
@@ -68,7 +69,7 @@ RSS reader made with Next.js. I just copied most of our Instructor code. But due
 
 ### PHP & MYSQL Ninja Course Project
 
-[GitHub Link](https://github.com/zulvkr/learnphp)
+[GitHub Link](https://github.com/zulvkr/learnphp/tree/master/project)
 
 This is the most complex project that I attended to. It's based on [a book from Sitepoint](https://www.sitepoint.com/premium/books/php-mysql-novice-to-ninja-6th-edition). The entire book is one big project of CRUD app made with vanilla PHP, no library.
 
