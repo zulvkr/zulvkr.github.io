@@ -6,14 +6,13 @@ date: 2021-07-01
 tags:
   - post
   - Python
-  - Django
   - Django Rest Framework
-  - stub
+  - Laravel
 ---
 
 I've been looking around for better backend solution. In JavaScript jungle land, currently there are too many budding technologies to try, a situation that excarbated by TypeScript hype train.
 
-In order to extricate myself from that, I went Python, which has better stability and known as a solid backend language. They have amazing tools too, battery-included Django, micro-framework Flask, and their newer async cousin FastAPI. Backend have never been better in Python, so let's hop on the back of this snake.
+In order to extricate myself from that, I went Python. It has better stability and known as a solid backend language. It has amazing tools too: battery-included Django, micro-framework Flask, and their newer async cousin FastAPI. Backend has never been better in Python, so let's hop on the back of this snake.
 
 So, as told by people of the internet, I learned Django first, which is a more opinionated framework that follow convention.
 

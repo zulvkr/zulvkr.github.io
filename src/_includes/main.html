@@ -15,11 +15,11 @@ layout: root.pug
         <!-- prettier-ignore -->
 
         {% set navPages = collections.all | eleventyNavigation %}
-        {% set bgDark = "text-white font-black bg-gray-900 rounded-sm" if item.url === page.url %}
+        {% set bgDark = "text-white bg-gray-900 rounded-sm" if item.url === page.url %}
         
         {% for item in navPages %}
         <li class="flex-shrink-0 {{ bgDark }}">
-          <a class="block px-3 pt-6" href="{{ item.url }}">{{ item.key }}</a>
+          <a class="block px-3 pt-6 {{ 'font-bold' if item.url === page.url  }}" href="{{ item.url }}">{{ item.key }}</a>
         </li>
         {% endfor %}
         <li class="flex-shrink-0 ml-auto {{ bgDark }}">
