@@ -73,7 +73,7 @@ RSS reader made with Next.js. I just copied most of our Instructor code. But due
 
 This is the most complex project that I attended to. It's based on [a book from Sitepoint](https://www.sitepoint.com/premium/books/php-mysql-novice-to-ninja-6th-edition). The entire book is one big project of CRUD app made with vanilla PHP, no library.
 
-It's quite hard to finish this course, zero library... Ow, man... I am a confused ninja now. I learned a lot and I gained some appreciation of object oriented PHP with PSR-3. I also learned some cool SQL ninja skill.
+It's quite hard to finish this course, zero library... Ow, man... I am a confused ninja now. I learned a lot and I gained some appreciation of object oriented PHP. I also learned some cool SQL ninja skill.
 
 PHP sure has changed and gained some static typing ability, but I still felt that PHP as a language is harder to learn correctly.
 

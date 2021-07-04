@@ -7,8 +7,10 @@ eleventyNavigation:
 
 <section id="preface" class="my-5 prose">
   <p class="italic">
-    Hi! I'm Zul, a muslim Indonesian. I live in Java Island. Currently hopping
-    on programmer-land and mostly coding JavaScript, sometimes Python / PHP. <a href="/about">Get in touch!</a>
+    Hi! I'm Zul, a muslim Indonesian. I live in
+    <a href="https://en.wikipedia.org/wiki/Java">Java Island</a>. Currently
+    hopping on programmer-land and mostly coding JavaScript, sometimes Python or
+    PHP. <br/> <a href="/about">Get in touch!</a>
   </p>
 </section>
 {% for post in collections.post | reverse %}
@@ -18,7 +20,9 @@ eleventyNavigation:
     — {{ post.data.date | toReadableDate }}
   </p>
   <a href="{{ post.url }}">
-    <h2 class="pb-3 text-2xl font-bold text-gray-900">{{ post.data.title }}</h2>
+    <h2 class="pb-3 text-4xl text-gray-900 font-display">
+      {{ post.data.title }}
+    </h2>
   </a>
   <section class="font-serif prose">
     <p>{{ post.data.description }}</p>
