@@ -51,7 +51,7 @@ Back to Django, it sure has the same spirit as Laravel, but my onboarding has be
 
 Maybe I'm biased, I have Homestead already set up before trying Laravel so it's a breeze to try.
 
-The official tutorial in Django is easy to follow but hard to understand. It consists of seven steps, with each step I get to know more Django magic that I don't need for a REST API. So I stopped when I met the templating step.
+The official tutorial in Django is easy to follow but hard to understand. It consists of seven steps, with each step I get to know more of Django magic that I don't need for a REST API. So I stopped when I met the templating step.
 
 If you are like me, you should not bother with the official tutorial.
 
