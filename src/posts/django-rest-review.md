@@ -10,13 +10,13 @@ tags:
   - Laravel
 ---
 
-I've been looking around for a better backend solution. In JavaScript jungle land, currently there are too many budding technologies to try, a situation that exacerbated by the TypeScript hype train.
+I've been looking around for a better backend solution. In JavaScript jungle land, currently there are too many budding technologies to try. A situation that exacerbated by the TypeScript hype train.
 
-In order to extricate myself from that, I went to Python. It has better stability and is known as a solid backend language. It has amazing tools too: battery-included Django, micro-framework Flask, and their newer async cousin FastAPI. Backend has never been better in Python, so let's hop on the back of this snake.
+In order to extricate myself from that, I went to Python. Python has better stability and is known as a solid backend language. It has amazing tools too: battery-included Django, micro-framework Flask, and their newer async cousin FastAPI. Backend has never been better in Python, so let's hop on the back of this snake.
 
 So, as told by people on the internet, I learned Django first, which is a more opinionated framework that follows convention.
 
-I tell you it's not easy, compared to learning Flask. Django is colossal, and the first thing I figured out to be confusing is the virtual env and folder structure.
+I tell you it's not easy. It's difficult to start learning Django compared to Flask. Django is colossal, and the first thing I figured out to be confusing is the virtual env and folder structure.
 
 ## What is virtual env?
 
@@ -28,9 +28,9 @@ Ah yes, unlike how `package.json` works. Your console and VSCode may not automat
 
 ## How is Django structured?
 
-Django folder structure and Python packages in general look alien to me. There is a stupid moment when I didn't put `.` when running `startingproject` and got confused for an hour due to wrong folder structure.
+Django folder structure and Python packages in general look alien to me. There is a stupid moment when I didn't put `.` when running `startproject` and got confused for an hour due to wrong folder structure.
 
-It has two start commands, `startproject` and `startapp`. Laravel only has one app folder, but Django can have many of them. So why do I want so many models and templates files separated in different folders? What is App?
+Django has two start commands, `startproject` and `startapp`. Laravel only has one app folder, but Django can have many of them. So why do I want so many models and templates files separated in different folders? What is App?
 
 I like this quote from [The Django Book](https://djangobook.com/mdj2-django-structure/):
 
