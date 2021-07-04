@@ -12,6 +12,6 @@ head
   link(rel='manifest' href='/manifest.webmanifest')
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
-  link(href='https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Condensed&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Condensed&display=swap' rel='stylesheet' media='print' onload='this.media="all"')
   title #{title || metadata.title}
 body !{content}
