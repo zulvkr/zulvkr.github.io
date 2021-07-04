@@ -11,18 +11,18 @@ layout: root.pug
 >
   <div class="mx-auto max-w-prose">
     <nav class="p-4 text-sm lg:px-6">
-      <ul class="flex flex-wrap">
+      <ul class="flex flex-wrap group">
         <!-- prettier-ignore -->
 
         {% set navPages = collections.all | eleventyNavigation %}
-        {% set bgDark = "text-white bg-gray-900 rounded-sm" if item.url === page.url %}
+        {% set bgDarkIfActive = "text-gray-100 bg-gray-900 rounded-sm" if item.url === page.url %}
         
         {% for item in navPages %}
-        <li class="flex-shrink-0 {{ bgDark }}">
-          <a class="block px-3 pt-6 hover:bg-black hover:bg-opacity-20 transition {{ 'bg-black bg-opacity-20' if item.url === page.url }}" href="{{ item.url }}">{{ item.key }}</a>
+        <li class="flex-shrink-0 {{ bgDarkIfActive }} {{ 'group-hover:text-white' if isHome }}">
+          <a class="block px-3 pt-6 hover:bg-black hover:bg-opacity-10 transition {{ 'bg-black bg-opacity-20' if item.url === page.url }}" href="{{ item.url }}">{{ item.key }}</a>
         </li>
         {% endfor %}
-        <li class="flex-shrink-0 ml-auto {{ bgDark }}">
+        <li class="flex-shrink-0 ml-auto {{ bgDarkIfActive }} {{ 'group-hover:text-white' if isHome }}">
           <a class="block pt-4 w-7" href="{{ metadata.github }}">
             {% include 'svg/github.svg' %}
           </a>
