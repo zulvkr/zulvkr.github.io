@@ -7,18 +7,31 @@ title: Portfolio
 published: true
 ---
 
-Employer seems to love to ask for portfolio. So for now I just made this page. Sadly, no fancy GitHub API call yet.
+Employer seems to love to ask for portfolio. So for now I just made this page.
 
 ## Personal project
 
 ### Staticform.click
 
-- [Github link][1]
-- Website: [staticform.click](https://staticform.click)
+![ss_sf12](image/Screenshot_sf12.jpg)
 
-A website I made for people to make their own form builder website with JAMStack. I played with Tailwind CSS and Alpine.js. I also wrote little documentation for it.
+- [Github link][1]
+- Website: [staticform.click](https://staticform21.netlify.app/)
+
+A website that I made for people to make their own form builder website with JAMStack. I played with Tailwind CSS and Alpine.js here. I also wrote little documentation for it.
 
 This project goes unpublished since I don't want people unknowingly share their WhatsApp number / API key freely in GitHub repo if they left it as public repo. I still feel there is a way to make this project more useful.
+
+The staticform.click that is a valid domain that I bought, but I experience it sometimes out, so I use the netlify domain instead. I don't trust this particular domain provider anymore...
+
+### Nuxt Vuetify Hotel Gallery
+
+![SS_Nuxt Vuetify](image/Screenshot_nuxtvuetify.jpg)
+
+- [Github link](https://github.com/zulvkr/wbnuxtvuetify)
+- [Website](https://brave-payne-6e0dd1.netlify.app/)
+
+A quickie one page website made for a code challenge for an interview. The image was provided by the interviewer so I'm not sure how long they will live in the internet.
 
 ### Discord bot
 
