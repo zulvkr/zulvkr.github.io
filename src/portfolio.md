@@ -13,7 +13,7 @@ Employer seems to love to ask for portfolio. So for now I just made this page.
 
 ### Staticform.click
 
-![ss_sf12](image/Screenshot_sf12.jpg)
+![ss_sf12](../image/Screenshot_sf12.jpg)
 
 - [Github link][1]
 - Website: [staticform.click](https://staticform21.netlify.app/)
@@ -26,7 +26,7 @@ The staticform.click that is a valid domain that I bought, but I experience it s
 
 ### Nuxt Vuetify Hotel Gallery
 
-![SS_Nuxt Vuetify](image/Screenshot_nuxtvuetify.jpg)
+![SS_Nuxt Vuetify](../image/Screenshot_nuxtvuetify.jpg)
 
 - [Github link](https://github.com/zulvkr/wbnuxtvuetify)
 - [Website](https://brave-payne-6e0dd1.netlify.app/)
