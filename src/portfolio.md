@@ -31,7 +31,7 @@ The staticform.click that is a valid domain that I bought, but I experience it s
 - [Github link](https://github.com/zulvkr/wbnuxtvuetify)
 - [Website](https://brave-payne-6e0dd1.netlify.app/)
 
-A quickie one page website made for a code challenge for an interview. The image was provided by the interviewer so I'm not sure how long they will live in the internet.
+A quickie one page website made for a code challenge of an interview. The image was provided by the interviewer so I'm not sure how long they will live in the internet.
 
 ### Discord bot
 
