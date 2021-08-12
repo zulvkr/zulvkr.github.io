@@ -4,12 +4,12 @@ eleventyNavigation:
   key: Portfolio
   order: 3
 title: Portfolio
-published: true
+description: Employer seems to love to ask for portfolio. So for now I just made this page.
 ---
 
-Employer seems to love to ask for portfolio. So for now I just made this page.
-
 ## Personal project
+
+These are projects I made for fun and learning.
 
 ### Staticform.click
 

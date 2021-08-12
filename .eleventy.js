@@ -9,7 +9,7 @@ module.exports = config => {
   config.addPassthroughCopy({
     'src/image/': 'image',
     'src/assets/favicon/*': '/',
-    'src/manifest.webmanifest': 'manifest.webmanifest'
+    'src/assets/manifest.webmanifest': 'manifest.webmanifest'
   })
 
   config.addFilter('toReadableDate', date => format(date, 'MMMM do, yyyy'))

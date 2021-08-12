@@ -4,17 +4,7 @@ eleventyNavigation:
   key: /zul/
   order: 1
 ---
-
-<section id="preface" class="my-5 prose">
-  <p class="italic">
-    Hi! I'm Zul, a muslim Indonesian. I live in
-    <a href="https://en.wikipedia.org/wiki/Java">Java Island</a>. Currently
-    hopping on programmer-land and mostly coding JavaScript, sometimes Python or
-    PHP.
-  </p>
-</section>
 {% for post in collections.post | reverse %}
-<hr />
 <article class="py-10">
   <p class="pb-2 text-sm text-gray-600">
     — {{ post.data.date | toReadableDate }}
@@ -29,10 +19,11 @@ eleventyNavigation:
   </section>
   <a href="{{ post.url }}">
     <p
-      class="inline-block px-4 py-1 mt-5 font-serif text-sm font-bold text-gray-900 transition border border-gray-900 hover:bg-gray-900 hover:text-yellow-300"
+    class="inline-block px-4 py-1 mt-5 font-serif text-sm font-bold text-gray-700 transition border border-gray-500 hover:bg-gray-900 hover:text-yellow-300"
     >
-      Read more
-    </p>
-  </a>
+    Read more
+  </p>
+</a>
 </article>
+<hr />
 {% endfor %}

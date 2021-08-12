@@ -19,7 +19,7 @@ layout: root.pug
         
         {% for item in navPages %}
         <li class="flex-shrink-0 {{ bgDarkIfActive }} {{ 'group-hover:text-white' if isHome }}">
-          <a class="block px-3 pt-6 hover:bg-black hover:bg-opacity-10 transition {{ 'bg-black bg-opacity-20' if item.url === page.url }}" href="{{ item.url }}">{{ item.key }}</a>
+          <a class="block px-3 pt-6 hover:bg-black hover:bg-opacity-10 transition {{ 'bg-black bg-opacity-10 shadow-inner' if item.url === page.url }}" href="{{ item.url }}">{{ item.key }}</a>
         </li>
         {% endfor %}
         <li class="flex-shrink-0 ml-auto {{ bgDarkIfActive }} {{ 'group-hover:text-white' if isHome }}">
@@ -50,7 +50,7 @@ layout: root.pug
       </h1>
       <h2
         id="description"
-        class="max-w-xs font-serif italic {{ 'text-white' if isHome else 'text-gray-600' }}"
+        class=" max-w-prose font-serif italic {{ 'text-white' if isHome else 'text-gray-600' }}"
       >
         {{ metadata.description if isHome else (description or '') }}
       </h2>
