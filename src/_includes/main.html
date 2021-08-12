@@ -7,10 +7,10 @@ layout: root.pug
 <!-- Left Side / Header -->
 
 <header
-  class="border-b lg:border-r lg:fixed lg:w-2/6 lg:h-full lg:pt-8 {{ 'bg-gray-900 lg:text-gray-300 text-white' if isHome else 'bg-gray-50' }} lg:border-b-0"
+  class="border-b xl:border-r xl:fixed xl:w-2/6 xl:h-full xl:pt-8 {{ 'bg-gray-900 xl:text-gray-300 text-white' if isHome else 'bg-gray-50' }} xl:border-b-0"
 >
-  <div class="mx-auto max-w-prose">
-    <nav class="p-4 text-sm lg:px-6">
+  <div class="mx-auto xl:ml-auto xl:mr-0 max-w-prose">
+    <nav class="p-4 text-sm xl:px-6">
       <ul class="flex flex-wrap group">
         <!-- prettier-ignore -->
 
@@ -18,21 +18,29 @@ layout: root.pug
         {% set bgDarkIfActive = "text-gray-100 bg-gray-900 rounded-sm" if item.url === page.url %}
         
         {% for item in navPages %}
-        <li class="flex-shrink-0 {{ bgDarkIfActive }} {{ 'group-hover:text-white' if isHome }}">
-          <a class="block px-3 pt-6 hover:bg-black hover:bg-opacity-10 transition {{ 'bg-black bg-opacity-10 shadow-inner' if item.url === page.url }}" href="{{ item.url }}">{{ item.key }}</a>
+        <li
+          class="flex-shrink-0 {{ bgDarkIfActive }} {{ 'group-hover:text-white' if isHome }}"
+        >
+          <a
+            class="block px-3 pt-6 hover:bg-black hover:bg-opacity-10 transition {{ 'bg-black bg-opacity-10 shadow-inner' if item.url === page.url }}"
+            href="{{ item.url }}"
+            >{{ item.key }}</a
+          >
         </li>
         {% endfor %}
-        <li class="flex-shrink-0 ml-auto {{ bgDarkIfActive }} {{ 'group-hover:text-white' if isHome }}">
+        <li
+          class="flex-shrink-0 ml-auto {{ bgDarkIfActive }} {{ 'group-hover:text-white' if isHome }}"
+        >
           <a class="block pt-4 w-7" href="{{ metadata.github }}">
             {% include 'svg/github.svg' %}
           </a>
         </li>
       </ul>
     </nav>
-    <div class="px-4 py-8 lg:px-6">
+    <div class="px-4 py-8 xl:px-6">
       {%- if isHome %}
       <div
-        class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 lg:block"
+        class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 xl:block"
       >
         <img src="/image/profile.jpeg" class="object-contain" alt="" />
       </div>
@@ -57,11 +65,11 @@ layout: root.pug
     </div>
   </div>
 </header>
-<div class="lg:grid lg:grid-cols-6">
+<div class="xl:grid xl:grid-cols-6">
   <!-- Middle / Body text -->
 
-  <div class="lg:col-start-3 lg:col-span-3">
-    <div class="px-4 pt-5 pb-8 mx-auto lg:pt-12 max-w-prose lg:px-6">
+  <div class="xl:col-start-3 xl:col-span-3">
+    <div class="px-4 pt-5 pb-8 mx-auto xl:ml-6 xl:mr-auto xl:pt-12 max-w-prose xl:px-6">
       <!-- prettier-ignore -->
       {# {{ page | debug | safe }} #}
       <div>{{ content | safe }}</div>
@@ -70,5 +78,5 @@ layout: root.pug
 
   <!-- Right Side -->
 
-  <div class="lg:col-start-6 lg:col-span-1"></div>
+  <div class="xl:col-start-6 xl:col-span-1"></div>
 </div>

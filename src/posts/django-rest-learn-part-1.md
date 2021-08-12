@@ -1,6 +1,6 @@
 ---
 layout: blog.html
-title: Learning Django as JavaScript Developer
+title: Learning Django as JavaScript Developer - Part 1
 description: I just learned Django, specifically Django Rest Framework. I also made comparison with Laravel. Here are my 2 cents.
 date: 2021-07-01
 tags:
@@ -10,13 +10,13 @@ tags:
   - Laravel
 ---
 
-I've been looking around for a better backend solution. In JavaScript jungle land, currently there are too many budding technologies to try. A situation that exacerbated by the TypeScript hype train.
+I've been looking around for backend solution in JavaScript jungle land. As a novice in backend, I preferred a battery-included framework to shape my application better, but currently there is no mature framework yet in JavaScript that fit my demand.
 
-In order to extricate myself from that, I went to Python. Python has better stability and is known as a solid backend language. It has amazing tools too: battery-included Django, micro-framework Flask, and their newer async cousin FastAPI. Backend has never been better in Python, so let's hop on the back of this snake.
+So I went Python. Python has better stability and is known as a solid backend language. Python known to be used by big name as their stack, at least when they are starting. The software ecosystem includes battery-included framework Django, micro-framework Flask, and their newer typed async cousin FastAPI. Backend seems to be interesting Python now, and less decision crazy like in JS world, so I decided to hop on the happy train.
 
-So, as told by people on the internet, I learned Django first, which is a more opinionated framework that follows convention.
+I tell you it's not easy. It's difficult to start learning Django compared to simpler unopinionated framework like Express.
 
-I tell you it's not easy. It's difficult to start learning Django compared to Flask. Django is colossal, and the first thing I figured out to be confusing is the virtual env and folder structure.
+Django is colossal, and the first thing I figured out to be confusing is the virtual env and folder structure.
 
 ## What is virtual env?
 
@@ -45,25 +45,17 @@ Well, there is no consensus on how the project is structured. A simple project m
 
 ## Django official tutorial is confusing.
 
-I had been playing around with Laravel before and everything felt so magical and in place. Things are just work. Coupled with amazing tutorials on the internet and the matured situation of PHP as a language of the web, Laravel is undoubtedly the most supportive, easiest framework I've ever felt.
+I had been playing around with Laravel before and everything felt so magical and in place. Things just work. Coupled with amazing tutorials on the internet and the matured situation of PHP as a language of the web, Laravel is undoubtedly the most supportive, easiest framework I've ever felt.
 
 Back to Django, it sure has the same spirit as Laravel, but my onboarding has been unpleasant due to python3 vs python2, virtualenv, and other python issues.
 
-Maybe I'm biased, I have Homestead already set up before trying Laravel so it's a breeze to try.
+Maybe I'm biased. I have Homestead already set up before trying Laravel so it's a breeze to try.
 
 The official tutorial in Django is easy to follow but hard to understand. It consists of seven steps, with each step I get to know more of Django magic that I don't need for a REST API. So I stopped when I met the templating step.
 
-If you are like me, you should not bother with the official tutorial.
+If you are like me, you should not bother with the official tutorial. 
 
 Start with [Django REST Framework Quickstart](https://www.django-rest-framework.org/tutorial/quickstart/) instead! It's short and get you up running in minutes. You should read Django docs sparingly to follow the quickstart.
-
-## Learning Python
-
-Learning Python is easy peasy if you have solid background in JavaScript. My learning path is reading W3School (Yea, I know it has bad reputation, but it's great to have a concise overview of the subject), complemented it with Python official tutorials on the basics of primitives and then straight to Django.
-
-## Closing
-
-Django is amazing at bootstraping the Model-View part of the project. Features that I appreciated the most are: serialization, migration and authentication.
 
 ### Comparison with Laravel
 
@@ -71,8 +63,4 @@ Laravel comes with more artisan magic tools out of the box. For building a REST 
 
 Django modularity gives rise to outstanding third party packages like Django REST Framework. On the other side, PHP has a rich package ecosystem too and Symfony that Laravel is built upon is an old behemoth.
 
-Both are good, the decision boils down to familiarity of developer and language ecosystem. 
-
-There are more PHP web developers in the wild, so pick PHP for a common web. It's easier to pick up as a newbie web developer, but the community suffers from pseudo-developer syndrome.
-
-Python is known for data wrangling. So if you want to get big and data-driven, Python is an easy pick.
+Both are good at what they do best, the decision boils down to familiarity of developer and language ecosystem.
