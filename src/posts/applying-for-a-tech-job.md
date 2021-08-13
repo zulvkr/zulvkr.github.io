@@ -7,15 +7,15 @@ tags:
   - post
 ---
 
-There surely must be a way for me to stop learning React and start applying for an actual job where it matters. I don't like job in general, you know it. I love helping people but doing a job is... Often it went outside of your expectation. I love coding and messing with things, but I possibly can't do that in actual job.
+There surely must be a way for me to stop learning React and start applying for an actual job where it matters. I love helping people but doing a job is... It often went outside of my expectation. I love coding and messing with things, but I possibly can't do that in actual job.
 
 But that's only a possibility. I may actually score an awesome job! So let's try my best doing this in a structured manner that actually works and don't render my heart too much due to rejection.
 
 ### My State of Portfolio
 
-My portfolio is made of some half finished static websites that I made with with some bad security idea in mind, thus it goes unpublished. But it's fine, and displaying my markup skill a bit.
+My portfolio is made of some half finished static websites that I made with with some bad security idea in mind, thus it goes unpublished. But it's fine, it displays my markup skill a bit.
 
-I don't have any working server right now. I think it's time to stop being stingy and start a good project with VPS. Next.js is worth it and very fine technology right now.
+I don't have any working server right now. I think it's time to stop being stingy and start a good project with VPS. Next.js is a good choice now.
 
 I haven't made the final PDF yet. I want to have a good one without hassle and portable enough, so I guess it will be Google Docs. I need it badly for applying so by the time anyone see this writing, it's already available.
 
@@ -23,18 +23,18 @@ My state of basic coding skill, I think I'm not a noob, but far from experienced
 
 Well, I just finished with FreeCodeCamp certification so that could speak up a bit for my skill.
 
-### Have you look up jobs?
+### Have you look up for jobs?
 
 Jobs are everywhere, but that makes finding a good one can be harder. I think this is my current Issue. I have to make a strategy to apply efficiently and avoiding potholes.
 
 Let's filter the job now.
 
 1. It should be local or has local presence. A foreign one is fine but must have solid background.
-2. It should take a junior, 2 year experience kind.
+2. It should take a junior, 2 year experience maybe a signal for junor or some kind.
 3. It's not a pothole.
 4. It aligns with my skillset and development program - backend.
 
-This is just a random list I made, but surely can be worked on as a base for specifying wanted job.
+This is just a random list I made, but surely it can be worked on as a base for specifying wanted job.
 
 The first and second is easy to identify so I skipped on that.
 
