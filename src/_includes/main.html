@@ -2,30 +2,31 @@
 layout: root.pug
 ---
 
+<!-- prettier-ignore -->
 {% set isHome = page.url === '/' %}
+{% set navPages = collections.all | eleventyNavigation %}
+{% set bgDarkIfActive = "text-gray-100 bg-gray-900" if item.url === page.url %}
 
 <!-- Left Side / Header -->
 
 <header
-  class="border-b xl:border-r xl:fixed xl:w-2/6 xl:h-full xl:pt-8 {{ 'bg-gray-900 xl:text-gray-300 text-white' if isHome else 'bg-gray-50' }} xl:border-b-0"
+  class="
+  border-b xl:border-r xl:fixed xl:w-2/6 xl:h-full xl:pt-8 xl:border-b-0 
+  {{ 'bg-gray-900 xl:text-gray-300 text-white' if isHome else 'bg-gray-50' }}"
 >
   <div class="mx-auto xl:ml-auto xl:mr-0 max-w-prose">
     <nav class="p-4 text-sm xl:px-6">
       <ul class="flex flex-wrap group">
-        <!-- prettier-ignore -->
-
-        {% set navPages = collections.all | eleventyNavigation %}
-        {% set bgDarkIfActive = "text-gray-100 bg-gray-900 rounded-sm" if item.url === page.url %}
-        
         {% for item in navPages %}
         <li
           class="flex-shrink-0 {{ bgDarkIfActive }} {{ 'group-hover:text-white' if isHome }}"
         >
           <a
-            class="block px-3 pt-6 hover:bg-black hover:bg-opacity-10 transition {{ 'bg-black bg-opacity-10 shadow-inner' if item.url === page.url }}"
+            class="block px-3 pt-6 hover:bg-black hover:bg-opacity-10 transition 
+              {{ 'bg-black bg-opacity-10 shadow-inner' if item.url === page.url }}"
             href="{{ item.url }}"
-            >{{ item.key }}</a
-          >
+            >{{ item.key }}
+          </a>
         </li>
         {% endfor %}
         <li
@@ -65,18 +66,19 @@ layout: root.pug
     </div>
   </div>
 </header>
+
+<!-- End left Side / Header -->
+
 <div class="xl:grid xl:grid-cols-6">
   <!-- Middle / Body text -->
-
   <div class="xl:col-start-3 xl:col-span-3">
-    <div class="px-4 pt-5 pb-8 mx-auto xl:ml-6 xl:mr-auto xl:pt-12 max-w-prose xl:px-6">
+    <div
+      class="px-4 pt-5 pb-8 mx-auto xl:ml-6 xl:mr-auto xl:pt-12 max-w-prose xl:px-6"
+    >
       <!-- prettier-ignore -->
       {# {{ page | debug | safe }} #}
       <div>{{ content | safe }}</div>
     </div>
   </div>
 
-  <!-- Right Side -->
-
-  <div class="xl:col-start-6 xl:col-span-1"></div>
 </div>
