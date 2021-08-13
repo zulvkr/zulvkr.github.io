@@ -42,7 +42,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       sans,
-      serif: ['Gelasio', ...serif],
+      serif: ['Lora', ...serif],
       mono,
       display: ['Ubuntu Condensed', ...sans]
     }

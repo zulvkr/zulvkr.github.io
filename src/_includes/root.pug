@@ -4,7 +4,6 @@ html(lang="en")
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-
     title #{title || metadata.title}
     meta(property='og:title' content=title || metadata.title)
     meta(name='description' content=isHome ? metadata.description : (description || ''))
@@ -13,18 +12,16 @@ html(lang="en")
     meta(property='og:type' content='website')
     meta(property='og:url' content=page.url)
     link(rel='canonical' href=page.url)
-
     //- meta(property='og:image:alt' content='Image description')
     //- meta(property='og:image' content='https://www.mywebsite.com/image.jpg')
     //- meta(name='twitter:card' content='summary_large_image')
-
     link(rel='stylesheet' href='/main.css')
     //- link(rel='stylesheet' href='/red.css')
     link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/prism-themes@1.7.0/themes/prism-atom-dark.css' media='print' onload='this.media="all"')
+    link(href='https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap' rel='stylesheet')
     link(rel='preconnect' href='https://fonts.googleapis.com')
     link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
-    link(href='https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Condensed&display=swap' rel='stylesheet' media='print' onload='this.media="all"')
-
+    link(href='https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Condensed&display=swap' rel='stylesheet' media='print' onload='this.media="all"')
     link(rel='icon' href='/favicon.ico')
     link(rel='icon' href='/icon.svg' type='image/svg+xml')
     link(rel='apple-touch-icon' href='/apple-touch-icon.png')
