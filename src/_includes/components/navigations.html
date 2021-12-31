@@ -1,0 +1,38 @@
+<!-- prettier-ignore -->
+{% set isActive = item.url === page.url %}
+
+<nav class="p-4 text-sm xl:px-6">
+  <ul class="flex flex-wrap group">
+    {% for item in collections.all | eleventyNavigation %}
+    <li
+      class="{{[
+        'flex-shrink-0',
+        'text-gray-100 bg-gray-900' if isActive, 
+        'group-hover:text-white' if isRoot 
+      ]|join(' ')}}"
+    >
+      <a
+        class="{{[
+          'block px-3 pt-6 transition hover:underline',
+          'bg-black bg-opacity-10 shadow-inner' if isActive,
+          'hover:bg-black hover:bg-opacity-10' if not isRoot
+        ]|join(' ')}}"
+        href="{{ item.url }}"
+      >
+        {{ item.key }}
+      </a>
+    </li>
+    {% endfor %}
+    <li
+      class="{{[
+        'flex-shrink-0 ml-auto',
+        'text-gray-100 bg-gray-900' if isActive,
+        'group-hover:text-white' if isRoot 
+      ]|join(' ')}}"
+    >
+      <a class="block pt-4 w-7" href="{{ metadata.github }}">
+        {% include 'svg/github.svg' %}
+      </a>
+    </li>
+  </ul>
+</nav>

@@ -3,69 +3,9 @@ layout: root.pug
 ---
 
 <!-- prettier-ignore -->
-{% set isHome = page.url === '/' %}
-{% set navPages = collections.all | eleventyNavigation %}
-{% set bgDarkIfActive = "text-gray-100 bg-gray-900" if item.url === page.url %}
+{% set isRoot = page.url === '/' %}
 
-<!-- Left Side / Header -->
-
-<header
-  class="
-  border-b xl:border-r xl:fixed xl:w-2/6 xl:h-full xl:pt-8 xl:border-b-0 
-  {{ 'bg-gray-900 xl:text-gray-300 text-white' if isHome else 'bg-gray-50' }}"
->
-  <div class="mx-auto xl:ml-auto xl:mr-0 max-w-prose">
-    <nav class="p-4 text-sm xl:px-6">
-      <ul class="flex flex-wrap group">
-        {% for item in navPages %}
-        <li
-          class="flex-shrink-0 {{ bgDarkIfActive }} {{ 'group-hover:text-white' if isHome }}"
-        >
-          <a
-            class="block px-3 pt-6 hover:bg-black hover:bg-opacity-10 transition 
-              {{ 'bg-black bg-opacity-10 shadow-inner' if item.url === page.url }}"
-            href="{{ item.url }}"
-            >{{ item.key }}
-          </a>
-        </li>
-        {% endfor %}
-        <li
-          class="flex-shrink-0 ml-auto {{ bgDarkIfActive }} {{ 'group-hover:text-white' if isHome }}"
-        >
-          <a class="block pt-4 w-7" href="{{ metadata.github }}">
-            {% include 'svg/github.svg' %}
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="px-4 py-8 xl:px-6">
-      {%- if isHome %}
-      <div
-        class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 xl:block"
-      >
-        <img src="/image/profile.jpeg" class="object-contain" alt="" />
-      </div>
-      <!-- prettier-ignore -->
-      {% endif -%}
-      {% if not tags -%}
-      {%- elif 'post' in tags -%}
-      <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>
-      {%- endif -%}
-      <h1
-        id="title"
-        class="pb-6 text-5xl font-display {{ '' if isHome else 'text-gray-900' }}"
-      >
-        {{ title or metadata.title }}
-      </h1>
-      <h2
-        id="description"
-        class=" max-w-prose font-serif italic {{ 'text-white' if isHome else 'text-gray-600' }}"
-      >
-        {{ metadata.description if isHome else (description or '') }}
-      </h2>
-    </div>
-  </div>
-</header>
+{% include "components/header.html" %}
 
 <!-- End left Side / Header -->
 
@@ -80,5 +20,4 @@ layout: root.pug
       <div>{{ content | safe }}</div>
     </div>
   </div>
-
 </div>

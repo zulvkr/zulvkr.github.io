@@ -1,14 +1,12 @@
 ---
 layout: blog.html
 title: The Way to Apply for A Tech Job
-description: I have been procrastinating and Not Actually Applying. This Shall Change.
+description: There surely must be a way for me to stop learning React and start applying for an actual job where it matters.
 date: 2021-06-23
 update: 2021-12-31
 tags:
   - post
 ---
-
-There surely must be a way for me to stop learning React and start applying for an actual job where it matters.
 
 Until 4 months ago, I was stuck in an odd job for a pharmacist. I didn't like my job. The routine felt gruelling and creating a report felt dull. Yet the dull job keeps increasing in number to the point drowning. My colleague did better than me at this dull job even when I tried my best is saddening.
 
