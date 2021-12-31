@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/zulvkr/zulvkr.github.io#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.2.6",
     "axios": "^0.21.1",
@@ -35,6 +34,7 @@
     "tailwindcss": "^2.2.2"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1"
   }
