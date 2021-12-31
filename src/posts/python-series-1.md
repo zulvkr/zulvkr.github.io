@@ -62,8 +62,6 @@ Poetry will create:
 2. pyproject.toml, the "package.json"
 3. poetry.lock, the "package-lock.json"
 
-Despite the resemblance, there are various differences between poetry and npm
-
 Here is a sample of pyproject.toml
 
 ```toml
