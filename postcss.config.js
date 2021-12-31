@@ -1,14 +1,15 @@
 const cssnano = require('cssnano')
-const env = process.env
+const autoprefixer = require('autoprefixer')
+const tailwindcss = require('tailwindcss')
+
+const isProduction = process.env.NODE_ENV === 'production'
 
 module.exports = {
   plugins: [
-    require('tailwindcss'),
-    env.NODE_ENV === 'production'
-      ? require('autoprefixer')
-      : null,
-    env.NODE_ENV === 'production'
-      ? cssnano({ preset: 'default' })
-      : null
+    tailwindcss,
+    ...(isProduction ? [
+      autoprefixer,
+      cssnano({ preset: 'default' })
+    ] : []),
   ]
 }
