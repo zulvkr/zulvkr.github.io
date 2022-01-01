@@ -2,7 +2,7 @@
 eleventyComputed:
   eleventyNavigation:
     key: GitHub
-    order: 3
+    order: 99
     url: "{{ metadata.github }}"
 permalink: false
 ---

@@ -54,7 +54,6 @@ module.exports = config => {
     config.addFilter('debug', content => `<pre>${inspect(content)}</pre>`)
     config.addPassthroughCopy({
       'src/temp/main.css': 'main.css',
-      'src/assets/red.css': 'red.css'
     })
   }
 

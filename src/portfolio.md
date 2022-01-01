@@ -2,7 +2,7 @@
 layout: blog.html
 eleventyNavigation:
   key: Portfolio
-  order: 3
+  order: 2
 title: Portfolio
 description: Employer seems to love to ask for portfolio. So for now I just made this page.
 ---
