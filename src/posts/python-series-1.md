@@ -46,7 +46,7 @@ Are you familiar with Node Version Management (nvm)? pyenv API has some similari
 | pyenv global 3.10.1  | Set global version                          | nvm alias default 14.18.2 |
 | pyenv local 3.10.1   | Set local version, saved in .python-version | node -v > .nvmrc          |
 
-\*: pyenv resolves the python version per directory, while nvm resolves the node version globally. Calling `nvm use` with an unspecified version will set node to default alias so it's rather similar with global python version.
+\*: pyenv resolves the python version per directory, while nvm resolves the node version globally. Calling `nvm use default` will set node to default alias so it's rather similar with global python version.
 
 ## Introduction to Poetry and virtual environment
 

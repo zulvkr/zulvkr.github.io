@@ -13,7 +13,7 @@
     "build:11ty": "NODE_ENV=production npx eleventy",
     "build:css": "NODE_ENV=production npx tailwindcss -i src/assets/main.tailwind.css -o _site/main.css --minify",
     "build": "npm run build:css & npm run build:11ty",
-    "preview": "npm run clean && npm run build && browser-sync _site"
+    "preview": "! npm run clean && npm run build && browser-sync _site"
   },
   "repository": {
     "type": "git",
