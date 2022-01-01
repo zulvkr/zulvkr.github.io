@@ -5,11 +5,11 @@
   "main": ".eleventy.js",
   "scripts": {
     "test": "DEBUG=Eleventy* npx eleventy --dryrun",
-    "seed": "NODE_ENV=seed npx postcss src/assets/main.tailwind.css -o src/temp/main.css",
-    "dev": "npm start",
-    "start": "npx eleventy --serve",
+    "dev:11ty": "npx eleventy --serve",
+    "dev:css": "npx tailwindcss -i src/assets/main.tailwind.css -o src/temp/main.css --watch",
+    "dev": "npm run dev:11ty & npm run dev:css",
     "clean": "rm -r _site src/temp",
-    "build": "NODE_ENV=production npx eleventy && NODE_ENV=production npx postcss src/assets/main.tailwind.css -o _site/main.css"
+    "build": "NODE_ENV=production npx eleventy && NODE_ENV=production npx tailwindcss -i src/assets/main.tailwind.css -o src/temp/main.css --minify"
   },
   "repository": {
     "type": "git",

@@ -1,42 +1,40 @@
+<!-- prettier-ignore -->
+{% set isRoot = page.url === '/' %}
+
 <header
   class="{{[
     'border-b xl:border-r xl:fixed xl:w-2/6 xl:h-full xl:pt-8 xl:border-b-0',
     'bg-gray-900 xl:text-gray-300 text-white' if isRoot else 'bg-gray-50' 
-  ]|join(' ')}}"
+  ] | class }}"
 >
   <div class="mx-auto xl:ml-auto xl:mr-0 max-w-prose">
-    {% include "components/navigations.html" %}
+    {% include "components/main/navigations.html" %}
     <div class="px-4 py-8 xl:px-6">
-      {%- if isRoot %}
-      <div
-        class="hidden mb-8 overflow-hidden border-4 shadow-md rounded-3xl w-28 xl:block"
-      >
-        <img src="/image/profile.jpeg" class="object-contain" alt="" />
-      </div>
       <!-- prettier-ignore -->
-      {% endif -%}
-      {% if not tags -%}
-      {%- elif 'post' in tags -%}
+      {% include "components/main/pic.html" %}
+      
+      {% if tags and 'post' in tags %}
       <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>
-      {%- endif -%}
+      {% endif %}
+
       <h1
         id="title"
         class="{{[
           'pb-6 text-5xl font-display',
           'text-gray-900' if not isRoot
-        ]|join(' ')}}"
+        ] | class }}"
       >
         {{ title or metadata.title }}
       </h1>
-      <h2
+      <p
         id="description"
         class="{{[
           'max-w-prose font-serif italic', 
           'text-white' if isRoot else 'text-gray-600'
-        ]|join(' ')}}"
+        ] | class }}"
       >
         {{ metadata.description if isRoot else (description or '') }}
-      </h2>
+      </p>
     </div>
   </div>
 </header>

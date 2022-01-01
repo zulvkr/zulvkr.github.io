@@ -13,6 +13,8 @@ module.exports = config => {
   })
 
   config.addFilter('toReadableDate', date => format(date, 'MMMM do, yyyy'))
+  
+  config.addFilter('class', arr => arr.join(' '))
 
   config.addPlugin(eleventyNavigationPlugin)
 

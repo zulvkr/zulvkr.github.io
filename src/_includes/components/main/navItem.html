@@ -1,0 +1,10 @@
+<li
+  class="{{[
+    'flex-shrink-0',
+    'text-gray-100 bg-gray-900' if isActive, 
+    'group-hover:text-white' if isRoot,
+    'ml-auto' if loop.last
+  ] | class }}"
+>
+  {% block navContent %}{% endblock %}
+</li>

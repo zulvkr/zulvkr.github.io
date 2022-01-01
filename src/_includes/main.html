@@ -2,20 +2,13 @@
 layout: root.pug
 ---
 
-<!-- prettier-ignore -->
-{% set isRoot = page.url === '/' %}
-
-{% include "components/header.html" %}
-
-<!-- End left Side / Header -->
+{% include "components/main/header.html" %}
 
 <div class="xl:grid xl:grid-cols-6">
-  <!-- Middle / Body text -->
   <div class="xl:col-start-3 xl:col-span-3">
     <div
-      class="px-4 pt-5 pb-8 mx-auto xl:ml-6 xl:mr-auto xl:pt-12 max-w-prose xl:px-6"
+      class="px-4 pt-5 pb-8 mx-auto  xl:ml-6 xl:mr-auto xl:pt-12 max-w-prose xl:px-6"
     >
-      <!-- prettier-ignore -->
       {# {{ page | debug | safe }} #}
       <div>{{ content | safe }}</div>
     </div>

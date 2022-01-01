@@ -36,7 +36,7 @@ const mono = [
 ]
 
 module.exports = {
-  purge: ['./src/**/*.html', './src/**/*.js'],
+  content: ['./src/**/*.{html,js}'],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {},

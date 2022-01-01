@@ -1,0 +1,12 @@
+<!-- prettier-ignore -->
+{% extends "components/main/navItem.html" %}
+
+{% block navContent %}
+  {% if loop.first %}
+    {% include 'components/main/navContentFirst.html' %}
+  {% elif loop.last %}
+    {% include 'components/main/navContentLast.html' %}
+  {% else %}
+    {% include 'components/main/navContent.html' %}
+  {% endif %}
+{% endblock %}

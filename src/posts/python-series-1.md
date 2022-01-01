@@ -1,7 +1,7 @@
 ---
 layout: blog.html
 title: Python Version and Dependency Management
-description: Learning Python as JavaScript Developer Series. Part 1.
+description: Learning Python as JavaScript Developer Series Part 1.
 date: 2021-07-01
 update: 2021-12-31
 tags:
@@ -39,13 +39,9 @@ Are you familiar with Node Version Management (nvm)? pyenv API has some similari
 | Command              | Description                                 | Similar nvm command       |
 | -------------------- | ------------------------------------------- | ------------------------- |
 | pyenv version        | Check version used in the directory         | nvm current               |
-
-
 | pyenv versions       | List installed versions                     | nvm ls                    |
 | pyenv install 3      | List available Python 3 to install          | nvm ls-remote 14          |
-| pyenv install 3.10.1 | Install a version                           | nvm install 14.18.2       
-
-|
+| pyenv install 3.10.1 | Install a version                           | nvm install 14.18.2       |
 | pyenv global         | Show global version                         | nvm alias default         |
 | pyenv global 3.10.1  | Set global version                          | nvm alias default 14.18.2 |
 | pyenv local 3.10.1   | Set local version, saved in .python-version | node -v > .nvmrc          |
