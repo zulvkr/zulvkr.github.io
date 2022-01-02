@@ -1,8 +1,8 @@
 <li
   class="{{[
     'flex-shrink-0',
-    'text-gray-100 bg-gray-900' if isActive, 
-    'group-hover:text-white' if isRoot,
+    'group-hover:text-white text-stone-300' if isRoot,
+    'group-hover:text-stone-900 text-stone-600' if not isRoot,
     'ml-auto' if loop.last
   ] | class }}"
 >

@@ -1,9 +1,9 @@
 module.exports = function () {
   return {
-    title: 'zulvkr',
+    title: 'Ivan Zulfikar',
     description: `
-    Hi! I'm Zul, a muslim Indonesian, living in Java Island.
-    I work as web developer, mostly code in JavaScript.
+    Hi! I'm Zul. I'm a web developer based in Java, Indonesia.
+    I spend most of my coding time in JavaScript.
     `,
     github: 'https://github.com/zulvkr',
   }

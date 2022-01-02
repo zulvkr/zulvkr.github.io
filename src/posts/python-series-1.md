@@ -110,7 +110,7 @@ Visual Studio Code plays really well with Python virtual environment. When using
 
 Selecting the interpreter also makes Visual Studio Code to auto activate virtual env when opening the integrated terminal.
 
-Visual Studio Code also can install formatter and linter for you. It will prompt you to install linter and formatter when you use Visual Studio Code command: "Python: run linting" and "Format document". Clicking the prompt button will install it via the detected package manager, in example when installing black formatter, Visual Studio Code will call `poetry add --dev black --allow-prereleases` to install it.
+Visual Studio Code also can install formatter and linter for you. It will prompt you to install linter and formatter when you use Visual Studio Code command: "Python: select linter" and "Format document". Clicking the prompt button will install it via the detected package manager, in example when you click black formatter, Visual Studio Code will run `poetry add --dev black --allow-prereleases` to install it.
 
 ## Alternative to virtual environment: Docker container
 

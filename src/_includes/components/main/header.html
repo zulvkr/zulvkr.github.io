@@ -3,25 +3,26 @@
 
 <header
   class="{{[
-    'border-b xl:border-r xl:fixed xl:w-2/6 xl:h-full xl:pt-8 xl:border-b-0',
-    'bg-gray-900 xl:text-gray-300 text-white' if isRoot else 'bg-gray-50' 
+    'grid border-b px-4 xl:px-6',
+    'xl:border-r xl:fixed xl:w-2/6 xl:h-full xl:pt-8 xl:border-b-0',
+    'bg-stone-900 xl:text-stone-300 text-white' if isRoot else 'bg-stone-50' 
   ] | class }}"
 >
-  <div class="mx-auto xl:ml-auto xl:mr-0 max-w-prose">
+  <div class="w-full max-w-prose xl:justify-self-end justify-self-center">
     {% include "components/main/navigations.html" %}
-    <div class="px-4 py-8 xl:px-6">
+    <div class="py-8">
       <!-- prettier-ignore -->
       {% include "components/main/pic.html" %}
       
       {% if tags and 'post' in tags %}
-      <p class="pb-4 text-sm">— {{ page.date | toReadableDate }}</p>
+      <p class="pb-4 font-serif text-sm">— {{ page.date | toReadableDate }}</p>
       {% endif %}
 
       <h1
         id="title"
         class="{{[
           'pb-6 text-5xl font-display',
-          'text-gray-900' if not isRoot
+          'text-stone-900' if not isRoot
         ] | class }}"
       >
         {{ title or metadata.title }}
@@ -30,7 +31,7 @@
         id="description"
         class="{{[
           'max-w-prose font-serif italic', 
-          'text-white' if isRoot else 'text-gray-600'
+          'text-white' if isRoot else 'text-stone-600'
         ] | class }}"
       >
         {{ metadata.description if isRoot else (description or '') }}
