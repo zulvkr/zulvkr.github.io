@@ -1,25 +1,24 @@
 ---
-import HeaderLink from './HeaderLink.astro';
+// import HeaderLink from './HeaderLink.astro';
+import GithubIcon from './mdi_github.svg';
+import LinkedIn from './mdi_linkedin.svg';
 import { SITE_TITLE } from '../consts';
 ---
 
 <header>
-	<h2>
+	<h2 class="hidden">
 		{SITE_TITLE}
 	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+	<nav class="max-w-screen-lg mx-auto px-4">
+    <div class="flex justify-end gap-4 py-4">
+      <a href="https://github.com/zulvkr" class="opacity-50 hover:opacity-100 transition-opacity">
+        <img src={GithubIcon} alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/ivanzulfikar" class="opacity-50 hover:opacity-100 transition-opacity">
+        <img src={LinkedIn} alt="LinkedIn" />
+      </a>
+    </div>
+    <!--  -->
 	</nav>
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>
+
