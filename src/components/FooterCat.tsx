@@ -1,16 +1,15 @@
-import Lottie from "lottie-react";
-import Cat from "./14592-loader-cat.json"
+import { useLottie } from 'lottie-react'
+import Cat from './Cat.json'
 
-const FooterCat = () => <Lottie animationData={Cat} loop={true}
- style={
-  {
-    // position: "absolute",
-    // top: 0,
-    // right: 0,
-    width: "190px",
+const FooterCat = () => {
+  const options = {
+    animationData: Cat,
+    loop: true,
   }
- }
-/>;
 
-export default FooterCat;
+  const { View } = useLottie(options)
 
+  return <>{View}</>
+}
+
+export default FooterCat
