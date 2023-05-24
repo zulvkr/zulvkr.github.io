@@ -34,13 +34,13 @@ const techStacks = [
     </style>
   </head>
 
-  <body class='overflow-x-hidden'>
+  <body class=''>
     <Header title={SITE_TITLE} />
 
     <div
-      class='absolute top-0 -z-[1000] pointer-events-none '
+      class='absolute top-0 inset-x-0 -z-[1000] pointer-events-none object-cover overflow-x-clip'
     >
-      <img src={Gradient} width='100%' />
+      <img src={Gradient} class="w-full scale-[200%] md:scale-100" />
     </div>
 
     <main class='text-white'>
